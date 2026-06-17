@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology — Phantom Brand Co — SEO & GEO Audit — March 2026</title>
+  <style>
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('https://res.cloudinary.com/dox7br3ot/raw/upload/fl_attachment/v1749132141/gilroy-bold-webfont_dheg8i.woff2') format('woff2');
+      font-weight: 700;
+    }
+    :root {
+      --primary: #b8001c;
+      --accent: #f1ccd2;
+      --bg: #ffffff;
+      --dark: #1a1c1c;
+      --text: #1f2124;
+      --mid: #69727d;
+      --border: #e0e0e0;
+      --high: #e03131;
+      --medium: #f08c00;
+      --low: #2f9e44;
+      --monitor: #868e96;
+      --verify: #1971c2;
+      --high-tint: #fff0f0;
+      --medium-tint: #fff8e6;
+      --low-tint: #ebfbee;
+      --monitor-tint: #f1f3f5;
+      --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --font-heading: 'Gilroy', var(--font-body);
+      --max-width: 1140px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+    h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; }
+    a { color: var(--primary); text-decoration: none; transition: opacity 0.25s; }
+    a:hover { opacity: 0.7; }
+    .inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+
+    /* ── HEADER ── */
+    .site-header { position: sticky; top: 0; z-index: 200; background: var(--dark); border-bottom: 1px solid #2a2a2a; }
+    .header-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; gap: 20px; height: 58px; }
+    .logo-text { font-family: var(--font-heading); font-size: 1.05rem; color: #fff; letter-spacing: 0.03em; flex-shrink: 0; }
+    .logo-dot { color: var(--primary); }
+    .main-nav { display: flex; gap: 2px; flex: 1; }
+    .main-nav a { color: #aaa; font-size: 0.75rem; padding: 5px 9px; border-radius: 3px; white-space: nowrap; transition: color 0.2s, background 0.2s; }
+    .main-nav a:hover, .main-nav a.active { color: #fff; background: rgba(255,255,255,0.08); opacity: 1; }
+    .header-meta { font-size: 0.7rem; color: #666; white-space: nowrap; }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb-bar { border-bottom: 1px solid var(--border); }
+    .breadcrumb { font-size: 0.8rem; color: var(--mid); padding: 10px 32px; max-width: var(--max-width); margin: 0 auto; }
+    .breadcrumb a { color: var(--mid); }
+    .breadcrumb a:hover { color: var(--primary); opacity: 1; }
+    .bc-sep { margin: 0 7px; color: var(--border); }
+    .bc-current { color: var(--text); font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--dark); padding: 52px 0 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 80% 50%, rgba(184,0,28,0.09) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-eyebrow { display: flex; align-items: center; gap: 10px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; }
+    .hero-eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--primary); }
+    .hero h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; }
+    .hero-date { font-size: 0.82rem; color: #666; margin-bottom: 24px; }
+    .hero p { font-size: 0.93rem; color: #bbb; line-height: 1.8; max-width: 640px; margin-bottom: 12px; }
+    .hero p:last-child { margin-bottom: 0; }
+
+    /* ── SECTION HEADING ── */
+    .section-heading { display: flex; align-items: center; margin-bottom: 24px; }
+    .section-heading::before { content: ''; width: 28px; height: 2px; background: var(--primary); margin-right: 16px; flex-shrink: 0; }
+    .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); margin-left: 16px; }
+    .section-heading h2 { font-size: 1.15rem; white-space: nowrap; }
+
+    /* ── WHAT WE CHECKED ── */
+    .what-checked { padding: 52px 0; background: var(--accent); }
+    .what-checked .section-heading::after { background: rgba(184,0,28,0.15); }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px; }
+    .card {
+      background: #fff; border: 1px solid rgba(184,0,28,0.1);
+      border-radius: 6px; padding: 22px 24px;
+      display: flex; flex-direction: column; gap: 10px;
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.09); transform: translateY(-2px); }
+    .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .card h3 { font-size: 0.98rem; color: var(--text); }
+    .card-count { font-size: 0.7rem; color: var(--primary); font-weight: 700; letter-spacing: 0.04em; white-space: nowrap; }
+    .card p { font-size: 0.85rem; color: var(--mid); line-height: 1.65; flex: 1; }
+    .card-link { font-size: 0.8rem; font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 4px; margin-top: 2px; }
+
+    /* ── SCORING ── */
+    .scoring { padding: 52px 0; }
+    .scoring > .inner > p { font-size: 0.95rem; line-height: 1.8; max-width: 700px; margin-bottom: 36px; color: var(--mid); }
+    .scoring h3 { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--primary); margin: 36px 0 14px; }
+    .scoring h3:first-of-type { margin-top: 0; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+    thead tr { background: var(--dark); }
+    th { color: #fff; padding: 10px 16px; text-align: left; font-family: var(--font-heading); font-size: 0.78rem; letter-spacing: 0.03em; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.55; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: #fafafa; }
+    td:first-child { font-weight: 600; }
+
+    .badge { display: inline-block; padding: 3px 10px; border-radius: 3px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.03em; }
+    .badge.high { background: var(--high); color: #fff; }
+    .badge.medium { background: transparent; color: var(--medium); border: 1.5px solid var(--medium); }
+    .badge.low { background: transparent; color: var(--low); border: 1.5px solid var(--low); }
+    .badge.monitor { background: transparent; color: var(--monitor); border: 1.5px solid var(--monitor); }
+
+    /* ── FOOTER ── */
+    .site-footer { padding: 24px 32px; text-align: center; font-size: 0.75rem; color: #aaa; background: var(--dark); }
+
+    @media (max-width: 640px) { .main-nav { display: none; } .hero h1 { font-size: 1.7rem; } .card-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <span class="logo-text">digi<span class="logo-dot">•</span>tad</span>
+    <nav class="main-nav">
+      <a href="index.html">Overview</a>
+      <a href="technical.html">Technical</a>
+      <a href="ux.html">User Experience</a>
+      <a href="tools.html">Tools & Config</a>
+      <a href="on-site.html">On-Site SEO</a>
+      <a href="off-site.html">Off-Site</a>
+      <a href="geo.html">GEO / AI Visibility</a>
+      <a href="schema.html">Schema</a>
+      <a href="methodology.html" class="active">Methodology</a>
+    </nav>
+    <div class="header-meta">Phantom Brand Co · March 2026</div>
+  </div>
+</header>
+
+<div class="breadcrumb-bar">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Overview</a>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Methodology</span>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="inner">
+    <div class="hero-eyebrow">Methodology</div>
+    <h1>How This Audit Works</h1>
+    <p class="hero-date">March 2026 · Phantom Brand Co</p>
+    <p>This audit examines Phantom Brand Co's search and AI visibility across seven areas — from the technical infrastructure that search engines rely on to crawl the site, through to how frequently and accurately the brand appears in AI-generated responses.</p>
+    <p>Each finding is assessed against current best practice, weighted by its real-world impact, and prioritised so that the most valuable fixes are clearly visible without requiring a background in SEO. Recommendations are sequenced by urgency — the most impactful changes appear at the top of each section.</p>
+  </div>
+</section>
+
+<!-- WHAT WE CHECKED -->
+<section class="what-checked">
+  <div class="inner">
+    <div class="section-heading"><h2>What We Checked</h2></div>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-top"><h3>Technical</h3><span class="card-count">26 elements</span></div>
+        <p>Crawlability, indexation, site speed, security, URL structure, and server-level signals that affect how search engines access and interpret the site.</p>
+        <a href="technical.html" class="card-link">View results ›</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>User Experience</h3><span class="card-count">14 elements</span></div>
+        <p>Core Web Vitals, mobile usability, navigation, accessibility, and on-page interaction signals that affect both users and search rankings.</p>
+        <a href="ux.html" class="card-link">View results ›</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>Tools & Configuration</h3><span class="card-count">11 elements</span></div>
+        <p>Analytics setup, tracking accuracy, Search Console configuration, and the measurement infrastructure needed to act on performance data.</p>
+        <a href="tools.html" class="card-link">View results ›</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>On-Site SEO</h3><span class="card-count">26 elements</span></div>
+        <p>Title tags, meta descriptions, heading structure, content quality, internal linking, and on-page signals that determine how individual pages rank.</p>
+        <a href="on-site.html" class="card-link">View results ›</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>Off-Site</h3><span class="card-count">11 elements</span></div>
+        <p>Backlink profile, domain authority, referring domains, link quality, and external signals that establish the site's credibility with search engines.</p>
+        <a href="off-site.html" class="card-link">View results ›</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>GEO / AI Visibility</h3><span class="card-count">26 elements</span></div>
+        <p>How the site appears in AI-generated responses, large language model citations, AI Overviews, and generative search experiences across major platforms.</p>
+        <a href="geo.html" class="card-link">View results ›</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>Schema</h3><span class="card-count">Sub-phase</span></div>
+        <p>Schema markup across all key page types — structured data that enables rich results, knowledge panel features, and machine-readable content signals.</p>
+        <a href="schema.html" class="card-link">View results ›</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCORING -->
+<section class="scoring">
+  <div class="inner">
+    <div class="section-heading"><h2>How We Score</h2></div>
+    <p>Each element is rated on a five-point scale, from Not Present to Excellent, then multiplied by a weight that reflects its real-world impact on search and AI visibility. The result is a Priority Score — lower scores indicate higher urgency, so the most critical issues rise to the top of each section automatically.</p>
+
+    <h3>Rating Scale</h3>
+    <table>
+      <thead><tr><th>Rating</th><th>Value</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td>Not Present</td><td>1</td><td>The element does not exist on the site.</td></tr>
+        <tr><td>Weak</td><td>2</td><td>Exists but implemented very poorly — significant issues present.</td></tr>
+        <tr><td>Medium</td><td>3</td><td>Functional, but with significant room to improve.</td></tr>
+        <tr><td>High</td><td>4</td><td>Mostly good — minor improvements possible.</td></tr>
+        <tr><td>Excellent</td><td>5</td><td>Best practice met — virtually no issues.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Importance Weights</h3>
+    <table>
+      <thead><tr><th>Weight</th><th>Tier</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td>10</td><td>Critical</td><td>Core ranking or visibility factor — maximum urgency when poorly implemented.</td></tr>
+        <tr><td>7.5</td><td>High</td><td>Strong impact on search performance — worth prioritising early.</td></tr>
+        <tr><td>5</td><td>Medium</td><td>Moderate impact — worth addressing as part of a broader programme.</td></tr>
+        <tr><td>2.5</td><td>Low</td><td>Minor or indirect signal — improve opportunistically.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Priority Levels</h3>
+    <table>
+      <thead><tr><th>Priority Score</th><th>Priority</th><th>Recommended action</th></tr></thead>
+      <tbody>
+        <tr><td>10 or under</td><td><span class="badge high">HIGH</span></td><td>Act immediately. Significant gaps with direct impact on visibility or ranking.</td></tr>
+        <tr><td>11–20</td><td><span class="badge medium">MEDIUM</span></td><td>Address this quarter. Meaningful improvement available with moderate effort.</td></tr>
+        <tr><td>21–35</td><td><span class="badge low">LOW</span></td><td>Monitor and improve. Lower urgency — include in a longer-term roadmap.</td></tr>
+        <tr><td>36–50</td><td><span class="badge monitor">MONITOR</span></td><td>No action needed. Performing well — check again at the next audit.</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+</section>
+
+<footer class="site-footer">Prepared by Digitad &nbsp;·&nbsp; Phantom Brand Co &nbsp;·&nbsp; SEO & GEO Audit &nbsp;·&nbsp; March 2026</footer>
+
+</body>
+</html>

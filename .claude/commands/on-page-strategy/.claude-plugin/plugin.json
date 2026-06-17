@@ -1,0 +1,22 @@
+{
+  "name": "on-page-strategy",
+  "version": "1.0.0",
+  "description": "Builds a prioritized SEO on-page content production plan from a keyword research Google Sheet and writes it to the Danone production plan sheet. Priority: category pages → product pages → discovery content.",
+  "author": "Digitad / Carla Klaasen",
+  "license": "MIT",
+  "allowed-tools": ["Bash", "Read", "Write", "Edit"],
+  "triggers": [
+    "build the production plan",
+    "fill the content strategy",
+    "on-page strategy",
+    "content production plan",
+    "write the production plan",
+    "SEO content plan",
+    "on-page content strategy"
+  ],
+  "dependencies": {
+    "scripts": ["scripts/sheets_helper.py"],
+    "credentials": "/Users/carlaklaasen/claude_code/content_automation/content-automation-492519-da1e80a65441.json",
+    "related-skills": ["global-seo-skill", "skill-watchdog"]
+  }
+}

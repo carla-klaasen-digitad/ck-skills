@@ -1,0 +1,24 @@
+# seo-geo-technical-audit-v13 — Python dependencies
+# Install before running any script:
+#   pip install -r requirements.txt
+
+# HTTP requests (fetch_data.py, init_session.py, api_clients.py)
+requests>=2.31.0
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# Google Sheets API
+gspread>=6.0.0
+
+# Google Drive, Docs, Sheets service APIs
+google-api-python-client>=2.100.0
+google-auth>=2.23.0
+google-auth-httplib2>=0.1.1
+google-auth-oauthlib>=1.1.0
+
+# GA4 Data API
+google-analytics-data>=0.18.0
+
+# Excel workbook (optional backup output via generate_workbook.py)
+openpyxl>=3.1.2

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Technical Health | SEO &amp; GEO Audit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#3a485b",
+              "on-surface-variant": "#5c403d",
+              "on-secondary-fixed": "#410004",
+              "on-secondary-container": "#721316",
+              "error-container": "#ffdad6",
+              "background": "#f9f9f9",
+              "on-error-container": "#93000a",
+              "surface-container-low": "#f3f3f3",
+              "secondary": "#a53937",
+              "surface-container-highest": "#e2e2e2",
+              "tertiary-container": "#4d5b6f",
+              "secondary-fixed": "#ffdad7",
+              "outline-variant": "#e5bdba",
+              "tertiary-fixed-dim": "#b9c7df",
+              "on-secondary-fixed-variant": "#852222",
+              "on-tertiary-container": "#c4d3ea",
+              "inverse-surface": "#2f3131",
+              "surface": "#f9f9f9",
+              "surface-container": "#eeeeee",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#ffc4bf",
+              "primary-fixed": "#ffdad7",
+              "secondary-container": "#fe7c75",
+              "surface-tint": "#be091f",
+              "tertiary": "#364457",
+              "surface-container-high": "#e8e8e8",
+              "on-surface": "#1a1c1c",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#ffb3ae",
+              "primary-container": "#b8001c",
+              "surface-dim": "#dadada",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#1a1c1c",
+              "on-error": "#ffffff",
+              "inverse-primary": "#ffb3ae",
+              "surface-bright": "#f9f9f9",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e2e2e2",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#d5e3fb",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary-fixed": "#410004",
+              "on-primary-fixed-variant": "#930014",
+              "outline": "#906f6c",
+              "on-tertiary-fixed": "#0d1c2e",
+              "primary": "#8c0012",
+              "secondary-fixed-dim": "#ffb3ae"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .donut-chart {
+            background: conic-gradient(#8c0012 0% 49%, #e2e2e2 49% 100%);
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(26, 28, 28, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low font-body text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md editorial-shadow h-16 flex justify-between items-center px-8 max-w-full mx-auto">
+<div class="flex items-center gap-6 flex-shrink-0">
+  <span class="text-xl font-headline font-bold text-on-surface tracking-tight">digi<span class="text-primary">•</span>tad</span>
+  <span class="w-px h-5 bg-zinc-200"></span>
+  <div class="flex items-center gap-2">
+    <div class="w-7 h-7 rounded-md bg-tertiary flex items-center justify-center flex-shrink-0">
+      <span class="text-white text-[10px] font-headline font-bold tracking-tight">PB</span>
+    </div>
+    <span class="text-sm font-headline font-semibold text-zinc-700 tracking-tight">Phantom Brand Co</span>
+  </div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-6 text-sm font-medium">
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="index.html">Overview</a>
+<a class="text-on-surface font-semibold bg-surface-container-low px-3 py-1 rounded-md" href="technical.html">Technical</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="ux.html">User Experience</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="tools.html">Tools & Config</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="on-site.html">On-Site SEO</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="off-site.html">Off-Site</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="geo.html">GEO</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="schema.html">Schema</a>
+<a class="text-zinc-600 hover:text-on-surface transition-colors" href="methodology.html">Methodology</a>
+</div>
+</div>
+<div class="text-xs font-label uppercase tracking-widest text-zinc-400 flex-shrink-0">March 2026</div>
+</nav>
+<main class="pt-16">
+<!-- Breadcrumbs -->
+<div class="px-8 py-6 max-w-7xl mx-auto">
+<nav class="flex items-center gap-2 text-xs font-label uppercase tracking-widest text-on-surface-variant">
+<a href="index.html" class="hover:text-primary transition-colors">Overview</a>
+<span class="material-symbols-outlined text-[10px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary font-bold">Technical</span>
+</nav>
+</div>
+<!-- Hero Section -->
+<section class="bg-white border-b-[3px] border-primary py-20 relative overflow-hidden">
+<div class="absolute right-0 top-0 w-[400px] h-[400px] bg-primary/5 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative z-10">
+<div>
+<div class="flex items-center gap-4 mb-5">
+  <div class="w-10 h-[2px] bg-primary"></div>
+  <span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-xs">Technical</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter mb-6 leading-none text-on-surface">Technical</h1>
+<div class="max-w-xl mb-10 space-y-3">
+<p class="text-zinc-700 text-base leading-relaxed">
+The technical audit examines 26 elements across crawlability, indexation, site speed, security, and server-level configuration — the infrastructure search engines depend on to access and rank your content.
+</p>
+<p class="text-zinc-500 text-sm leading-relaxed">
+Three areas require immediate attention: 47 broken URLs are wasting crawl budget and losing link equity; mobile page speed scores in the "Poor" range at 31/100; and roughly 30% of the site's pages remain unindexed. Addressing these three items will have the most direct impact on organic visibility.
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<a href="#high-issues" class="bg-primary px-4 py-2 rounded-full flex items-center gap-2 no-underline hover:opacity-80 transition-opacity">
+<span class="text-white text-[10px] font-bold font-label uppercase tracking-widest">High 7</span>
+</a>
+<a href="#medium-issues" class="border border-[#f08c00] px-4 py-2 rounded-full flex items-center gap-2 no-underline hover:opacity-80 transition-opacity">
+<span class="text-[#f08c00] text-[10px] font-bold font-label uppercase tracking-widest">Medium 9</span>
+</a>
+<a href="#low-issues" class="border border-[#2f9e44] px-4 py-2 rounded-full flex items-center gap-2 no-underline hover:opacity-80 transition-opacity">
+<span class="text-[#2f9e44] text-[10px] font-bold font-label uppercase tracking-widest">Low 6</span>
+</a>
+<a href="#monitor-issues" class="border border-zinc-400 px-4 py-2 rounded-full flex items-center gap-2 no-underline hover:opacity-80 transition-opacity">
+<span class="text-zinc-500 text-[10px] font-bold font-label uppercase tracking-widest">Monitor 4</span>
+</a>
+</div>
+</div>
+<div class="flex justify-center md:justify-end">
+<!-- SVG ring — 49/100 = red (high priority range) -->
+<div class="relative w-[200px] h-[200px]">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 200 200">
+<circle cx="100" cy="100" r="80" fill="transparent" stroke="#e2e2e2" stroke-width="14"></circle>
+<circle cx="100" cy="100" r="80" fill="transparent" stroke="#e03131" stroke-width="14"
+  stroke-dasharray="502.65" stroke-dashoffset="256.4" stroke-linecap="round"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-5xl font-headline font-bold text-on-surface leading-none">49</span>
+<span class="text-zinc-500 font-label text-xs uppercase tracking-widest mt-2">out of 100</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Findings Section -->
+<section class="py-20 px-8 max-w-7xl mx-auto space-y-24">
+<!-- High Priority -->
+<div id="high-issues" class="space-y-6 scroll-mt-20">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-headline font-bold text-on-surface">Critical Infrastructure Risks</h2>
+<span class="px-3 py-1 bg-[#e03131] text-white text-[10px] font-bold uppercase rounded-full tracking-tighter">High Priority</span>
+</div>
+<div class="space-y-4">
+<!-- High Priority Item 1 -->
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#e03131]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#e03131]/10 rounded-full mr-4 text-[#e03131]">
+<span class="material-symbols-outlined" data-icon="error">error</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg">4xx Errors &amp; Broken Links</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform rotate-180" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-8 bg-surface-container-low mx-6 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Client-side errors where the requested page cannot be found or accessed by search engines.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">It wastes crawl budget and creates a "dead-end" experience for users and bots alike.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Redirect broken URLs to relevant live pages or update internal links to point to active content.</p>
+</div>
+</div>
+</div>
+<!-- High Priority Item 2 -->
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#e03131]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#e03131]/10 rounded-full mr-4 text-[#e03131]">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg">Page Speed — Mobile</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-8 bg-surface-container-low mx-6 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Mobile page speed measures how quickly the site loads on mobile devices via Google's Core Web Vitals framework. It directly affects both search rankings and the percentage of visitors who stay on the site.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">The mobile PageSpeed score is 31/100, placing the site in the "Poor" range. Largest Contentful Paint averages 6.2 seconds — more than double the recommended 2.5 second threshold. The primary cause is uncompressed images and render-blocking scripts.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Convert hero images to WebP format, implement lazy loading, and defer third-party scripts that are not critical to initial render. Enable server-side caching and consider a CDN for static assets.</p>
+</div>
+</div>
+</div>
+<!-- High Priority Item 3 -->
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#e03131]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#e03131]/10 rounded-full mr-4 text-[#e03131]">
+<span class="material-symbols-outlined" data-icon="search_check">search_check</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg">Indexation Coverage</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-8 bg-surface-container-low mx-6 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Indexation coverage refers to the proportion of the site's pages that are successfully indexed by Google and eligible to appear in search results.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Search Console shows 214 pages in a "Discovered — currently not indexed" state and a further 38 marked "Crawled — currently not indexed." Combined, these represent roughly 30% of the site's total page count.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#e03131]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Audit non-indexed pages to separate noindex-blocked pages from thin-content pages. Apply canonical tags on faceted navigation pages. Add unique introductory content to thin category pages with commercial intent.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Medium Priority -->
+<div id="medium-issues" class="space-y-6 scroll-mt-20">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-headline font-bold text-on-surface">Performance Opportunities</h2>
+<span class="px-3 py-1 border border-[#f08c00] text-[#f08c00] text-[10px] font-bold uppercase rounded-full tracking-tighter">Medium Priority</span>
+</div>
+<div class="space-y-4">
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#f08c00]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#f08c00]/10 rounded-full mr-4 text-[#f08c00]">
+<span class="material-symbols-outlined" data-icon="account_tree">account_tree</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg">XML Sitemap</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-8 bg-surface-container-low mx-6 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#f08c00]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">The XML sitemap is a structured file that tells search engines which pages should be crawled and indexed. A well-maintained sitemap helps ensure important pages are discovered promptly after updates.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#f08c00]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">The sitemap includes 83 URLs that return a 301 redirect and 12 URLs currently marked noindex. Including redirected or non-indexable URLs creates conflicting signals and wastes crawl budget.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#f08c00]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Remove all redirecting URLs from the sitemap — only final destination URLs should be included. Remove all noindex URLs, and update CMS sitemap generation settings to dynamically exclude non-indexable pages.</p>
+</div>
+</div>
+</div>
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#f08c00]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#f08c00]/10 rounded-full mr-4 text-[#f08c00]">
+<span class="material-symbols-outlined" data-icon="link_off">link_off</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-lg">Redirect Chains</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-8 bg-surface-container-low mx-6 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#f08c00]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Redirect chains occur when a URL redirects to another URL that itself redirects again before reaching the final destination. Each hop dilutes link authority and adds latency.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#f08c00]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">The crawl identified 31 redirect chains, some reaching 3 or 4 hops. These involve legacy product URLs redirected across two separate site migrations and never consolidated. Each extra hop passes progressively less authority to the destination.</p>
+</div>
+<div class="space-y-3">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#f08c00]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Update the origin URL's redirect rule to bypass intermediate URLs and resolve in a single hop. Refer to the Redirect Plan report for the full list of chains to consolidate.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Low & Monitor -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div id="low-issues" class="space-y-6 scroll-mt-20">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-headline font-bold text-on-surface">Lower Priority</h2>
+<span class="px-3 py-1 border border-[#2f9e44] text-[#2f9e44] text-[10px] font-bold uppercase rounded-full tracking-tighter">Low Priority</span>
+</div>
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#2f9e44]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#2f9e44]/10 rounded-full mr-4 text-[#2f9e44]">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-md">Hreflang Configuration</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-6 bg-surface-container-low mx-4 rounded-lg space-y-4">
+<div class="space-y-2">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#2f9e44]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Hreflang tags tell search engines which language and regional version of a page to serve to users in different countries.</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#2f9e44]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">The French-Canadian and English-Canadian versions are missing reciprocal hreflang annotations on a subset of product pages. Google may surface the wrong language variant to users.</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#2f9e44]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Ensure every page with an hreflang tag also includes the reciprocal tag. Add a self-referencing hreflang tag on every page. Validate with a hreflang testing tool after deploying.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="monitor-issues" class="space-y-6 scroll-mt-20">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-headline font-bold text-on-surface">Monitor</h2>
+<span class="px-3 py-1 border border-[#868e96] text-[#868e96] text-[10px] font-bold uppercase rounded-full tracking-tighter">Monitor</span>
+</div>
+<div class="bg-white editorial-shadow accordion-card border-l-[6px] border-[#868e96]">
+<div class="flex items-center p-6 accordion-trigger cursor-pointer">
+<div class="w-10 h-10 flex items-center justify-center bg-[#868e96]/10 rounded-full mr-4 text-[#868e96]">
+<span class="material-symbols-outlined" data-icon="rebase_edit">rebase_edit</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-md">URL Structure</h3>
+</div>
+<span class="material-symbols-outlined text-zinc-400 accordion-icon transition-transform" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content hidden p-6 bg-surface-container-low mx-4 rounded-lg space-y-4">
+<div class="space-y-2">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#868e96]">What it is</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">URL structure refers to how page addresses are formatted — including the use of hyphens, lowercase characters, logical hierarchy, and avoidance of unnecessary parameters.</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#868e96]">Why it is a problem</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">URL structure is well-implemented across the site. All URLs use lowercase characters, hyphens as word separators, and a logical folder hierarchy. No action is required at this time.</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-[10px] font-label font-extrabold uppercase tracking-widest text-[#868e96]">How to fix it</h4>
+<p class="text-sm text-zinc-600 leading-relaxed">Maintain the existing URL conventions when adding new pages or categories. Avoid introducing dynamic parameters for filterable content without canonical tags.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Passed Items -->
+<div class="bg-[#2f9e44]/5 p-12 rounded-xl flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-[#2f9e44] text-white rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</div>
+<h2 class="text-2xl font-headline font-bold text-[#2f9e44] mb-4">Healthy Components</h2>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-medium text-[#2f9e44]/80">
+<span class="flex items-center gap-2">SSL Certificate <span class="material-symbols-outlined text-[14px]" data-icon="check">check</span></span>
+<span class="flex items-center gap-2">Domain Configuration <span class="material-symbols-outlined text-[14px]" data-icon="check">check</span></span>
+<span class="flex items-center gap-2">HTTPS Implementation <span class="material-symbols-outlined text-[14px]" data-icon="check">check</span></span>
+<span class="flex items-center gap-2">Robots.txt <span class="material-symbols-outlined text-[14px]" data-icon="check">check</span></span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1a1c1c] text-zinc-500 py-16 text-center">
+<div class="max-w-7xl mx-auto px-8 flex flex-col items-center gap-8">
+<span class="text-xs font-label uppercase tracking-[0.3em]">Prepared by Digitad • Phantom Brand Co • SEO &amp; GEO Audit • March 2026</span>
+<div class="flex gap-8 text-[10px] uppercase font-bold tracking-widest text-zinc-600">
+<a class="hover:text-white transition-colors" href="#">Privacy</a>
+<a class="hover:text-white transition-colors" href="#">Terms</a>
+<a class="hover:text-white transition-colors" href="#">Support</a>
+</div>
+<div class="w-12 h-[1px] bg-zinc-800"></div>
+<span class="text-lg font-headline font-bold text-zinc-700">digi<span class="text-zinc-800">•</span>tad</span>
+</div>
+</footer>
+<script>
+  document.querySelectorAll('.accordion-card').forEach(card => {
+    const trigger = card.querySelector('.accordion-trigger');
+    const content = card.querySelector('.accordion-content');
+    const icon = card.querySelector('.accordion-icon');
+    if (!trigger || !content) return;
+    trigger.addEventListener('click', () => {
+      const isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      card.classList.toggle('pb-6', !isOpen);
+      if (icon) icon.classList.toggle('rotate-180', !isOpen);
+    });
+  });
+</script>
+</body></html>

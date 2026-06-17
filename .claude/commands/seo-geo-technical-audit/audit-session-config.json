@@ -1,0 +1,26 @@
+{
+  "client_name": "ACTIVIA",
+  "client_display_name": "Activia USA",
+  "site_url": "https://www.activia.us.com/",
+  "session_date": "May 2026",
+  "audit_dir": "/Users/carlaklaasen/claude_code/activia_us_may2026_audit",
+  "writing_style": "A",
+  "api_modes": {
+    "screaming_frog": "headless",
+    "screaming_frog_config": "/Users/carlaklaasen/claude_code/.ScreamingFrogSEOSpider/configs/activia.seospiderconfig",
+    "se_ranking": "api",
+    "majestic": "manual",
+    "psi": "api",
+    "gsc": "api",
+    "ga4": "pending_permission",
+    "ga4_property_id": "347471080",
+    "moz": "manual",
+    "whois": "manual"
+  },
+  "gdrive_main_dir_id": "1Irx0hajNK0ls-wtRP_rnR1HY5Blmsgc0",
+  "gdrive_exports_dir_id": "1Irx0hajNK0ls-wtRP_rnR1HY5Blmsgc0",
+  "gdrive_html_dir_id": "",
+  "existing_sheet_id": "1gLSwEBpE7Usr8Cyj_eFtZgY4o7EUhO1TJFkH1C4NUzw",
+  "sheet_id": "",
+  "tab_name": "Detailed Technical Audit"
+}

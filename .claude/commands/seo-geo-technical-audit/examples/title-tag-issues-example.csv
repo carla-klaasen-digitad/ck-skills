@@ -1,0 +1,5 @@
+Address,Title 1,Title 1 Length,Title 1 Duplicate,Title 1 Occurrences,Issue Type,Recommended Title,Priority,Notes
+https://www.domain.com/,,,0,,Missing,"Domain Name — Primary Keyword | Brand",HIGH,Homepage has no title tag — critical for branded search visibility.
+https://www.domain.com/product/cold-foam/,"Best Cold Brew Coffee Creamer for People Who Love Rich Creamy Taste Every Morning",81,No,,Too Long,"Cold Brew Coffee Creamer — Rich & Creamy | Brand",MEDIUM,Title is 81 characters and will be truncated in search results. Shortened version leads with the primary product keyword.
+https://www.domain.com/about/,"About",5,No,,Too Short,"About Us — Brand Story & Mission | Brand",LOW,Current title is too short to communicate page purpose or attract clicks in search results.
+https://www.domain.com/products/creamers/,"Shop",4,Yes,3,Duplicate,"Coffee Creamers — Browse All Flavours | Brand",HIGH,Three pages share this title tag. Each product category page must have a unique title that describes its specific content.

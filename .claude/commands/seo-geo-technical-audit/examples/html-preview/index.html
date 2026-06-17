@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SEO &amp; GEO Audit Overview | Phantom Brand Co</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#be091f",
+              "on-surface": "#1a1c1c",
+              "primary-fixed-dim": "#ffb3ae",
+              "on-primary-fixed-variant": "#930014",
+              "on-tertiary-fixed": "#0d1c2e",
+              "secondary-container": "#dae3f0",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#5c403d",
+              "error": "#ba1a1a",
+              "tertiary": "#364457",
+              "on-error": "#ffffff",
+              "primary": "#8c0012",
+              "background": "#f9f9f9",
+              "on-tertiary-container": "#c4d3ea",
+              "on-secondary-fixed-variant": "#3f4852",
+              "surface-dim": "#dadad9",
+              "primary-container": "#b8001c",
+              "on-primary-container": "#ffc4bf",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#bec7d4",
+              "surface-container-low": "#f4f3f3",
+              "on-primary-fixed": "#410004",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f1f1f0",
+              "secondary": "#565f6a",
+              "inverse-surface": "#2f3131",
+              "secondary-fixed": "#dae3f0",
+              "on-secondary-fixed": "#141c25",
+              "surface-container-high": "#e8e8e8",
+              "outline-variant": "#e5bdba",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#5c6570",
+              "surface": "#f9f9f9",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#4d5b6f",
+              "inverse-primary": "#ffb3ae",
+              "error-container": "#ffdad6",
+              "outline": "#906f6c",
+              "surface-container": "#eeeeed",
+              "surface-variant": "#e2e2e2",
+              "surface-bright": "#f9f9f9",
+              "on-tertiary-fixed-variant": "#3a485b",
+              "primary-fixed": "#ffdad7",
+              "tertiary-fixed": "#d5e3fb",
+              "surface-container-highest": "#e2e2e2",
+              "tertiary-fixed-dim": "#b9c7df",
+              "on-background": "#1a1c1c"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #8c0012 0%, #b8001c 100%);
+        }
+        .mask-edges {
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Priority Matrix — Scatter Plot */
+        .quadrant-hover-label {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, calc(-50% + 4px));
+            opacity: 0; transition: opacity 0.18s ease, transform 0.18s ease;
+            pointer-events: none; z-index: 40; white-space: nowrap;
+        }
+        .quadrant-zone:hover .quadrant-hover-label { opacity: 1; transform: translate(-50%, -50%); }
+        .scatter-plot:has(.scatter-dot:hover) .quadrant-hover-label { opacity: 0 !important; }
+        .scatter-dot > div { transition: transform 0.15s ease; }
+        .scatter-dot:hover > div { transform: scale(1.12); }
+        .dot-tooltip {
+            position: absolute; top: calc(100% + 10px); left: 50%;
+            transform: translateX(-50%) translateY(-4px);
+            opacity: 0; transition: opacity 0.18s ease, transform 0.18s ease;
+            pointer-events: none; z-index: 50;
+            background: #1a1c1c; color: #fff;
+            font-family: Inter, sans-serif; font-size: 11px; line-height: 1.5;
+            padding: 8px 12px; border-radius: 6px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            width: 210px; text-align: center;
+        }
+        .scatter-dot:hover .dot-tooltip { opacity: 1; transform: translateX(-50%) translateY(0); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<nav class="flex justify-between items-center h-20 px-12 w-full mx-auto max-w-[1920px]">
+<div class="flex items-center gap-4 flex-shrink-0">
+  <span class="text-xl font-bold text-zinc-900 font-headline tracking-tight">digi<span class="text-primary">•</span>tad</span>
+  <span class="w-px h-5 bg-zinc-200"></span>
+  <div class="flex items-center gap-2">
+    <div class="w-7 h-7 rounded-md bg-tertiary flex items-center justify-center flex-shrink-0">
+      <span class="text-white text-[10px] font-headline font-bold tracking-tight">PB</span>
+    </div>
+    <span class="text-sm font-headline font-semibold text-zinc-700 tracking-tight">Phantom Brand Co</span>
+  </div>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-on-surface font-medium bg-surface-container-low px-3 py-1 rounded-md font-headline text-sm tracking-tight" href="index.html">Overview</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="technical.html">Technical</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="ux.html">User Experience</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="tools.html">Tools & Config</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="on-site.html">On-Site SEO</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="off-site.html">Off-Site</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="geo.html">GEO</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="schema.html">Schema</a>
+<a class="text-zinc-500 font-medium hover:text-zinc-800 transition-colors font-headline text-sm tracking-tight" href="methodology.html">Methodology</a>
+</div>
+<div class="text-xs font-label text-zinc-400 tracking-widest uppercase flex-shrink-0">March 2026</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative bg-white border-b-[3px] border-primary py-24 overflow-hidden">
+<!-- Subtle brand warmth — barely visible radial tint -->
+<div class="absolute right-0 top-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
+<!-- Left Content -->
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-[2px] bg-primary"></div>
+<span class="text-primary font-headline text-xs tracking-[0.2em] font-bold uppercase">Digitad — SEO & GEO Technical Audit</span>
+</div>
+<h1 class="text-on-surface text-6xl md:text-7xl font-headline font-bold mb-4 tracking-tight">Phantom Brand Co</h1>
+<p class="text-zinc-500 font-headline text-lg mb-8 tracking-wide">March 2026</p>
+<div class="max-w-xl space-y-4">
+<p class="text-zinc-700 text-base leading-relaxed font-body">
+This audit evaluates Phantom Brand Co's search and AI visibility across seven areas — from technical infrastructure through to how frequently the brand appears in AI-generated responses.
+</p>
+<div class="space-y-2 text-sm text-zinc-500 font-body leading-relaxed">
+<p><span class="text-zinc-800 font-semibold">Technical & UX</span> — Crawlability, indexation, site speed, Core Web Vitals, and mobile usability. The health of the infrastructure search engines depend on.</p>
+<p><span class="text-zinc-800 font-semibold">On-Site SEO & Off-Site</span> — Title tags, content quality, internal linking, backlink profile, and the on- and off-page signals that determine how individual pages rank.</p>
+<p><span class="text-zinc-800 font-semibold">Tools & Configuration</span> — Analytics setup, Search Console accuracy, and the measurement infrastructure needed to act on performance data.</p>
+<p><span class="text-zinc-800 font-semibold">GEO / AI Visibility</span> — How and how often the brand appears in AI Overviews, large language model citations, and generative search across major platforms.</p>
+<p><span class="text-zinc-800 font-semibold">Schema</span> — Structured data markup that enables rich results, knowledge panel features, and machine-readable content signals.</p>
+</div>
+</div>
+</div>
+<!-- Right Content: Score Visualization -->
+<div class="flex flex-col items-center">
+<div class="relative mb-10">
+<!-- Donut Ring SVG — score 58/100 = amber (medium range) -->
+<svg class="w-[220px] h-[220px] transform -rotate-90" viewBox="0 0 220 220">
+<circle cx="110" cy="110" fill="transparent" r="90" stroke="#e2e2e2" stroke-width="14"></circle>
+<circle cx="110" cy="110" fill="transparent" r="90" stroke="#f08c00" stroke-width="14"
+  stroke-dasharray="565.48" stroke-dashoffset="237.5" stroke-linecap="round"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-on-surface text-6xl font-headline font-bold leading-none">58</span>
+<span class="text-zinc-500 font-label text-xs uppercase tracking-widest mt-2">out of 100</span>
+</div>
+</div>
+<!-- Priority Badge Row -->
+<div class="flex flex-wrap gap-3 justify-center">
+<div class="bg-primary px-4 py-2 rounded-full flex items-center gap-2">
+<span class="text-white text-[10px] font-bold tracking-widest font-label uppercase">High 18</span>
+</div>
+<div class="border border-[#f08c00] px-4 py-2 rounded-full flex items-center gap-2">
+<span class="text-[#f08c00] text-[10px] font-bold tracking-widest font-label uppercase">Medium 27</span>
+</div>
+<div class="border border-[#2f9e44] px-4 py-2 rounded-full flex items-center gap-2">
+<span class="text-[#2f9e44] text-[10px] font-bold tracking-widest font-label uppercase">Low 34</span>
+</div>
+<div class="border border-zinc-400 px-4 py-2 rounded-full flex items-center gap-2">
+<span class="text-zinc-500 text-[10px] font-bold tracking-widest font-label uppercase">Monitor 29</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Priority Matrix -->
+<section class="bg-surface-container-lowest py-24">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="bg-white rounded-xl p-12 shadow-[0_8px_40px_rgba(26,28,28,0.04)]">
+  <!-- Section header -->
+  <div class="flex items-center mb-4">
+    <div class="w-[3px] h-[22px] bg-primary mr-5 rounded-full"></div>
+    <h2 class="text-tertiary font-headline text-2xl font-bold tracking-tight pr-8">Prioritization Matrix</h2>
+    <div class="flex-grow h-[1px] bg-surface-container-highest"></div>
+  </div>
+  <p class="text-sm text-zinc-500 font-body mb-12 max-w-xl">Top findings ranked by impact versus implementation effort. Hover a quadrant to see what it means.</p>
+  <!-- Outer layout: Y-axis label + plot -->
+  <div class="flex gap-4">
+    <!-- Y-axis label -->
+    <div class="flex flex-col items-center justify-center gap-3 flex-shrink-0 w-8">
+      <span class="material-symbols-outlined text-zinc-400 text-base" style="transform:rotate(-90deg)">arrow_upward</span>
+      <span class="text-[10px] font-label font-extrabold uppercase tracking-widest text-zinc-400" style="writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:0.15em;">Impact</span>
+      <span class="material-symbols-outlined text-zinc-400 text-base" style="transform:rotate(-90deg)">arrow_downward</span>
+    </div>
+    <!-- Plot + axes -->
+    <div class="flex-1 flex flex-col gap-2">
+      <div class="flex justify-start pl-1">
+        <span class="text-[10px] font-label font-semibold uppercase tracking-widest text-zinc-400">High</span>
+      </div>
+      <!-- Scatter Plot Area -->
+      <div class="scatter-plot relative rounded-lg overflow-hidden border border-[#e2e2e2]" style="height:480px;">
+        <!-- Quadrant dividers -->
+        <div class="absolute inset-0 pointer-events-none" style="z-index:5;background:linear-gradient(to right,transparent calc(50% - 0.5px),#e2e2e2 calc(50% - 0.5px),#e2e2e2 calc(50% + 0.5px),transparent calc(50% + 0.5px)),linear-gradient(to bottom,transparent calc(50% - 0.5px),#e2e2e2 calc(50% - 0.5px),#e2e2e2 calc(50% + 0.5px),transparent calc(50% + 0.5px));"></div>
+        <!-- Quadrant hover zones -->
+        <div class="quadrant-zone absolute top-0 left-0 w-1/2 h-1/2 cursor-default">
+          <div class="quadrant-hover-label"><span class="px-3 py-1 bg-[#f08c00] text-white text-[10px] font-label font-bold uppercase tracking-widest rounded-full shadow-sm">Major Projects</span></div>
+        </div>
+        <div class="quadrant-zone absolute top-0 right-0 w-1/2 h-1/2 cursor-default">
+          <div class="quadrant-hover-label"><span class="px-3 py-1 bg-[#2f9e44] text-white text-[10px] font-label font-bold uppercase tracking-widest rounded-full shadow-sm">Quick Wins</span></div>
+        </div>
+        <div class="quadrant-zone absolute bottom-0 left-0 w-1/2 h-1/2 cursor-default">
+          <div class="quadrant-hover-label"><span class="px-3 py-1 bg-[#868e96] text-white text-[10px] font-label font-bold uppercase tracking-widest rounded-full shadow-sm">Reconsider</span></div>
+        </div>
+        <div class="quadrant-zone absolute bottom-0 right-0 w-1/2 h-1/2 cursor-default">
+          <div class="quadrant-hover-label"><span class="px-3 py-1 bg-[#1971c2] text-white text-[10px] font-label font-bold uppercase tracking-widest rounded-full shadow-sm">Easy Fixes</span></div>
+        </div>
+        <!-- Scatter Dots (5–7 top findings — replace with client-specific items) -->
+        <a href="geo.html" class="scatter-dot absolute flex flex-col items-center" style="left:16%;top:16%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(25,113,194,0.88);box-shadow:0 4px 14px rgba(25,113,194,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">Content Expansion</span>
+          <div class="dot-tooltip">Thin content across most pages is the primary reason for low AI citation and weak keyword rankings.</div>
+        </a>
+        <a href="on-site.html" class="scatter-dot absolute flex flex-col items-center" style="left:34%;top:10%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(184,0,28,0.88);box-shadow:0 4px 14px rgba(184,0,28,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">Keyword Strategy</span>
+          <div class="dot-tooltip">No keyword targeting on key pages. Without a defined strategy, content cannot rank for relevant search terms.</div>
+        </a>
+        <a href="schema.html" class="scatter-dot absolute flex flex-col items-center" style="left:58%;top:24%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(140,0,18,0.88);box-shadow:0 4px 14px rgba(140,0,18,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">Organization Schema</span>
+          <div class="dot-tooltip">No Organization schema on the homepage. Search engines and AI tools cannot verify brand identity or social profiles.</div>
+        </a>
+        <a href="geo.html" class="scatter-dot absolute flex flex-col items-center" style="left:70%;top:13%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(25,113,194,0.88);box-shadow:0 4px 14px rgba(25,113,194,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">TL;DR Summaries</span>
+          <div class="dot-tooltip">No summary intros on any page. Adding short TL;DR paragraphs is the fastest lever to earn AI citations.</div>
+        </a>
+        <a href="geo.html" class="scatter-dot absolute flex flex-col items-center" style="left:84%;top:7%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(25,113,194,0.88);box-shadow:0 4px 14px rgba(25,113,194,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">llms.txt</span>
+          <div class="dot-tooltip">File generated and ready to deploy. Tells AI crawlers what to index — zero development work required.</div>
+        </a>
+        <a href="technical.html" class="scatter-dot absolute flex flex-col items-center" style="left:80%;top:40%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(54,68,87,0.88);box-shadow:0 4px 14px rgba(54,68,87,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">Secure Admin</span>
+          <div class="dot-tooltip">Admin login is at the default URL. Any automated bot can target the login page — a quick config change to fix.</div>
+        </a>
+        <a href="on-site.html" class="scatter-dot absolute flex flex-col items-center" style="left:73%;top:57%;transform:translate(-50%,-50%);z-index:30;text-decoration:none;">
+          <div class="w-10 h-10 rounded-full" style="background:rgba(184,0,28,0.88);box-shadow:0 4px 14px rgba(184,0,28,0.32);"></div>
+          <span class="text-[11px] font-semibold font-label whitespace-nowrap mt-1.5" style="color:#364457;">OpenGraph Tags</span>
+          <div class="dot-tooltip">No OG tags sitewide. Every social share renders with no image, title, or description.</div>
+        </a>
+      </div>
+      <div class="flex justify-start pl-1">
+        <span class="text-[10px] font-label font-semibold uppercase tracking-widest text-zinc-400">Low</span>
+      </div>
+      <!-- X-axis -->
+      <div class="flex items-center justify-between px-2 pt-1">
+        <div class="flex items-center gap-1">
+          <span class="material-symbols-outlined text-zinc-400 text-base">arrow_back</span>
+          <span class="text-[10px] font-label font-semibold uppercase tracking-widest text-zinc-400">Hard</span>
+        </div>
+        <span class="text-[10px] font-label font-extrabold uppercase tracking-widest text-zinc-400">Ease of Implementation</span>
+        <div class="flex items-center gap-1">
+          <span class="text-[10px] font-label font-semibold uppercase tracking-widest text-zinc-400">Easy</span>
+          <span class="material-symbols-outlined text-zinc-400 text-base">arrow_forward</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Legend -->
+  <div class="border-t border-[#e2e2e2] mt-10 pt-6">
+    <span class="text-[10px] font-label font-extrabold uppercase tracking-widest text-zinc-400 block mb-3">Phase</span>
+    <div class="flex flex-wrap gap-2">
+      <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-semibold font-label text-white" style="background:#364457;"><span class="w-2 h-2 rounded-full inline-block" style="background:rgba(255,255,255,0.4);"></span>Technical</span>
+      <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-semibold font-label text-white" style="background:#1971c2;"><span class="w-2 h-2 rounded-full inline-block" style="background:rgba(255,255,255,0.4);"></span>GEO</span>
+      <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-semibold font-label text-white" style="background:#b8001c;"><span class="w-2 h-2 rounded-full inline-block" style="background:rgba(255,255,255,0.4);"></span>On-Site</span>
+      <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-semibold font-label text-white" style="background:#8c0012;"><span class="w-2 h-2 rounded-full inline-block" style="background:rgba(255,255,255,0.4);"></span>Schema</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Scores By Area -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="bg-surface-container-lowest rounded-xl p-12 shadow-[0_8px_40px_rgba(26,28,28,0.04)]">
+<div class="flex items-center mb-16">
+<div class="w-[3px] h-[22px] bg-primary mr-5 rounded-full"></div>
+<h2 class="text-tertiary font-headline text-2xl font-bold tracking-tight pr-8">Performance Overview</h2>
+<div class="flex-grow h-[1px] bg-surface-container-highest"></div>
+</div>
+<div class="space-y-10">
+<!-- Row: Technical -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="technical.html">
+                                Technical
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 49%"></div>
+</div>
+<span class="text-right font-headline font-bold text-primary">49/100</span>
+</div>
+<!-- Row: UX -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="ux.html">
+                                User Experience
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-[#f08c00]" style="width: 63%"></div>
+</div>
+<span class="text-right font-headline font-bold text-[#f08c00]">63/100</span>
+</div>
+<!-- Row: Tools -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="tools.html">
+                                Tools & Config
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-[#f08c00]" style="width: 71%"></div>
+</div>
+<span class="text-right font-headline font-bold text-[#f08c00]">71/100</span>
+</div>
+<!-- Row: On-Site -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="on-site.html">
+                                On-Site SEO
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-[#f08c00]" style="width: 54%"></div>
+</div>
+<span class="text-right font-headline font-bold text-[#f08c00]">54/100</span>
+</div>
+<!-- Row: Off-Site -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="off-site.html">
+                                Off-Site
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-[#f08c00]" style="width: 67%"></div>
+</div>
+<span class="text-right font-headline font-bold text-[#f08c00]">67/100</span>
+</div>
+<!-- Row: GEO -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="geo.html">
+                                GEO
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 41%"></div>
+</div>
+<span class="text-right font-headline font-bold text-primary">41/100</span>
+</div>
+<!-- Row: Schema -->
+<div class="grid grid-cols-1 md:grid-cols-[240px_1fr_80px] items-center gap-8 group">
+<a class="text-tertiary font-headline font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2" href="schema.html">
+                                Schema
+                                <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<div class="h-3 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-[#2f9e44]" style="width: 78%"></div>
+</div>
+<span class="text-right font-headline font-bold text-[#2f9e44]">78/100</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Data Sources Carousel -->
+<section class="bg-[#f3f3f3] py-20">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="mb-10 text-center">
+<p class="font-headline text-[10px] font-bold tracking-[0.3em] uppercase text-primary mb-2">Integrated Audit Sources</p>
+<div class="w-12 h-[1px] bg-primary/30 mx-auto"></div>
+</div>
+<div class="relative overflow-hidden mask-edges py-8">
+<div class="flex items-center gap-24 whitespace-nowrap animate-carousel-move">
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">analytics</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">Google Console</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">monitoring</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">PageSpeed</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">bug_report</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">Screaming Frog</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">search_check</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">Moz</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">speed</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">GTmetrix</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">query_stats</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">SE Ranking</span>
+</div>
+<!-- Duplicate set for seamless infinite loop -->
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">analytics</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">Google Console</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">monitoring</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">PageSpeed</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">bug_report</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">Screaming Frog</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">search_check</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">Moz</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">speed</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">GTmetrix</span>
+</div>
+<div class="flex flex-col items-center opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<div class="w-12 h-12 bg-zinc-900/10 rounded-lg flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-zinc-900">query_stats</span>
+</div>
+<span class="font-label text-[10px] font-bold tracking-widest text-zinc-800 uppercase">SE Ranking</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-zinc-900 w-full py-12 flex flex-col items-center justify-center text-center px-6">
+<p class="font-['Inter'] text-[10px] uppercase tracking-[0.1em] font-medium text-zinc-400 opacity-80 hover:opacity-100 transition-colors">
+            Prepared by Digitad · Phantom Brand Co · SEO &amp; GEO Audit · March 2026
+        </p>
+</footer>
+<style>
+        @keyframes carousel-move {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-carousel-move {
+            animation: carousel-move 30s linear infinite;
+        }
+        .animate-carousel-move:hover {
+            animation-play-state: paused;
+        }
+        .mask-edges {
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+        }
+    </style>
+</body></html>

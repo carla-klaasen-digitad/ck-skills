@@ -1,0 +1,58 @@
+# Credentials and secrets
+.env
+*.env
+.env.*
+client_secret_key_claude_config.json
+mcp-claude-*.json
+.gdrive-credentials.json
+ssh_credentials
+ssh_credentials.pub
+API Key Anthropic.rtf
+
+# System
+.DS_Store
+.DS_Store?
+*.swo
+*.swp
+
+# Screaming Frog
+.ScreamingFrogSEOSpider/
+*.seospiderconfig
+
+# Claude internal
+.claude.json
+.gsc/
+.claude/claude_desktop_config.json
+.claude/commands/.claude/
+".claude/Vector Embedding Project/"
+
+# all_skills — exclude runtime state and archives, keep guidelines
+all_skills/session-skill-logs/
+all_skills/watchdog-evolution/
+all_skills/skill-baselines/
+all_skills/Archive/
+all_skills/seo-geo-technical-audit-v*/
+all_skills/skill-watchdog-v*/
+all_skills/digitad-tech-recommendations-v1/
+all_skills/skill-creator/
+all_skills/*.zip
+all_skills/*.pdf
+all_skills/*.rtf
+all_skills/*.html
+
+# Archives and large files
+*.zip
+content_automation/
+content_automation_skill/
+one_search/
+
+# Images (logos etc — not skill code)
+*.png
+
+# Python
+**/__pycache__/
+**/*.pyc
+
+# Loose scripts (not part of skills)
+read_*.py
+write_*.py

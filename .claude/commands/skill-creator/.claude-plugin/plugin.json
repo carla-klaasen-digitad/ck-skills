@@ -1,0 +1,12 @@
+{
+  "name": "skill-creator",
+  "version": "1.0.0",
+  "description": "Create new Agent Skills interactively or from templates. Use when user wants to create, generate, scaffold, or build a new skill.",
+  "homepage": "https://docs.skills-marketplace.dev/skills/skill-creator",
+  "license": "MIT",
+  "author": {
+    "name": "nibzard",
+    "email": "nibzard@github.com"
+  },
+  "skills": "./skills/"
+}
