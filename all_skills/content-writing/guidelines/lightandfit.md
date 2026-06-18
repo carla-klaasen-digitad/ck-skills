@@ -1,10 +1,11 @@
 # Logistical Infrormation 
-1. Website URL:  https://www.lightandfit.com/
-2. Status: Pending  
+1. Website URL: https://www.lightandfit.com/
+2. Status: Approved
 3. Production Plan ID: 13ZKd5UVG_OcvRS9Wri8c8XSbwqiCguiJBDvUuUN9hbg
-4. Tab Name: 'ON SITE (LIGHT+FIT) - Content Strategy'
-5. On-Site Content Folder: 
-6. On-Site Content Deliverable Template: 
+4. Tab Name: ON SITE (LIGHT+FIT) - Content Strategy
+5. On-Site Content Folder: https://drive.google.com/drive/folders/1TuYXDdue8UnYyMhhjcOMAuCPzsZLmZ3g
+6. On-Site Content Deliverable Template: https://docs.google.com/document/d/1d_72RzKgQdAr1ty_x09kLKZIE6t5twGIdGj07WG6NU0/edit?usp=sharing
+7. Neuronwriter Project: https://app.neuronwriter.com/project/view/e17cf0b4b79be490/optimisation
 
 --- 
 
