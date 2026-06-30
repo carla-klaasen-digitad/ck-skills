@@ -13,777 +13,280 @@
 
 **Prepared by:** Digitad | **Last updated:** April 2026 | **For internal use only**
 
+---
+
 # PART 1 — ENGLISH WRITING GUIDELINES
 
-## 1\. Client Overview
+## 1. Client Overview
 
-**Mitacs** is a Canadian non-profit organization with 25+ years of experience connecting businesses, non-profits, and research institutions with post-secondary talent (students, postdoctoral researchers). Their core offering is a **co-funding model** where Mitacs covers up to 50% of eligible R\&D project costs.
+Mitacs is a Canadian non-profit co-funding intermediary with 25+ years of experience connecting businesses, NPOs, and research institutions with post-secondary talent. **Not a government grants portal** — it is supported by the Government of Canada, all ten provinces, the Yukon territories, and private funding.
 
-**Important positioning note:** Mitacs is NOT a government grants portal. It is a co-funding intermediary **supported by** the federal government and all provinces. When writing about government funding, frame Mitacs as one well-funded source of R\&D support — not as a gateway to secure government subsidies directly.
+**Key facts (use precisely):**
+- **25+ years** of experience (not "over 20 years" — that copy is outdated)
+- 100+ advisors at post-secondary institutions across Canada
+- Co-investment: Mitacs covers **up to 50%** of eligible costs (not "approximately" — say "up to"). Eligible costs = intern stipend + direct research costs (not general R&D budget; use "budget," not "investment")
+- Funding per project: $5,000–$20,000 (up to $120,000 for professor programs) ⚠️ *Confirm with client before publishing*
+- Timeline: ~6 months application to approval ⚠️ *Confirm before citing*
+- Mitacs **never claims IP** generated during a project
+- Seasonal intake: January (summer interns), May (autumn), September (winter)
+- Co-investment model name: "unique, talent-first model" or "co-investment"
+- Government backing phrasing (exact): *"the Government of Canada, all ten provinces, the Yukon territories, as well as private funding"* — do not use "federal and provincial governments" generically
 
-**Key facts to always keep accurate:**
+**Active programs:**
+- **Accelerate** – research internships, core program ([https://www.mitacs.ca/our-programs/accelerate/](https://www.mitacs.ca/our-programs/accelerate/))
+- **Business Strategy Internship** – operational/business innovation ([https://www.mitacs.ca/our-programs/business-strategy-internship/](https://www.mitacs.ca/our-programs/business-strategy-internship/))
+- **Accelerate Entrepreneur** – student-entrepreneur startups; confirmed figures: $10,000 stipend per internship, up to $5,000 flexible funding, frame as 50% co-funding ([https://www.mitacs.ca/our-programs/accelerate-entrepreneur/](https://www.mitacs.ca/our-programs/accelerate-entrepreneur/))
+- **Globalink Research Award (GRA)** – international researcher mobility ([https://www.mitacs.ca/our-programs/globalink-research-award/](https://www.mitacs.ca/our-programs/globalink-research-award/))
 
-* **25+ years** of experience in Canada's innovation ecosystem (confirmed by client — do not use "over 20 years" even if found on the live site; that copy is outdated)  
-* 100+ advisors embedded at post-secondary institutions across Canada  
-* Co-investment: Mitacs typically covers \~50% of eligible costs (partner pays up to 50 per cent). dont say "approximately", say "up to" instead.   
-  * **Eligible costs \= intern stipend and direct research costs associated with the placement** (not a general R\&D budget (call it budget and not investment))  
-* Average funding per project: $5,000 to $20,000 (up to $120,000 for some professor programs) ⚠️ *Confirm these figures with client before publishing*  
-* Typical timeline from application to approval: \~6 months ⚠️ *Timeline may vary — confirm with client before citing*  
-* Mitacs **never claims intellectual property** generated during a project  
-* Seasonal intake: January (summer interns), May (autumn interns), September (winter interns)
-* What to call co-investment model: "unique, talent-first model" or "co-investment" 
-**Main active programs:**
+**Discontinued — do not promote:**
+- **Elevate** – permanently closed. Remove from all program listings.
+- **Mitacs Entrepreneur International (MEI)** – permanently discontinued 2025. If a page references it, note applications are closed. Replace with Accelerate or Business Strategy Internship.
 
-* **Accelerate** – research internships, core program  
-* **Business Strategy Internship** – operational/business innovation  
-* **Accelerate Entrepreneur** – student-entrepreneur startups  
-* **Globalink Research Award (GRA)** – international researcher mobility
+Every named program in article body must be hyperlinked to its program page. No program name unlinked.
 
-**Discontinued programs (do not promote):**
+## 2. Target Audiences
 
-* **Elevate** – postdoctoral training and leadership — **permanently closed**  
-* **Mitacs Entrepreneur International (MEI)** – entrepreneur program — **permanently discontinued as of 2025**
+| Audience | Priority |
+|---|---|
+| SMEs & startups | Primary |
+| Large enterprises | Secondary |
+| Professors / faculty | Important secondary |
+| NPOs / non-profits | Tertiary |
+| Community organizations (hospitals, municipalities) | Tertiary |
+| Students / postdocs | Not primary for these pages |
 
-## 2\. Target Audiences
+Business side is the main focus. Pages speak to businesses first.
 
-| Audience | Priority | Description |
-| :---- | :---- | :---- |
-| SMEs & startups | Primary | Main business target; need affordable R\&D talent |
-| Large enterprises | Secondary | Higher budgets; scalable engagement |
-| NPOs / non-profits | Tertiary | Social innovation and community challenges |
-| Community organizations (hospitals, municipalities) | Tertiary | Eligible for Mitacs programs; often overlooked in copy |
-| Professors / faculty | Important secondary | Key connector between business and student talent |
-| Students / postdocs | Not primary for these pages | They seek Mitacs through professors and partner institutions |
+## 3. Brand Pillars
 
-**From the brief:** The business side is the main focus, because professors and students already know Mitacs well. Pages should speak to businesses first.
+Always reflect: (1) De-risk your R&D, (2) Access the talent you need, (3) Leverage your budget via co-investment, (4) Expert advisors — 100+ across Canada, (5) Trusted 25+ years, (6) No IP claims.
 
-## 3\. Key Brand Messages
+**Differentiators vs. Axelys, NSERC, NRC-IRAP, MaRS:** bridges industry + academia; national reach; broad sector coverage; personalized advisor support.
 
-Always reflect these pillars in the content:
+**7 Mitacs research priority sectors** ([https://www.mitacs.ca/about/where-we-invest/](https://www.mitacs.ca/about/where-we-invest/)): Advanced Manufacturing, AI, Cleantech, Cybersecurity, Health & Life Sciences, ICT, Quantum. In articles: list max 5 most relevant; link to full page for rest.
 
-1. **De-risk your R\&D** – Mitacs shares the financial risk of innovation  
-2. **Access the talent you need** – Pan-Canadian post-secondary network  
-3. **Leverage your budget** – Co-investment means your dollar goes further  
-4. **Expert advisors** – 100+ Mitacs advisors available across Canada  
-5. **Trusted for 25 years** – Credibility through experience and track record  
-6. **No IP claims** – Mitacs does not take ownership of generated intellectual property
+## 4. Tone of Voice
 
-**Differentiators vs. competitors (Axelys, NSERC, NRC-IRAP, MaRS, etc.):**
-
-* Mitacs bridges industry AND academia in a unique co-investment model  
-* National reach (not province-specific)  
-* Broad sector coverage (ICT, advanced manufacturing, quantum, clean tech, social sciences, etc.)  
-* Personalized advisor support
-
-## 4\. Tone of Voice
-
-### Overall
-
-* **Professional yet accessible** – speak to a business owner or decision-maker, not an academic  
-* **Benefit-first** – lead with what the reader gains, not what Mitacs does  
-* **Confident, not boastful** – state facts and outcomes, avoid superlatives without proof  
-* **Action-oriented** – use strong verbs; avoid passive voice  
-* **Mitacs-first framing** – Mitacs should always be the active agent; avoid constructions that make it sound like a passive conduit or middleman for government programs  
-* **Second person** ("you/your") throughout the article body
-
-### Vocabulary to use
+- Professional yet accessible — speak to a business decision-maker, not an academic
+- Benefit-first — lead with what the reader gains
+- Confident, not boastful — facts and outcomes; no unsupported superlatives
+- Action-oriented — strong verbs; avoid passive voice
+- **Mitacs-first framing** — Mitacs is always the active agent; never a passive conduit or middleman for government programs
+- Second person ("you/your") throughout article body
 
 **Preferred verbs:** drive, connect, unlock, accelerate, leverage, boost, de-risk, discover, foster, facilitate, bridge, advance, commercialize, scale
 
-**Phrases to repeat (brand anchors):**
+**Brand anchor phrases:** co-funding / co-investment model, post-secondary talent, Pan-Canadian network, research and development (R&D), applied research, innovation ecosystem, knowledge transfer, technology readiness levels (TRLs)
 
-* "co-funding" / "co-investment model"  
-* "post-secondary talent"  
-* "Pan-Canadian network"  
-* "research and development (R\&D)"  
-* "applied research"  
-* "innovation ecosystem"  
-* "knowledge transfer"  
-* "technology readiness levels (TRLs)"
+**Avoid:** "innovative solutions" / "cutting-edge technology" without context; academic jargon unexplained; "the best" / "only" / "guaranteed"; first-person plural in headings; specific fixed prices (use ranges); passive voice in intros
 
-### Vocabulary to avoid
+## 5. Document Format & Structure
 
-* Avoid vague filler: "innovative solutions," "cutting-edge technology" without context  
-* Avoid academic jargon without explanation  
-* Avoid overusing "we" in H1/H2 headings (use benefit-driven language instead)  
-* Avoid absolute claims: "the best," "only," "guaranteed"  
-* Avoid specific pricing guarantees (use ranges: "$7,500 to $15,000")
-
-## 5\. Document Format & Structure
-
-### Document header (editorial table)
-
-Every article file must begin with an editorial information table containing:
+### Editorial table (top of every file)
 
 | Field | Requirement |
-| :---- | :---- |
-| Primary keyword | As defined in the production plan |
-| Secondary keyword(s) | As defined |
+|---|---|
+| Primary keyword | From production plan |
+| Secondary keyword(s) | From production plan |
 | Title (H1) | Benefit-driven, includes primary keyword |
 | Meta-title | 55–65 characters |
 | Meta-description | 150–165 characters |
 | URL | Existing or proposed |
-| Word count | Target word count |
-| Internal links | 2–4 links with semantic anchors |
-| External link(s) | Typically 1 government or authority source |
+| Word count | Target |
+| Internal links | 2–4 (Mitacs articles: 4–6) with semantic anchors |
+| External link(s) | Typically 1 government/authority source |
 
 ### Article structure
 
-**H1** – Main title (benefit-driven, includes primary keyword)
+**H1** – Topic label, not a slogan. Format: "[Topic] for [Audience]" or "[Topic] in Canada." Primary keyword included.
 
-Example: *"Access to Talent: Find the Skills You Need to Innovate"*
+**Intro** – Two sentences maximum. First: fact/credential (Mitacs, years, what it does). Second: brand positioning — audience range + co-funding value. **Mitacs must be the first or second word.** 40–50 words maximum. Do not open with scene-setting about Canada or a rhetorical question.
 
-**Intro paragraph** – 2–3 sentences. Hook the reader immediately. Include the primary keyword naturally in the first paragraph.
+**H2 sections** – H3 subsections as needed. Each program in a multi-program section gets its own H3 — not continuous prose.
 
-**H2 – Section 1** – First major benefit or concept
+**H2: FAQ** – Always include. Minimum 3 questions (4–5 preferred). Each question as H3.
 
-* **H3** – Subsection (if needed)  
-* **H3** – Subsection (if needed)
+**CTA** – Note anchor text in document.
 
-**H2 – Section 2** – Second major topic
+### Word count by type
 
-* **H3** – Subsections as needed
-
-**H2 – Section 3+** – Additional sections as needed
-
-**H2: FAQ** – Always include a FAQ section at the end
-
-* **H3: Question 1?**  
-* Answer  
-* **H3: Question 2?**  
-* Answer  
-* (Minimum 3 questions, typically 4–5)
-
-**CTA** – Embedded contact form or "Learn More" button (inherited from the page template, note anchor text in the doc)
-
-### Word count guidelines
-
-| Content type | Target word count |
-| :---- | :---- |
-| Static service/program page (optimization) | 500–700 words added |
+| Content type | Target |
+|---|---|
+| Static page optimization | 500–700 words added |
 | Full page rewrite | 700–1,000 words |
-| Program detail page (with eligibility, FAQ, etc.) | 1,500–5,000 words |
-| Government grants / broader topic pages | \~700 words |
+| Program detail page (eligibility, FAQ) | 1,500–5,000 words |
+| Government grants / broader topic | ~700 words |
 
-### Bold text usage
+### Formatting rules
 
-* Bold **key terms** and important **brand phrases** selectively  
-* 1–2 bolded phrases per paragraph maximum  
-* Do NOT bold entire sentences or paragraphs  
-* Examples of appropriate bold: **co-investment model**, **de-risk your R\&D**, **post-secondary talent**
+- **Bold:** key terms and brand phrases only; max 1–2 per paragraph; never full sentences. In bullet lists: do **not** bold the lead term — use plain colon only. Format: `Co-investment that reduces your R&D costs: Organizations contribute...`
+- **Em-dashes:** max 3 per article. Not in bullet lists (use colon). Acceptable mid-sentence to set off a defining clause.
+- **Bullets:** use colons, not em-dashes. Format: `Term: explanation naming specific outcome.`
+- **Green text** = modification to existing content or new addition (in-doc editing)
 
-### Color coding (in-document editing)
-
-* **Green text** \= modification to existing content or new addition
-
-## 6\. SEO Rules
+## 6. SEO Rules
 
 ### Keyword placement
 
 | Location | Requirement |
-| :---- | :---- |
-| H1 (title) | Primary keyword must appear |
-| First paragraph | Primary keyword within the first 100 words |
-| Meta-title | Primary keyword near the start; 55–65 characters |
-| Meta-description | Primary keyword; 150–165 characters |
-| H2 headings | At least 1 H2 should contain primary or secondary keyword |
-| Body text | Natural density; avoid keyword stuffing |
+|---|---|
+| H1 | Primary keyword |
+| First paragraph | Primary keyword within first 100 words |
+| Meta-title | Primary keyword near start; 55–65 chars |
+| Meta-description | Primary keyword; 150–165 chars |
+| H2 headings | At least 1 contains primary or secondary keyword |
+| Body | Natural density — no stuffing; do not apply 5x/500-word consumer rule |
+
+Keyword volumes are very low (20–170 monthly searches) — niche B2B audience.
 
 ### Internal linking
 
-* 2–4 internal links per article  
-* Use **semantic anchor text** (descriptive phrase, not "click here")  
-* Link to related Mitacs program pages, service pages, or audience pages  
-* Always link to the **specific page or form** — avoid vague references like "our portal" or "our website" without an actual URL
+- 4–6 per article (higher than consumer brands)
+- Semantic anchor text — no "click here"
+- Audience-matched: business articles link to business-facing pages only; never to student/intern pages
+- Always link to specific page or form — no vague "our portal" without URL
+- Always link to Mitacs advisors page ([https://www.mitacs.ca/about/mitacs-advisors/](https://www.mitacs.ca/about/mitacs-advisors/)) when content covers timelines, getting started, or application process. Anchor: "Mitacs advisor" or "Mitacs advisors"
 
 ### External linking
 
-* Typically 1 external link per article  
-* Prefer government or authoritative sources (e.g., [Canada.ca](http://Canada.ca), Government of Quebec)
+- 1 per article; prefer Canada.ca or Government of Quebec
 
-### Quality checks before delivery
+### Quality checks
 
 | Check | Tool | Threshold |
-| :---- | :---- | :---- |
-| SEO score | NEURON SEO | Note score before and after |
-| Plagiarism | Duplichecker | \< 10% |
-| AI detection | AI detector | \< 25% |
-| Language/spelling | Language Tool | All issues resolved |
+|---|---|---|
+| SEO score | NEURON SEO | Note before and after |
+| Plagiarism | Duplichecker | <10% |
+| AI detection | AI detector | <25% (⚠️ EN Mitacs briefs: no AI detection check — FR template includes it) |
+| Language/spelling | Language Tool (EN) / Antidote (FR) | All issues resolved |
 
-## 7\. Rules & Do's / Don'ts
+## 7. Content Rules (applies to both EN and FR)
 
-### Do's ✅
+### Do's
+- Lead every section with a reader benefit
+- Use "you/your" (EN) / "vous/votre" (FR) throughout
+- Always include FAQ
+- Naturally include primary keyword in first paragraph and H1
+- Mention 25+ years, co-funding, and network in most pages
+- Keep meta-title 55–65 chars, meta-description 150–165 chars
+- Note seasonal intake when relevant (January, May, September)
+- Use official program names
+- Make benefit statements concrete — name the actual outcome (e.g., "to access the talent you need to advance your innovation project" not "to work with researchers")
+- List all eligible org types in required order: (1) Start-ups, (2) SMEs, (3) Large enterprises, (4) NPOs, (5) Community organizations (hospitals, municipalities), (6) Indigenous businesses and organizations (with Pathways note)
+- Spell out every abbreviation on first use in body: SMEs, R&D, NPOs, ICT, IP, TRLs (may abbreviate in meta fields/table cells)
+- Every Mitacs claim must include a concrete, specific benefit to the reader
+- H2 headings: descriptive and keyword-reinforcing (e.g., "What Sectors Mitacs Provides Co-Funding For")
 
-* Lead every section with a benefit to the reader  
-* Use "you/your" throughout  
-* Always include a FAQ section  
-* Naturally include primary keyword in the first paragraph and H1  
-* Include internal links with descriptive anchor text — and link to specific pages or forms, not generic references  
-* Mention the 25+ years, co-funding model, and network in most pages (brand pillars)  
-* Keep meta-titles between 55–65 characters  
-* Keep meta-descriptions between 150–165 characters  
-* Note seasonal intake windows when relevant (January, May, September)  
-* Reference specific Mitacs programs by their official names  
-* Make benefit statements **specific and concrete** — always name the actual outcome (e.g., "to access the talent you need to advance your innovation project" not just "to work with researchers")  
-* When listing eligible organizations, include all four types: SMEs, large enterprises, NPOs, and community organizations (hospitals, municipalities)
+### Don'ts
+- No passive voice in intros
+- No absolute claims without data ("the only," "guaranteed," "always")
+- No fixed prices — use ranges ("$7,500 to $15,000")
+- No first-person plural in H1/H2 headings
+- No academic-only language without explanation
+- No keyword stuffing (>3–4 occurrences in a short page = revise)
+- No IP ownership claims
+- Do not frame Mitacs as a direct government grants provider
+- Do not give Mitacs a passive or middleman role — use active framing ("Mitacs bridges…", "Mitacs powers…")
+- No vague benefit statements — "a cost-effective approach" must name the specific outcome
+- Do not present student/intern-facing programs (skills training, leadership) as business partner benefits
+- Do not promote MEI or Elevate
+- No word-for-word sentence repetition within an article — cut or meaningfully rewrite
+- Co-investment share: say "covers a portion of eligible project costs" — not "covers the majority of"
 
-### Don'ts ❌
+### Indigenous Pathways (include in eligibility lists)
 
-* Don't write passive voice in the intro ("Mitacs is an organization that was founded…")  
-* Don't use absolute claims without data ("the only," "guaranteed," "always")  
-* Don't state exact fixed prices — use ranges ("$7,500 to $15,000")  
-* Don't use first-person plural in H1/H2 headings ("Our Program")  
-* Don't use academic-only language without explaining it  
-* Don't keyword-stuff — if the keyword appears more than 3–4 times in a short page, revise  
-* Don't claim Mitacs owns any IP generated through projects  
-* Don't frame Mitacs as a **direct government grants provider** — it is a co-funded intermediary supported by federal and provincial governments, not a grants portal  
-* Don't make Mitacs sound like a passive conduit or middleman — it should be the active agent powering the collaboration ("Mitacs bridges…", "Mitacs powers…")  
-* Don't leave benefit statements vague — generic phrases like "a cost-effective approach" or "work with researchers" must be followed by the specific outcome  
-* Don't present student-facing or intern-facing programs (professional skills development, leadership training) as benefits for industry/business partners — training programs benefit the intern, not the partner organization  
-* Don't confuse the Accelerate program (for industry) with MEI (discontinued as of 2025\) or Elevate (permanently closed)
+- Partner orgs contribute only **25%** of eligible project costs (vs. standard 45–50%)
+- Eligible if: business is 50%+ owned by someone self-identifying as Indigenous, OR selected intern self-identifies as Indigenous
+- Non-profits: board is 50%+ Indigenous, or mandate is Indigenous-focused
+- Mitacs is seed sponsor of **Pow Wow Pitch**
+- Eligibility bullet template: *"Indigenous businesses and organizations, which may qualify for enhanced co-funding through the Mitacs Indigenous Pathways initiative, reducing their partner contribution to 25% of eligible project costs."*
+- Reference URL: [https://www.mitacs.ca/about/indigenous-pathways/](https://www.mitacs.ca/about/indigenous-pathways/)
 
-**Discontinued programs — do not promote:**
+## 8. Pre-Writing Fact Validation (required for every article)
 
-* **Mitacs Entrepreneur International (MEI)** has been permanently discontinued as of 2025\. Do not write new promotional content for MEI. If a page references MEI, note that applications are closed.  
-* **Elevate** (postdoctoral fellowship and leadership) is permanently closed. Remove or do not include in any program listings or benefits sections.
+Before writing or optimizing, launch a validation agent to verify against live mitacs.ca:
+1. Every named program is still active and correctly named
+2. Exact official program names match mitacs.ca
+3. Any contradiction with these guidelines is flagged before writing
+
+Do not write the article if the validation agent returns unresolved flags without noting them in delivery comments.
+
+## 9. Technical SEO Note
+
+Several mitacs.ca pages (including [https://www.mitacs.ca/about/where-we-invest/](https://www.mitacs.ca/about/where-we-invest/)) use client-side JavaScript rendering — SEO tools that don't execute JS cannot read content; Google indexes in slower two-wave process. Full technical brief: `/claude_code/Mitacs/js-rendering-seo-issue.md`. **Flag to Mitacs dev team:** high-priority SEO pages should implement SSR or SSG.
+
+---
 
 # PART 2 — DIRECTIVES DE RÉDACTION EN FRANÇAIS
 
-## 1\. Aperçu du client
+*Les règles de contenu (Section 7 de la Partie 1) s'appliquent aux deux langues. Cette section couvre les spécificités françaises.*
 
-**Mitacs** est un organisme sans but lucratif canadien fort de **plus de 25 ans d'expérience**, qui met en relation des entreprises, des ONBL et des établissements de recherche avec des talents postsecondaires (étudiants, chercheurs au postdoctorat). Son modèle repose sur le **cofinancement** : Mitacs couvre jusqu'à 50 % des coûts admissibles d'un projet de R-D.
+## 1. Aperçu du client
 
-**Note de positionnement importante :** Mitacs n'est PAS un portail de subventions gouvernementales. C'est un intermédiaire de cofinancement **soutenu par** le gouvernement fédéral et les provinces. Pour les articles ciblant des mots-clés liés aux subventions, présentez Mitacs comme une source de soutien à la R-D bien financée — et non comme une porte d'accès directe aux fonds gouvernementaux.
+Mêmes faits clés que la Partie 1 EN. Différences FR :
+- Dire « R-D » (pas « R&D »)
+- Organisme sans but lucratif (ONBL) / PME
+- Cofinancement : « jusqu'à 50 % » — ne pas dire « approximativement »
+- Financement moyen : 7 500 $ à 15 000 $ (jusqu'à 120 000 $ pour programmes professeurs) ⚠️ Confirmer avant publication
 
-**Faits clés à toujours utiliser avec précision :**
+**Programmes actifs (noms officiels FR) :**
+- **Accélération** – stages de recherche, programme principal
+- **Stage de stratégie d'entreprise** – innovation opérationnelle
+- **Accélération Entrepreneur** – entrepreneuriat étudiant
+- **Bourse de recherche Globalink (BRG)** – mobilité internationale
 
-* Plus de 25 ans dans l'écosystème de l'innovation canadien  
-* Plus de 100 conseillers et conseillères répartis dans les établissements postsecondaires du Canada  
-* Cofinancement : Mitacs couvre généralement \~50 % des coûts admissibles (le partenaire paie \~45–50 %)  
-  * **Les coûts admissibles \= la bourse du stagiaire et les coûts de recherche directement liés au stage** (pas un budget R-D général)  
-* Financement moyen par projet : 7 500 $ à 15 000 $ (jusqu'à 120 000 $ pour certains programmes professeurs) ⚠️ *À confirmer avec le client avant publication*  
-* Délai habituel de la demande à l'approbation : \~6 mois ⚠️ *Le délai peut varier — à confirmer avec le client avant de citer ce chiffre*  
-* Mitacs **ne revendique aucun droit sur la propriété intellectuelle** générée dans le cadre d'un projet  
-* Périodes d'admission : janvier (stagiaires d'été), mai (automne), septembre (hiver)
+**Discontinués — ne pas promouvoir :**
+- **Élévation** – définitivement fermé
+- **Mitacs Entrepreneur International (MEI)** – définitivement discontinué en 2025
 
-**Programmes principaux actifs :**
+## 2. Ton et voix (spécificités FR)
 
-* **Accélération** – stages de recherche, programme principal  
-* **Stage de stratégie d'entreprise** – innovation opérationnelle  
-* **Accélération Entrepreneur** – entrepreneuriat étudiant  
-* **Bourse de recherche Globalink (BRG)** – mobilité internationale
+- Vouvoiement systématique — « vous/votre » dans tout le corps de l'article
+- Écriture inclusive cohérente dans tout le document — ne pas alterner les styles entre sections :
+  - Professeur·es / Étudiant·es / Chercheurs et chercheuses / Conseillères et conseillers / Innovatrices et innovateurs
 
-**Programmes discontinués (ne pas promouvoir) :**
+**Verbes privilégiés FR :** propulser, stimuler, accélérer, renforcer, libérer, connecter, faciliter, soutenir, développer, commercialiser, dérisquer, maximiser, tirer profit
 
-* **Élévation** – formation postdoctorale et leadership — **définitivement fermé**  
-* **Mitacs Entrepreneur International (MEI)** – programme entrepreneurial — **définitivement discontinué en 2025**
+**Expressions clés FR :** cofinancement / modèle de co-investissement, talents postsecondaires, réseau pancanadien, recherche et développement (R-D), recherche appliquée, écosystème de l'innovation, transfert de connaissances, niveaux de maturité technologique (NMT)
 
-## 2\. Publics cibles
+## 3. Structure de document FR
 
-| Audience | Priorité | Description |
-| :---- | :---- | :---- |
-| PME et startups | Primaire | Cible principale côté entreprise |
-| Grandes entreprises | Secondaire | Budgets plus importants; engagement scalable |
-| ONBL / organismes sans but lucratif | Tertiaire | Innovation sociale et défis communautaires |
-| Organismes communautaires (hôpitaux, municipalités) | Tertiaire | Admissibles aux programmes Mitacs; souvent oubliés dans les textes |
-| Professeur·es / corps professoral | Secondaire important | Lien essentiel entre entreprises et talents étudiants |
-| Étudiants et étudiantes / postdoctorants | Non prioritaire pour ces pages | Ils rejoignent Mitacs via les professeurs et les établissements |
+**Tableau 1 — INFORMATIONS ÉDITORIALES** (2 colonnes, centré) :
 
-## 3\. Messages de marque clés
-
-Toujours refléter ces piliers dans le contenu :
-
-1. **Dérisquez votre R-D** – Mitacs partage le risque financier de l'innovation  
-2. **Accédez aux talents dont vous avez besoin** – Réseau pancanadien postsecondaire  
-3. **Tirez parti de votre budget** – Le cofinancement multiplie la portée de chaque dollar investi  
-4. **Conseillers experts** – Plus de 100 conseillères et conseillers Mitacs partout au Canada  
-5. **25 ans de crédibilité** – Expérience et résultats probants  
-6. **Aucune revendication sur la PI** – Mitacs ne s'approprie pas la propriété intellectuelle
-
-## 4\. Ton et voix
-
-### Général
-
-* **Professionnel et accessible** – s'adresser à un·e décideur·euse d'entreprise, pas à un·e académique  
-* **Axé sur les bénéfices** – commencer par ce que le lecteur gagne, pas par ce que fait Mitacs  
-* **Confiant, sans arrogance** – énoncer des faits et des résultats; éviter les superlatifs non appuyés  
-* **Orienté action** – utiliser des verbes forts; éviter la voix passive  
-* **Mitacs en position active** – Mitacs doit toujours être l'agent actif du texte; éviter les tournures qui le présentent comme un simple intermédiaire passif ou un relais de programmes gouvernementaux  
-* **Vouvoiement systématique** – utiliser "vous/votre" dans tout le corps de l'article
-
-### Vocabulaire à privilégier
-
-**Verbes privilégiés :** propulser, stimuler, accélérer, renforcer, libérer, connecter, faciliter, soutenir, développer, commercialiser, dérisquer, maximiser, tirer profit
-
-**Expressions clés à répéter (ancres de marque) :**
-
-* « cofinancement » / « modèle de co-investissement »  
-* « talents postsecondaires »  
-* « réseau pancanadien »  
-* « recherche et développement (R-D) »  
-* « recherche appliquée »  
-* « écosystème de l'innovation »  
-* « transfert de connaissances »  
-* « niveaux de maturité technologique (NMT) »
-
-### Écriture inclusive
-
-Utiliser les formes épicènes ou les paires inclusives de façon **cohérente** dans chaque document :
-
-* Professeur·es (ou : les professeures et professeurs)  
-* Étudiant·es (ou : les étudiantes et étudiants)  
-* Chercheurs et chercheuses  
-* Conseillères et conseillers  
-* Innovatrices et innovateurs
-
-Ne pas alterner les styles entre les sections d'un même document.
-
-### Vocabulaire à éviter
-
-* Éviter les généralités creuses : « solutions innovantes », « technologie de pointe » sans contexte  
-* Éviter le jargon académique non expliqué  
-* Éviter les superlatifs absolus : « le meilleur », « unique au monde », « garanti »  
-* Éviter les prix fixes — utiliser des fourchettes (« de 7 500 $ à 15 000 $ »)  
-* Éviter l'utilisation de « nous » dans les H1/H2 (privilégier un langage axé sur les bénéfices)
-
-## 5\. Règles de rédaction
-
-### Format du document
-
-Chaque fichier Google Doc doit commencer par un tableau d'informations éditoriales :
-
-| Champ | Exigence |
-| :---- | :---- |
-| Mot-clé principal | Tel que défini dans le plan de production |
-| Mot(s)-clé(s) secondaire(s) | Tel que défini |
-| Titre (H1) | Axé sur les bénéfices, inclut le mot-clé principal |
-| Méta-titre | 55–65 caractères |
-| Méta-description | 150–165 caractères |
-| URL | Existante ou proposée |
-| Nombre de mots | Cible définie |
-| Maillage interne | 2–4 liens avec ancres sémantiques |
-| Lien(s) externe(s) | Généralement 1 source gouvernementale ou d'autorité |
-
-### Structure de l'article
-
-**H1** – Titre principal (axé sur les bénéfices, inclut le mot-clé principal)
-
-Exemple : *« Accès aux talents : Trouvez les compétences dont vous avez besoin pour évoluer »*
-
-**Paragraphe d'introduction** – 2–3 phrases. Accrocher le lecteur immédiatement. Le mot-clé principal doit apparaître dans le premier paragraphe.
-
-**H2 – Section 1** – Premier bénéfice majeur ou concept
-
-* **H3** – Sous-section (si nécessaire)
-
-**H2 – Section 2** – Deuxième thème principal
-
-* **H3** – Sous-sections selon les besoins
-
-**H2 – Section 3+** – Sections additionnelles au besoin
-
-**H2 : FAQ** – Inclure systématiquement une section FAQ en fin d'article
-
-* **H3 : Question 1 ?**  
-* Réponse  
-* **H3 : Question 2 ?**  
-* Réponse  
-* (Minimum 3 questions, idéalement 4–5)
-
-**CTA** – Formulaire de contact intégré ou bouton « En savoir plus » (noter le texte d'ancre dans le document)
-
-### Nombre de mots par type de contenu
-
-| Type de contenu | Cible |
-| :---- | :---- |
-| Page statique (optimisation) | 500–700 mots ajoutés |
-| Réécriture complète | 700–1 000 mots |
-| Page de programme détaillée (avec critères, FAQ, etc.) | 1 500–5 000 mots |
-| Page thématique (subventions, financement) | \~700 mots |
-
-### Utilisation du gras
-
-* Mettre en gras les **termes clés** et les **expressions de marque importantes**, de façon sélective  
-* Maximum 1–2 expressions en gras par paragraphe  
-* Ne pas mettre des phrases entières ou des paragraphes complets en gras  
-* Exemples appropriés : **modèle de cofinancement**, **dérisquer votre R-D**, **réseau pancanadien**
-
-### Code couleur (édition dans le document)
-
-* **Texte en vert** \= modification d'un contenu existant ou ajout nouveau
-
-## 6\. Règles SEO
-
-### Placement du mot-clé
-
-| Emplacement | Exigence |
-| :---- | :---- |
-| H1 (titre) | Le mot-clé principal doit y figurer |
-| Premier paragraphe | Le mot-clé principal dans les 100 premiers mots |
-| Méta-titre | Mot-clé principal en début; 55–65 caractères |
-| Méta-description | Mot-clé principal; 150–165 caractères |
-| Titres H2 | Au moins 1 H2 contient le mot-clé principal ou secondaire |
-| Corps du texte | Densité naturelle; éviter la suroptimisation |
-
-### Maillage interne
-
-* 2–4 liens internes par article  
-* Utiliser des **ancres sémantiques** (expression descriptive, pas « cliquez ici »)  
-* Pointer vers des pages de programmes, services ou audiences connexes de Mitacs  
-* Toujours lier vers la **page ou le formulaire spécifique** — éviter les références vagues du type « notre portail » ou « notre site » sans URL réelle
-
-### Lien externe
-
-* Généralement 1 lien externe par article  
-* Privilégier des sources gouvernementales ou d'autorité (ex. : [Canada.ca](http://Canada.ca), Gouvernement du Québec)
-
-### Vérifications qualité avant livraison
-
-| Vérification | Outil | Seuil |
-| :---- | :---- | :---- |
-| Score SEO | NEURON SEO | Noter avant et après |
-| Plagiat | Duplichecker | \< 10 % |
-| Détection IA | Détecteur IA | \< 25 % |
-| Langue et orthographe | Antidote | Toutes les erreurs corrigées |
-
-## 7\. À faire et à éviter
-
-### À faire ✅
-
-* Commencer chaque section par un bénéfice pour le lecteur  
-* Utiliser le « vous/votre » tout au long  
-* Toujours inclure une section FAQ  
-* Intégrer naturellement le mot-clé principal dans le premier paragraphe et le H1  
-* Inclure des liens internes avec des ancres descriptives — et toujours pointer vers la page ou le formulaire précis, pas une référence générique  
-* Mentionner les 25 ans d'expérience, le cofinancement et le réseau dans la plupart des pages (piliers de marque)  
-* Respecter les fourchettes de caractères pour les méta-titres (55–65) et méta-descriptions (150–165)  
-* Signaler les périodes d'admission saisonnières si pertinentes (janvier, mai, septembre)  
-* Désigner les programmes par leurs noms officiels en français  
-* Utiliser l'écriture inclusive de façon cohérente dans tout le document  
-* Formuler les bénéfices de façon **concrète et précise** — toujours nommer le résultat réel (ex. : « pour accéder aux talents nécessaires à votre projet d'innovation », pas seulement « pour travailler avec des chercheurs »)  
-* Lorsqu'on liste les organisations admissibles, inclure les quatre types : PME, grandes entreprises, ONBL, et organismes communautaires (hôpitaux, municipalités)
-
-### À éviter ❌
-
-* Ne pas utiliser la voix passive dans l'introduction  
-* Ne pas formuler d'affirmations absolues sans données (« le seul », « garanti », « toujours »)  
-* Ne pas indiquer de prix fixes — utiliser des fourchettes (« de 7 500 $ à 15 000 $ »)  
-* Ne pas utiliser « notre »/« nos » dans les H1/H2 (ex. : éviter « Notre programme »)  
-* Ne pas utiliser un langage purement académique sans l'expliquer  
-* Ne pas suroptimiser — si le mot-clé apparaît plus de 3–4 fois sur une courte page, réviser  
-* Ne pas laisser entendre que Mitacs revendique des droits sur la PI  
-* Ne pas présenter Mitacs comme un **portail direct de subventions gouvernementales** — c'est un intermédiaire de cofinancement soutenu par les gouvernements fédéral et provinciaux  
-* Ne pas donner à Mitacs un rôle passif ou celui d'un simple relais — utiliser des tournures actives (« Mitacs propulse… », « Mitacs connecte… »)  
-* Ne pas laisser les énoncés de bénéfices dans le vague — des formulations génériques comme « une approche rentable » ou « travailler avec des chercheurs » doivent être suivies du résultat concret  
-* Ne pas présenter des programmes destinés aux stagiaires ou aux étudiant·es (développement des compétences professionnelles, formation au leadership) comme des avantages pour les partenaires industriels — ces programmes bénéficient au stagiaire, pas à l'organisation partenaire  
-* Ne pas promouvoir le programme MEI — il est **définitivement discontinué depuis 2025**  
-* Ne pas inclure Élévation dans les listes de programmes actifs — ce programme est **définitivement fermé**
-
-**Programmes discontinués — ne pas promouvoir :**
-
-* **Mitacs Entrepreneur International (MEI)** a été définitivement abandonné en 2025\. Ne pas rédiger de nouveau contenu promotionnel. Si une page y fait référence, indiquer que les demandes sont fermées.  
-* **Élévation** (formation postdoctorale et leadership) est définitivement fermé. Ne pas inclure dans les listes de programmes ni dans les sections bénéfices.
-
-## 8\. Terminologie officielle FR ↔ EN
-
-| Français | English | Statut |
-| :---- | :---- | :---- |
-| Accélération | Accelerate | Actif |
-| Stage de stratégie d'entreprise | Business Strategy Internship | Actif |
-| Accélération Entrepreneur | Accelerate Entrepreneur | Actif |
-| Bourse de recherche Globalink (BRG) | Globalink Research Award (GRA) | Actif |
-| Élévation | Elevate | ⚠️ Fermé définitivement |
-| Mitacs Entrepreneur International (MEI) | Mitacs Entrepreneur International (MEI) | ⚠️ Discontinué en 2025 |
-| Cofinancement / co-investissement | Co-funding / co-investment | — |
-| Recherche et développement (R-D) | Research and development (R\&D) | — |
-| Organisme sans but lucratif (ONBL) | Non-profit organization (NPO) | — |
-| PME / Petite et moyenne entreprise | SME / Small and medium-sized enterprise | — |
-| Établissement postsecondaire | Post-secondary institution | — |
-| Chercheur·e au postdoctorat | Postdoctoral fellow / postdoc | — |
-| Niveaux de maturité technologique (NMT) | Technology readiness levels (TRLs) | — |
-| Maillage interne | Internal linking | — |
-| Ancre sémantique | Semantic anchor | — |
-| Perspectives d'innovation | Innovation insights | — |
-| Conseillers et conseillères Mitacs | Mitacs Advisors | — |
-
-*Document prepared by Digitad for internal agency use — MITACS SEO mandate, April 2026*
-
-# PART 3 — ADDITIONAL RULES & UPDATES (April 2026\)
-
-*Added based on live article production and client feedback. These rules apply to all future Mitacs content in both EN and FR.*
-
-## A. Writing Style Rules
-
-### Em-dashes
-
-* **Maximum 3 em-dashes per article.** Count before delivery.  
-* Do not use em-dashes in bullet lists. Use a colon instead: "**Bold term:** explanation" — not "**Bold term** — explanation."  
-* Acceptable em-dash uses: to set off a defining clause mid-sentence (e.g., "covers 50% of eligible costs — the intern's stipend and direct research costs — reducing your contribution").
-
-### Introduction length and framing
-
-* Introductions must be approximately **40–50 words maximum**.  
-* **Mitacs must be the first or second word.** Do not open with scene-setting about Canada, the industry, or a question. Lead with the brand.  
-* Example of correct framing: *"Mitacs has been powering business innovations in Canada for more than 25 years, connecting businesses with post-secondary talent and co-funding to drive R\&D forward."*  
-* Example to avoid: *"Canada has one of the world's most dynamic research ecosystems — and business innovations in Canada are accelerating faster than ever. Yet for most organizations…"*
-
-### Sentence construction
-
-* Remove filler phrases. Every word must earn its place.  
-* Prefer: *"Mitacs delivers the co-funding needed to..."*  
-* Avoid: *"Mitacs delivers the co-funding and applied research expertise your organization needs to..."*  
-* Avoid vague openers: "That is where Mitacs becomes your strategic advantage." — remove or replace with the specific benefit.
-
-### Bullet list formatting
-
-* Use colons in bullet lists, not em-dashes.  
-* Format: **Bold term:** Supporting explanation that names a specific outcome.
-
-### Strikethroughs
-
-* When removing strikethrough text from a document, note *why* it was removed in your delivery notes or response. Two common reasons:  
-1. **Vague filler:** The sentence makes no specific claim and adds no benefit (e.g., "That is where Mitacs becomes your strategic advantage.").  
-2. **Negative framing:** The sentence defines Mitacs by what it is NOT (e.g., "Mitacs is not a passive funding portal."). Per brand rules, Mitacs must always be the active agent — reframe positively.
-
-## B. Audience & Internal Link Rules
-
-### Audience-matched internal links
-
-* Every internal link must target the **same audience as the article**.  
-* Business-focused articles must link to business-facing pages only. Do not link to student programs, intern-facing pages, or academic resources in a business article.  
-* Before finalizing internal links, check: *"Would the article's primary reader click this link and find it relevant?"*
-
-### Benefit always attached to Mitacs claims
-
-* Every mention of what Mitacs does must be followed by a **concrete, specific benefit** to the reader.  
-* Avoid: *"Mitacs supports innovation across Canada."*  
-* Use: *"Mitacs connects Canadian businesses with post-secondary researchers to advance applied R\&D projects, reducing costs and accelerating time to market."*
-
-### No abbreviations without spelling out first
-
-* Always write the full term before using the abbreviation.  
-* Examples: small and medium-sized enterprises (SMEs), research and development (R\&D), non-profit organizations (NPOs), information and communications technology (ICT), intellectual property (IP), technology readiness levels (TRLs).  
-* Applies to the article body. Meta fields and table cells may abbreviate for character-count reasons.
-
-## C. Structure & Formatting Rules
-
-### Program sections
-
-* When listing multiple Mitacs programs in a section, give each its own **H3 subheading**. Do not write them as continuous prose paragraphs.  
-* Check that every program listed is appropriate for the article's target audience. Do not present student-facing or intern-facing programs as business benefits.
-
-### Advisor link call to action
-
-* When an article's content mentions timelines, how to get started, or the application process, include a **link to the Mitacs advisors page** ([https://www.mitacs.ca/about/mitacs-advisors/](https://www.mitacs.ca/about/mitacs-advisors/)) as a natural call to action.  
-* Preferred anchor text: "Mitacs advisor" or "Mitacs advisors."
-
-## D. Program & Eligibility Updates
-
-### Indigenous Pathways initiative (active program — include in eligibility lists)
-
-Mitacs runs an explicit **Indigenous Pathways** initiative. Key facts for content:
-
-* Eligible partner organizations contribute only **25% of eligible project costs** (versus the standard 45–50%).  
-* Eligible if: the business is at least 50% owned by someone who self-identifies as Indigenous, OR the selected intern self-identifies as Indigenous.  
-* For non-profits: board is at least 50% self-identified Indigenous peoples, or the organization's mandate is Indigenous-focused.  
-* Mitacs is also a seed sponsor of **Pow Wow Pitch**, North America's premier pitch competition for Indigenous entrepreneurs.  
-* **Include in eligibility bullet lists** for business-facing and general-audience articles. Example bullet: *"Indigenous businesses and organizations, which may qualify for enhanced co-funding through the Mitacs Indigenous Pathways initiative, reducing their partner contribution to 25% of eligible project costs."*  
-* Reference URL: [https://www.mitacs.ca/about/indigenous-pathways/](https://www.mitacs.ca/about/indigenous-pathways/)
-
-### Sectors reference (where we invest)
-
-Mitacs's 7 research priority areas per [https://www.mitacs.ca/about/where-we-invest/:](https://www.mitacs.ca/about/where-we-invest/:)
-
-1. Advanced Manufacturing  
-2. Artificial Intelligence (AI)  
-3. Cleantech  
-4. Cybersecurity  
-5. Health & Life Sciences  
-6. Information and Communications Technologies (ICT)  
-7. Quantum
-
-Include a link to this page as an internal link in business-facing articles where sector coverage is discussed. In articles with a sector bullet list, use 5 sectors at most — pick the most relevant and link to the full page for the rest.
-
-### Discontinued programs reminder
-
-* **Mitacs Entrepreneur International (MEI)** — permanently discontinued as of 2025\. Remove from all internal link tables and article body references. Replace with an active business-facing program (e.g., Accelerate, Business Strategy Internship).  
-* **Elevate** — permanently closed. Do not include in program listings.
-
-## G. Style Refinements — Observed from Live Client Edits (May 2026)
-
-*Derived from Carla's edits to the "business research funding" article. Apply to all future Mitacs EN articles.*
-
-### H1 title format
-
-* Write H1s as **"[Topic] for [Audience]"** or **"[Topic] in Canada"** — audience-specific and keyword-aligned.
-* Do not use action taglines ("Business Research Funding to Accelerate Your R&D") — the H1 is a topic label, not a slogan.
-* Correct example: *"Business Research Funding for Canadian Companies"*
-
-### Intro structure
-
-* **Two sentences maximum.** First sentence: fact/credential statement (Mitacs, years of experience, what it does). Second sentence: brand positioning — name the audience range and lead with the co-funding value.
-* Example second sentence: *"Mitacs's co-funding model gives Canadian companies, from start-ups to enterprise businesses, access to specialized research expertise without the full financial burden."*
-
-### Bullet list lead terms — no bold
-
-* In Mitacs article bullet lists, do **not** bold the lead term. Use a plain colon only.
-* Format: `Co-investment that reduces your R&D costs: Organizations contribute...`
-* Not: `**Co-investment that reduces your R&D costs:** Organizations contribute...`
-
-### Eligible organizations — required order
-
-Always list eligible organization types in this order:
-
-1. Start-ups in active growth phases
-2. Small and medium-sized enterprises
-3. Large enterprises
-4. Non-profit organizations
-5. Community organizations (hospitals, municipalities)
-6. Indigenous businesses and organizations (with Pathways note)
-
-### Section H2 labels — descriptive and keyword-reinforcing
-
-* H2 headings should describe what the reader finds AND include co-funding or key terms naturally.
-* Example: *"What Sectors Mitacs Provides Co-Funding For"* (not "Sectors Mitacs Funds")
-
-### Government support — exact approved phrasing
-
-When describing Mitacs's government backing, use this exact framing:
-> *"the Government of Canada, all ten provinces, the Yukon territories, as well as private funding"*
-
-Do not use "federal and provincial governments" generically.
-
-### Co-investment model — conservative language
-
-* Say **"covers a portion of eligible project costs"** — not "covers the majority of."
-* This is more accurate and avoids overstating Mitacs's share.
-
-### Accelerate Entrepreneur — confirmed program figures
-
-Use these confirmed figures when describing Accelerate Entrepreneur:
-* **$10,000 stipend** per internship
-* **Up to $5,000 in flexible funding** to support research costs
-* Frame co-funding as **50% co-funding** for this specific program (differs from the standard 45% partner contribution language used elsewhere)
-
----
-
-## F. Pre-Writing Fact Validation (Required for Every Mitacs Article)
-
-Before writing or optimising any Mitacs article, a validation agent must be launched to verify the following against the live mitacs.ca website:
-
-1. **Program status** — confirm every named program (Accelerate, Business Strategy Internship, Accelerate Entrepreneur, Globalink Research Award) is still active and correctly named on the website. Flag any program that has been renamed, discontinued, or is no longer findable.
-2. **Program names** — confirm exact official names match what is used on mitacs.ca (e.g., "Accelerate" not "Accelerate Program," "Business Strategy Internship" not "BSI Program").
-3. **Flag anything contradicting the guidelines** — if a program page says something different from what is in these guidelines, flag it before including it in the article.
-
-This step runs **before** content generation. Do not write the article if the validation agent returns unresolved flags without noting them in the delivery comments.
-
-## E. Technical SEO Note for Client
-
-### JavaScript rendering issue ([mitacs.ca](http://mitacs.ca))
-
-Several Mitacs website pages — including [https://www.mitacs.ca/about/where-we-invest/](https://www.mitacs.ca/about/where-we-invest/) — use client-side JavaScript rendering. This means the visible page content is loaded by JavaScript after the page is delivered, rather than being included in the initial HTML response from the server. As a result:
-
-* SEO tools and crawlers that do not execute JavaScript cannot read the page content.  
-* Google indexes these pages in a slower two-wave process, which may delay ranking.  
-* This has been documented in a full technical brief at `/claude_code/Mitacs/js-rendering-seo-issue.md` for client delivery.  
-* **Recommendation:** Flag to the Mitacs dev team that high-priority SEO pages should implement server-side rendering (SSR) or static site generation (SSG) so content is included in the initial HTML response.
-
-### Program links
-
-Every time a specific Mitacs program is named in the article body, it must include a hyperlink to its program page. No program name should appear unlinked.
-
-Known program URLs:
-
-* Accelerate: [https://www.mitacs.ca/our-programs/accelerate/](https://www.mitacs.ca/our-programs/accelerate/)  
-* Business Strategy Internship: [https://www.mitacs.ca/our-programs/business-strategy-internship/](https://www.mitacs.ca/our-programs/business-strategy-internship/)  
-* Accelerate Entrepreneur: [https://www.mitacs.ca/our-programs/accelerate-entrepreneur/](https://www.mitacs.ca/our-programs/accelerate-entrepreneur/)  
-* Globalink Research Award (GRA): [https://www.mitacs.ca/our-programs/globalink-research-award/](https://www.mitacs.ca/our-programs/globalink-research-award/)
-
-### No word-for-word repetition
-
-Do not repeat the same point twice in an article unless the second instance adds a genuinely new dimension — new context, new benefit, or a different audience angle. Sentences that are essentially word-for-word copies of earlier sentences must be cut or meaningfully rewritten before delivery.
-
----
-
-## 15. Content Brief Standards & Observed Patterns
-
-*Derived from analysis of on-site content briefs (March–April 2026).*
-
-### Production Plan
-- **Spreadsheet ID:** `1yAJ3QkX7TovCFbclCmAsxozOxOGkDS2d24KM_gef9ZY` (separate from the Danone brands plan)
-- **Tab name:** `ON SITE - Calendrier éditorial`
-- **FR template doc ID:** `1x3SR4oNqXhNNK9O0YsYT5JPewwzaadkG6BIAvPCkZa4`
-- **EN template doc ID:** `1tPoOoUuftM6dhup5aEsKfkdV-pAwoxMvSRwBetizIFo`
-
-### Document & Folder Naming Conventions
-- Monthly folder: numbered format — `01. January`, `02. February`, `03. March`, `04. April`, etc. (NOT `MITACS - Month YYYY`)
-- **Separate EN and FR documents** — each language is its own file (not bilingual within one document like Silk/ID)
-- EN document name: `MITACS - Static Page - Creation & Optimization - EN - [Topic]`
-- FR document name: `MITACS - Static Page - Traduction & Optimisation - FR - [Topic]`
-  - "Traduction & Optimisation" = translation/optimization briefs (existing FR page being updated)
-  - "Creation & Optimization" = new or rewritten EN content
-- Parent folder ID: `1HjO1ViPJ18G0mgs6OFigSuXd9HncsagF`
-
-### Brief Template Structure (EN)
-| Field | Spec |
+| Étiquette FR (telle qu'elle apparaît dans le doc) | Champ |
 |---|---|
-| Keyword | Primary keyword + monthly search volume in brackets |
-| Secondary Keyword | At least 2 secondary keywords |
-| Title | On-page H1 |
-| Meta-title | 55–65 characters |
-| Meta description | 150–165 characters |
-| URL | Full URL of the page being optimized |
-| Word count | Target word count for the delivery |
-| Internal links | 2–4 (or more; up to 4–6 observed) with semantic anchors |
-
-After the table:
-- **Neuronwriter Brief Link:** `https://app.neuronwriter.com/analysis/view/[ID]` — label is "Neuronwriter Brief Link:" in EN briefs
-- **Quality Check** section:
-  - NEURON SEO score
-  - Plagiarism <10% (duplichecker.com)
-  - Antidote Language Tool (French and English)
-  - ⚠️ **No AI detection check** in Mitacs briefs (unlike other brands)
-  - ⚠️ **No NW score before/after** format — just the link
-- **CUSTOMER FEEDBACK** table at the very end of every brief — a structured table for client review comments (standard across all Mitacs briefs)
-- **Text color:** Green = modification to existing content or new addition (same convention as the main guidelines)
-
-### FR Brief Template — Document Structure (confirmed June 2026)
-
-The FR template uses **French labels throughout**. These differ from the EN template and from the gdocs_helper.py default English keyword matching. When scripting or manually filling an FR brief, use the FR row labels below.
-
-**Table 1 — INFORMATIONS ÉDITORIALES** (2-column, centered):
-| FR Row Label (as it appears in the doc) | Field |
-|---|---|
-| Mot-clé défini | Primary keyword (pre-filled from production plan) |
-| Titre | H1 / page title |
-| Méta-titre (entre 55 et 65 caractères) | Meta-title — 55–65 chars |
-| Méta-description (entre 150 et 165 caractères) | Meta-description — 150–165 chars |
+| Mot-clé défini | Mot-clé principal (pré-rempli depuis le plan de production) |
+| Titre | H1 / titre de page |
+| Méta-titre (entre 55 et 65 caractères) | Méta-titre — 55–65 car. |
+| Méta-description (entre 150 et 165 caractères) | Méta-description — 150–165 car. |
 | URL (/mot-cle/) opti=même url | URL slug |
-| Nombre de mots | Target word count |
+| Nombre de mots | Nombre de mots cible |
 
-**Table 2 — MAILLAGE INTERNE** (3-column, centered):
-| Col 1 | Col 2 | Col 3 |
-|---|---|---|
+**Tableau 2 — MAILLAGE INTERNE** (3 colonnes, centré) :
+
 | Maillage Interne | Ancre sémantique | Page de destination |
-| Lien interne 1 | (semantic anchor text) | (full URL) |
+|---|---|---|
+| Lien interne 1 | (ancre) | (URL complète) |
 | Lien interne 2–4 | … | … |
 
-**NeuronWriter label in FR briefs:** `Lien de Neuronwriter:` — NOT "Neuronwriter Brief Link:" (that label is EN only). The link appears on the same line immediately after the colon.
+**Lien NeuronWriter FR :** étiquette = `Lien de Neuronwriter:` (pas "Neuronwriter Brief Link:" — c'est l'étiquette EN seulement)
 
-**Table 3 — VÉRIFICATION QUALITÉ** (2-column):
-| Row | Default |
+**Tableau 3 — VÉRIFICATION QUALITÉ** (2 colonnes) :
+
+| Ligne | Défaut |
 |---|---|
-| Note SEO NEURON | (fill after delivery) |
-| Détecteur de contenu généré par AI — Viser < 25% | OK (pre-filled in template) |
-| Vérificateur de plagiat < 10% | OK (pre-filled) |
-| Vérification de l'orthographe (Language Tool) | OK (pre-filled) |
+| Note SEO NEURON | (remplir après livraison) |
+| Détecteur de contenu généré par AI — Viser < 25% | OK (pré-rempli) |
+| Vérificateur de plagiat < 10% | OK (pré-rempli) |
+| Vérification de l'orthographe (Language Tool) | OK (pré-rempli) |
 
-**Table 4 — RETOURS DU CLIENT** (single-column, pre-populated with instructions)
+**Tableau 4 — RETOURS DU CLIENT** (colonne unique, pré-rempli avec instructions)
 
-⚠️ **Script matching note:** gdocs_helper.py `populate_brief` uses English label keywords and will not correctly match FR table rows. Use a custom script with FR label matching (`"méta" + "titre"` for Méta-titre, `"nombre de mots"` for word count, `"lien interne"` for maillage rows). Match `"méta-titre"` before `"titre"` to avoid substring collision.
+⚠️ **Note script :** `gdocs_helper.py populate_brief` utilise des étiquettes EN et ne matchera pas les lignes FR. Utiliser un script personnalisé avec correspondance FR (`"méta" + "titre"` pour Méta-titre, `"nombre de mots"` pour word count, `"lien interne"` pour les lignes de maillage). Matcher `"méta-titre"` avant `"titre"` pour éviter collision de sous-chaîne.
 
-### Known FR Program URLs (confirmed from mitacs.ca)
-| Program | FR URL |
+## 4. URLs de programmes FR (confirmées depuis mitacs.ca)
+
+| Programme | URL FR |
 |---|---|
 | Accélération | `https://www.mitacs.ca/fr-ca/programmes/acceleration/` |
 | Stage de stratégie d'entreprise | `https://www.mitacs.ca/fr-ca/programmes/stage-de-strategie-dentreprise/` |
@@ -792,21 +295,54 @@ The FR template uses **French labels throughout**. These differ from the EN temp
 | Nos investissements (secteurs) | `https://www.mitacs.ca/fr-ca/a-propos/nos-investissements/` |
 | Initiative Voies autochtones | `https://www.mitacs.ca/fr-ca/a-propos/voies-autochtones/` |
 
-⚠️ Confirm FR program URLs against live mitacs.ca before publishing — WeGlot translation layer may alter URL slugs.
+⚠️ Confirmer les URLs FR contre le site live avant publication — la couche WeGlot peut modifier les slugs.
 
-### Word Count & Keyword Profile
-- Word count range observed: **700–1,000 words** (static pages)
-- Keyword search volumes are **very low** (20–170 monthly searches) — Mitacs targets a niche B2B audience, not mass consumer keywords
-- Keyword density rule: natural density; avoid stuffing — do NOT apply the 5x per 500 words rule used for consumer brands
+## 5. Terminologie officielle FR ↔ EN
 
-### Internal Linking
-- 4–6 internal links per page (higher than consumer brands)
-- Anchors must be semantic and business-audience appropriate
-- Always link named programs to their official program pages (see Part 3 Section E)
+| Français | English | Statut |
+|---|---|---|
+| Accélération | Accelerate | Actif |
+| Stage de stratégie d'entreprise | Business Strategy Internship | Actif |
+| Accélération Entrepreneur | Accelerate Entrepreneur | Actif |
+| Bourse de recherche Globalink (BRG) | Globalink Research Award (GRA) | Actif |
+| Élévation | Elevate | ⚠️ Fermé définitivement |
+| Mitacs Entrepreneur International (MEI) | Mitacs Entrepreneur International (MEI) | ⚠️ Discontinué 2025 |
+| Cofinancement / co-investissement | Co-funding / co-investment | — |
+| Recherche et développement (R-D) | Research and development (R&D) | — |
+| Organisme sans but lucratif (ONBL) | Non-profit organization (NPO) | — |
+| PME | SME | — |
+| Établissement postsecondaire | Post-secondary institution | — |
+| Chercheur·e au postdoctorat | Postdoctoral fellow / postdoc | — |
+| Niveaux de maturité technologique (NMT) | Technology readiness levels (TRLs) | — |
+| Maillage interne | Internal linking | — |
+| Ancre sémantique | Semantic anchor | — |
+| Conseillers et conseillères Mitacs | Mitacs Advisors | — |
 
-### Content Types Observed
-1. **Static informational pages (EN)** — programs, funding topics, innovation themes (e.g., "Business Innovation in Canada")
-2. **Static informational pages (FR translation)** — French-language equivalents of EN pages ("Traduction & Optimisation")
-3. No recipe pages, no category pages, no product pages — Mitacs content is entirely informational and program-focused
+---
 
+# PART 3 — CONTENT BRIEF STANDARDS & NAMING CONVENTIONS
 
+## Production Plan & Templates
+
+- **Spreadsheet ID:** `1yAJ3QkX7TovCFbclCmAsxozOxOGkDS2d24KM_gef9ZY` (separate from Danone brands plan)
+- **Tab:** `ON SITE - Calendrier éditorial`
+- **FR template doc ID:** `1x3SR4oNqXhNNK9O0YsYT5JPewwzaadkG6BIAvPCkZa4`
+- **EN template doc ID:** `1tPoOoUuftM6dhup5aEsKfkdV-pAwoxMvSRwBetizIFo`
+- **Parent folder ID:** `1HjO1ViPJ18G0mgs6OFigSuXd9HncsagF`
+
+## Folder & File Naming
+
+- Monthly folder: `01. January`, `02. February`, etc. (not `MITACS - Month YYYY`)
+- EN and FR are **separate files** (not bilingual in one doc like Silk/ID)
+- EN file name: `MITACS - Static Page - Creation & Optimization - EN - [Topic]`
+- FR file name: `MITACS - Static Page - Traduction & Optimisation - FR - [Topic]`
+  - "Traduction & Optimisation" = translation/optimization of existing FR page
+  - "Creation & Optimization" = new or rewritten EN content
+
+## Content Type Reference
+
+1. Static informational pages (EN) — programs, funding topics, innovation themes
+2. Static informational pages (FR translation) — French equivalents
+3. No recipe, category, or product pages — entirely informational and program-focused
+
+*Document prepared by Digitad for internal agency use — MITACS SEO mandate, April 2026*

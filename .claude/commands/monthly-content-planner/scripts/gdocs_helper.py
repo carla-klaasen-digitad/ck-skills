@@ -203,45 +203,104 @@ def populate_brief(doc_id, keyword, secondary, heading, url, nw_link, brand, sea
 
 # ─── scrape_url ────────────────────────────────────────────────────────────────
 def scrape_url(url):
-    """Scrape text content from a URL. Returns JSON with 'text' key."""
+    """Scrape on-page body content from a URL, stripping nav/header/footer."""
     import urllib.request
-    from html.parser import HTMLParser
+    try:
+        from bs4 import BeautifulSoup, Comment
+        _bs4_available = True
+    except ImportError:
+        _bs4_available = False
 
-    class TextExtractor(HTMLParser):
-        def __init__(self):
-            super().__init__()
-            self.text_parts = []
-            self._skip = False
-            self._skip_tags = {"script", "style", "noscript", "head", "nav",
-                               "footer", "header", "aside", "form"}
+    JUNK_TAGS = ["script", "style", "noscript", "nav", "footer", "header",
+                 "aside", "form", "iframe", "svg", "button", "picture"]
+    # Class/id patterns that indicate site chrome, not page content
+    JUNK_CLASS = re.compile(
+        r'(?:^|\s)(?:nav(?:igation)?|menu|header|footer|sidebar|breadcrumb|'
+        r'cookie|popup|modal|overlay|banner|promo|social|share|related|'
+        r'widget|advertisement|subnav|utility|site-header|site-footer|'
+        r'skip-link|back-to-top)(?:\s|$)',
+        re.IGNORECASE
+    )
 
-        def handle_starttag(self, tag, attrs):
-            if tag in self._skip_tags:
-                self._skip = True
-            if tag in ("br", "p", "div", "h1", "h2", "h3", "h4", "h5", "h6",
-                       "li", "tr", "td", "th", "blockquote"):
-                self.text_parts.append("\n")
-
-        def handle_endtag(self, tag):
-            if tag in self._skip_tags:
-                self._skip = False
-
-        def handle_data(self, data):
-            if not self._skip:
-                stripped = data.strip()
-                if stripped:
-                    self.text_parts.append(stripped)
+    def _is_junk(tag):
+        classes = " ".join(tag.get("class", []))
+        tag_id = tag.get("id", "")
+        return bool(JUNK_CLASS.search(classes) or JUNK_CLASS.search(tag_id))
 
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (compatible; ContentBot/1.0)"}
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                          "AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        }
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=20) as resp:
             raw_html = resp.read().decode("utf-8", errors="replace")
 
-        parser = TextExtractor()
-        parser.feed(raw_html)
-        text = "\n".join(parser.text_parts)
-        text = re.sub(r"\n{3,}", "\n\n", text).strip()
+        if _bs4_available:
+            soup = BeautifulSoup(raw_html, "html.parser")
+
+            # Remove HTML comments
+            for c in soup.find_all(string=lambda t: isinstance(t, Comment)):
+                c.extract()
+
+            # Remove known junk tags outright
+            for tag_name in JUNK_TAGS:
+                for t in soup.find_all(tag_name):
+                    t.decompose()
+
+            # Remove elements whose class/id indicate site chrome
+            # Collect first, then decompose (safe modification pattern)
+            junk_els = [t for t in soup.find_all(True)
+                        if t.parent is not None and _is_junk(t)]
+            for t in junk_els:
+                if t.parent is not None:
+                    t.decompose()
+
+            # Pick the most relevant content container
+            content_el = (
+                soup.find("main") or
+                soup.find("article") or
+                soup.find(attrs={"id": re.compile(r'^(?:content|main|page-content|primary)$', re.I)}) or
+                soup.find(attrs={"class": re.compile(r'\b(?:page-content|post-content|entry-content|product-content)\b', re.I)}) or
+                soup.body or
+                soup
+            )
+
+            # Use get_text with a newline separator, then clean up
+            raw_text = content_el.get_text(separator="\n")
+        else:
+            # Fallback: strip tags manually
+            raw_text = re.sub(r'<[^>]+>', ' ', raw_html)
+
+        # Post-process: normalize whitespace, remove duplicates, filter nav noise
+        lines = raw_text.split("\n")
+        seen = set()
+        clean = []
+        for line in lines:
+            line = line.strip()
+            if not line:
+                if clean and clean[-1] != "":
+                    clean.append("")
+                continue
+            # Skip exact-duplicate lines
+            if line in seen:
+                continue
+            # Skip lines that look like nav labels: ≤4 words, no sentence-ending punctuation,
+            # no digits (product specs kept), length ≤ 40 chars
+            words = line.split()
+            if (len(words) <= 4
+                    and not any(c in line for c in ".!?,;:")
+                    and not re.search(r'\d', line)
+                    and len(line) <= 40):
+                seen.add(line)
+                continue
+            seen.add(line)
+            clean.append(line)
+
+        text = "\n".join(clean).strip()
+        text = re.sub(r"\n{3,}", "\n\n", text)
         print(json.dumps({"ok": True, "url": url, "text": text, "chars": len(text)}))
 
     except Exception as e:
@@ -430,21 +489,38 @@ def _build_markdown_requests(text, cursor, apply_underlines=True):
         # Non-bullet — flush any pending bullets first
         flush_bullets()
 
-        # Heading
-        h_m = re.match(r'^(#{1,6})\s+(.*)', line)
-        if h_m:
-            level = min(len(h_m.group(1)), 6)
-            raw_heading = h_m.group(2).strip()
+        # Heading detection — two patterns:
+        #   Pattern A: [U]## Heading text[/U]  → whole new heading wrapped in [U]
+        #   Pattern B: ## Heading text          → normal heading (may have inline [U] markers)
+        h_level, raw_heading, heading_is_new = None, None, False
+
+        pa = re.match(r'^\[U\](#{1,6})\s+(.*?)\[/U\]$', stripped)
+        if pa:
+            h_level = min(len(pa.group(1)), 6)
+            raw_heading = pa.group(2).strip()
+            heading_is_new = True
+        else:
+            pb = re.match(r'^(#{1,6})\s+(.*)', stripped)
+            if pb:
+                h_level = min(len(pb.group(1)), 6)
+                raw_heading = pb.group(2).strip()
+
+        if h_level is not None:
             plain, iranges = _parse_inline_formatting(raw_heading, apply_underlines)
             itext = plain + "\n"
             requests.append({"insertText": {"location": {"index": cursor}, "text": itext}})
             requests.append({
                 "updateParagraphStyle": {
                     "range": {"startIndex": cursor, "endIndex": cursor + len(itext)},
-                    "paragraphStyle": {"namedStyleType": HEADING_STYLES[level]},
+                    "paragraphStyle": {"namedStyleType": HEADING_STYLES[h_level]},
                     "fields": "namedStyleType",
                 }
             })
+            # Apply underline across the full heading if it was [U]-wrapped as a whole
+            if apply_underlines and heading_is_new:
+                req = _inline_style_req(cursor, cursor + len(itext) - 1, "underline")
+                if req:
+                    requests.append(req)
             for (s, e, t) in iranges:
                 req = _inline_style_req(cursor + s, cursor + e, t)
                 if req:

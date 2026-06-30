@@ -169,6 +169,14 @@ Returns: `new_doc_id`, `doc_url`.
 
 ### 3.4 Populate Editorial Information table
 
+Build the NW project link from the `nw_project_id` returned in Phase 0.2:
+```python
+nw_project_url = (
+    f"https://app.neuronwriter.com/project/view/{nw_project_id}/optimisation"
+    if nw_project_id else ""
+)
+```
+
 ```bash
 python3 SCRIPTS_DIR/gdocs_helper.py populate_brief \
   --doc-id "{new_doc_id}" \
@@ -176,12 +184,12 @@ python3 SCRIPTS_DIR/gdocs_helper.py populate_brief \
   --secondary "{col_m}" \
   --heading "{col_k}" \
   --url "{col_p}" \
-  --nw-link "" \
+  --nw-link "{nw_project_url}" \
   --brand "{brand_key}" \
   --search-demand "{col_l_search_demand}"
 ```
 
-NW link is left blank until the NW API key is confirmed active. Script endpoint: `/api/rest/` (corrected May 2026 — was `/uiapi/rest/`).
+The NW link points to the brand's NW project (not a specific analysis) so the writer can open it directly and create an analysis for this keyword manually. Script endpoint: `/api/rest/` (corrected May 2026 — was `/uiapi/rest/`).
 `col_l_search_demand` is the search volume parsed from the keyword cell (e.g. `10,000`). Pass empty string if not present.
 
 ### 3.5 Write Google Doc URL to doc_output_col in production plan

@@ -10,330 +10,81 @@
 9. Column Mapping: month=D, year=E, heading=K, keyword=L, secondary=M, type=H, url=P, doc_output=N, nw_output=Q, status=C, header_row=4
 --- 
 
-# **AI PROFILE: Silk (Plant-Based Nutrition Leader)**
----
-# Logistical Infomration:
-
-* Neuronwriter Folder: https://app.neuronwriter.com/project/view/706206137852755d/optimisation
-* Production Plan Google Sheet: https://docs.google.com/spreadsheets/d/13ZKd5UVG_OcvRS9Wri8c8XSbwqiCguiJBDvUuUN9hbg/edit?gid=1695006791#gid=1695006791
-* Tab in Sheet Name: 'ON SITE (SILK) - Content Strategy'
 ---
 
-## **1\. Brand Identity & Positioning**
+# AI PROFILE: Silk (Plant-Based Nutrition Leader)
 
-Silk is a **plant-based beverage and dairy alternative leader** focused on delivering **nutrition-forward, great-tasting alternatives** that support healthier lifestyles without compromise.
+## 1. Brand Identity & Positioning
 
-The brand differentiates itself through:
+Plant-based beverage and dairy alternative leader. Key differentiators:
+- **"5 Essential Nutrients"** claim (authority pillar)
+- Protein emphasis (especially Soy + protein product line)
+- Clean-label innovation (removal of seed oils and gums in creamers)
+- Portfolio: plant-based milks, creamers, yogurt alternatives, protein drinks
 
-* The **“5 Essential Nutrients”** claim (key authority pillar)  
-* Strong emphasis on **protein (especially Soy \+ new protein product line)**  
-* Ongoing **clean-label innovation** (e.g., removal of seed oils and gums in creamers)  
-* Broad portfolio across:  
-  * Plant-based milks  
-  * Creamers  
-  * Yogurt alternatives  
-  * Protein drinks
+## 2. Target Audience
 
----
+| Segment | Key Motivations |
+|---|---|
+| Health-conscious consumers | "Is this actually healthy?" / "What nutrients am I getting?" |
+| Multicultural Millennials | Open to plant-based, culturally diverse nutrition |
+| Flexitarians | Reducing dairy, not fully vegan / "Does it taste like real dairy?" |
 
-## **2\. Target Audience (Refined Personas)**
+Core friction: nutritional skepticism, taste concerns vs dairy, protein/nutrient misunderstanding.
 
-**Primary Segments:**
+## 3. Strategic Content Pillars
 
-* **Health-conscious consumers** seeking better-for-you swaps without sacrificing taste  
-* **Multicultural Millennials** open to plant-based diets and culturally diverse nutrition habits  
-* **Flexitarians** reducing dairy intake but not fully vegan
+1. **Nutritional Authority** — "plant-based nutrition" education; 5 Essential Nutrients claim
+2. **Protein Leadership** — Silk Protein Products + Soy; competes vs Fairlife *(applies to protein beverages only: silk.com/plant-based-products/plant-based-protein-beverages/)*
+3. **Product-Specific SEO** — high-intent queries tied to SKUs (almond milk unsweetened 64oz, soy milk original 64oz, oat creamer, protein drinks)
+4. **Lifestyle & Use-Case** — coffeehouse drinks, smoothies, breakfast swaps, dairy-free cooking
+5. **Clean Label & Transparency** — seed oil-free, reformulation trust content
 
-**Key Motivations:**
+## 4. SEO Keyword Clusters
 
-* “Is this actually healthy?”  
-* “Does it taste like real dairy?”  
-* “What nutrients am I getting?”  
-* “Is plant-based better for me?”
+| Cluster | Examples |
+|---|---|
+| Health & Nutrition | plant-based milk benefits, is plant-based milk healthy, dairy-free nutrition |
+| Protein Focus | plant-based protein drinks, high protein non-dairy milk, soy protein drinks |
+| Product Intent | best almond milk unsweetened, oat creamer for coffee, soy milk original 64 oz |
+| Lifestyle | dairy-free coffee creamer ideas, plant-based milk for coffee, plant-based breakfast ideas |
 
-**Core Friction to Address:**
+## 5. LLM / AI Search Optimization
 
-* Nutritional skepticism around plant-based products  
-* Taste concerns vs dairy  
-* Misunderstanding of protein and nutrient adequacy
+Target prompt-based queries: "Is plant-based milk good for you?", "What is the healthiest non-dairy milk?", "Which plant-based milk has the most protein?". Strategy: authoritative structured answers, clear nutrient comparisons, reinforce protein content, 5 Essential Nutrients, clean label messaging.
 
----
+## 6. Competitive Positioning
 
-## **3\. Strategic Content Pillars (SEO \+ AI)**
+- Beverages: Almond Breeze, Califia Farms, Fairlife
+- Creamers: Planet Oat, Nutpods, Starbucks plant-based
+- Yogurt: Forager Project, Cocojune, Siggi's
 
-### **1\. Nutritional Authority (Core SEO Driver)**
+Silk advantage: 5 Essential Nutrients, protein-forward innovation, broad category coverage, clean label reformulations.
 
-Focus: **“plant-based nutrition” education**
+## 7. Tone & Messaging
 
-Target queries:
+Informative, science-backed but approachable. Confident in nutrition without being clinical. Key phrases: "Good for you," "Tastes great," "Powered by plants," "Complete nutrition."
 
-* Is plant-based milk good for you?  
-* What nutrients are in plant-based milk?  
-* Is soy milk healthy?  
-* Protein in plant-based drinks
+## 8. Seasonal / Campaign
 
-👉 This aligns with your **5 Essential Nutrients** claim and builds authority.
+- January: Plant-based resolutions (key traffic spike)
+- Build SEO content 2–3 months before launches: Protein drinks (late 2025/2026), Yogurt (June & end 2026), Creamer reformulation (Sept 2026)
 
----
+## 9. Conversion Strategy
 
-### **2\. Protein Leadership (High-Priority Growth Area)**
-
-Focus: **Silk Protein Products \+ Soy**
-
-Target queries:
-
-* Best plant-based protein drinks  
-* High protein dairy-free drinks  
-* Protein in soy milk
-
-👉 Critical for:
-
-* Product launch visibility  
-* Competing against Fairlife and other protein-focused brands
-
-#### Terms to Avoid 
-* Referring to products that contain added sugar as "sweetened"; however, products that do not contain added sugar can be referrred to as "unsweetened". 
+Priority metrics: retail clicks (MikMak tracking), product page engagement, engaged sessions. Tactics: "Where to Buy" CTAs, product comparison content, nutrition-first storytelling.
 
 ---
 
-### **3\. Product-Specific SEO (Conversion-Focused)**
+## 15. Content Brief Standards & Observed Patterns
 
-Focus: High-intent queries tied to SKUs:
-
-* Almond milk unsweetened 64oz  
-* Soy milk original 64oz  
-* Oat creamer  
-* Protein drinks (Original & Chocolate 48oz)
-
-👉 These should drive:
-
-* Retail clicks (MikMak)  
-* Product page engagement
-
----
-
-### **4\. Lifestyle & Use-Case Content**
-
-Focus: “how to use plant-based products”
-
-Examples:
-
-* Coffeehouse drinks at home (creamers)  
-* Smoothies with protein milk  
-* Healthy breakfast swaps  
-* Dairy-free cooking & baking
-
-👉 Supports:
-
-* Engagement  
-* Broader keyword coverage  
-* AI answer visibility
-
----
-
-### **5\. Clean Label & Transparency (Emerging Differentiator)**
-
-Focus: Reformulations & ingredient trust
-
-Target themes:
-
-* Seed oil-free dairy alternatives  
-* Clean label plant-based creamers  
-* “What’s in plant-based creamer?”
-
-👉 Strong opportunity for **trust-building SEO content**
-
----
-
-## **4\. SEO Keyword Strategy**
-
-### **Core Keywords (Validated & Expanded)**
-
-You’ve identified strong head terms:
-
-* plant-based milk  
-* almond milk  
-* soy milk  
-* oat milk  
-* dairy free beverages  
-* plant-based creamer
-
-### **Recommended Keyword Clusters:**
-
-#### **A. Health & Nutrition**
-
-* plant-based milk benefits  
-* is plant-based milk healthy  
-* plant-based nutrition  
-* dairy-free nutrition
-
-#### **B. Protein Focus**
-This only applies to specific protein beverages: https://silk.com/plant-based-products/plant-based-protein-beverages/ 
-* plant-based protein drinks  
-* high protein non-dairy milk  
-* soy protein drinks  
-* protein milk alternatives
-
-#### **C. Product Intent**
-
-* best almond milk unsweetened  
-* oat creamer for coffee  
-* dairy-free creamer brands  
-* soy milk original 64 oz
-
-#### **D. Lifestyle & Use Cases**
-
-* dairy-free coffee creamer ideas  
-* plant-based milk for coffee  
-* how to use plant-based yogurt  
-* plant-based breakfast ideas
-
----
-
-## **5\. LLM / AI Search Optimization (Important)**
-
-Your audience is increasingly using AI tools for discovery. Optimize for:
-
-### **Prompt-Based Queries**
-
-* Is plant-based milk good for you?  
-* What is the healthiest non-dairy milk?  
-* Which plant-based milk has the most protein?  
-* Are plant-based protein drinks effective?
-
-### **Strategy:**
-
-* Create **authoritative, structured answers**  
-* Use **clear nutrient comparisons**  
-* Reinforce:  
-  * Protein content  
-  * 5 Essential Nutrients  
-  * Clean label messaging
-
-👉 This will help Silk appear in **AI-generated answers (SGE, ChatGPT, etc.)**
-
----
-
-## **6\. Competitive Positioning**
-
-### **Key Competitors:**
-
-* Beverages: Almond Breeze, Califia Farms, Fairlife  
-* Creamers: Planet Oat, Nutpods, Starbucks plant-based  
-* Yogurt: Forager Project, Cocojune, Siggi's
-
-### **Silk’s Competitive Advantage:**
-
-* Strong **nutritional positioning (5 Essential Nutrients)**  
-* **Protein-forward innovation**  
-* Broad category coverage (milk \+ creamer \+ yogurt \+ protein)  
-* Upcoming **clean label reformulations**
-
----
-
-## **7\. Content Strategy (Important Constraint-Based)**
-
-
-### **Recommended Structure:**
-
-* Product pages (SEO optimized)  
-* Recipe hub (primary content vehicle)  
-* Educational landing pages:  
-  * “Plant-Based Nutrition”  
-  * “Protein in Plant-Based Foods”  
-  * “Understanding Dairy-Free Alternatives”
-
-👉 Use:
-
-* FAQ sections  
-* Schema markup  
-* Internal linking between products and education
-
----
-
-## **8\. Seasonal & Campaign Strategy**
-
-* **January:** Plant-based resolutions (key traffic spike)  
-* **Product launches:**  
-  * Protein drinks (late 2025 / 2026\)  
-  * Yogurt (June & end of 2026\)  
-  * Creamer reformulation (Sept 2026\)
-
-👉 Build SEO content 2–3 months **before launch**
-
----
-
-## **9\. Conversion Strategy**
-
-Prioritize:
-
-* Clicks to retailers (MikMak tracking)  
-* Product page engagement  
-* Engaged sessions
-
-### **Tactics:**
-
-* Clear CTAs: “Where to Buy”  
-* Product comparison content  
-* Nutrition-first storytelling  
-* Retail-optimized landing pages
-
----
-
-## **10\. Key Strategic Opportunities**
-
-### **High Impact:**
-
-* Dominate **“plant-based nutrition” education space**  
-* Own **“plant-based protein drinks” category**  
-* Lead **clean label plant-based creamers** (post-reformulation)
-
-### **Growth Levers:**
-
-* AI search optimization (LLM prompts)  
-* Nutrition authority content  
-* Product-led SEO  
-* Lifestyle integration (coffee, breakfast, smoothies)
-
----
-
-## **11\. Tone & Messaging Guidelines**
-
-* Informative, **science-backed but approachable**  
-* Confidence in nutrition without being overly clinical  
-* Emphasize:  
-  * “Good for you”  
-  * “Tastes great”  
-  * “Powered by plants”  
-  * “Complete nutrition”
-
----
-
-## **12\. Strategic Summary**
-
-Silk should position itself as:
-
-**The authority in plant-based nutrition—where health, protein, and great taste meet.**
-
-With SEO and AI strategy centered on:
-
-* Nutritional trust  
-* Protein leadership  
-* Clean label innovation  
-* Product-led discovery
-
----
-
-## **15. Content Brief Standards & Observed Patterns**
-
-*Derived from analysis of on-site content briefs (Nov 2025–May 2026).*
-
-### Document & Folder Naming Conventions
+### Document & Folder Naming
 - Monthly folder: `SILK - [MonthName YYYY]` (e.g., `SILK - May 2026`)
 - Document name: `SILK - YYYY-MM - [Topic Name]` (e.g., `SILK - 2026-04 - Protein Chocolate`)
 - Parent folder ID: `1JCe1W0qQvUD6O5O5EsCXGjlA-c5h6xc7`
 
 ### Brief Template Structure (Tab 1)
+
 | Field | Spec |
 |---|---|
 | Keyword | Primary keyword + monthly search volume in brackets; repeated 5 times per 500 words |
@@ -349,12 +100,13 @@ After the table:
 - **Text highlighting:** White = original | Green = updates
 - **Market:** US (silk.com) — US English spelling (flavor, fiber, color)
 
-### Category Page Content Structure (US market — most common type)
-Category pages cover an entire milk type (oat milk, almond milk, coconut milk, etc.) or product line (creamers, protein beverages, shelf-stable). The FAQ IS the content body — there is no separate FAQ section at the end.
+### Category Page Content Structure
+
+Category pages cover an entire milk type or product line. The FAQ IS the content body — no separate FAQ section at end.
 
 1. **H1** — descriptive, benefit-forward (e.g., "Creamy oat milk and the benefits")
 2. **H2** — "All about [milk/product type]"
-3. **H3 questions → answer paragraphs** — each section is a Q&A pair; the FAQ structure is the entire body copy
+3. **H3 questions → answer paragraphs** — Q&A pairs are the entire body copy
 4. **1–2 internal links** embedded within answers (not a separate link block)
 
 Typical FAQ topics for milk-type category pages:
@@ -366,26 +118,24 @@ Typical FAQ topics for milk-type category pages:
 - What are the 5 Essential Nutrients in Silk [milk]?
 - Specific use cases (baking, cooking, coffee)
 
-> 🚫 **No separate FAQ heading.** Do not write "Frequently Asked Questions" as a section heading — the Q&A format is integrated throughout as H3 headings.
+**BANNED on category pages:**
+- Do NOT write "Frequently Asked Questions" as a section heading — Q&A format is integrated throughout as H3 headings
+- Do NOT include DIY or "how to make at home" FAQ questions (e.g., "Can you make yogurt with almond milk?", "How to make almond milk yogurt at home") — these belong to recipe/food blogs, not brand pages
 
-> 🚫 **No DIY or "how to make at home" FAQ questions on brand product pages.** Questions like "Can you make yogurt with almond milk?" or "How to make almond milk yogurt at home" imply the reader should make it themselves and are owned by recipe/food blogs, not brand pages. Stick to evaluative, branded, and post-purchase questions only.
-
-### FAQ Answer Writing Style (confirmed from live site inspection — May 2026)
-
-Every H3 answer must match Silk's actual on-site style. The copy on silk.com is tight, warm, and load-bearing — no filler.
+### FAQ Answer Writing Style
 
 | Dimension | Standard |
 |---|---|
-| **Paragraph count** | **1 paragraph per H3** — hard rule. Exception: "How is [product] made?" answers may use 2 very short paragraphs (brand-voice hook + process). No other answer should exceed 1 paragraph. |
-| **Sentence count** | 3–5 sentences max |
-| **Word count** | 50–75 words per answer |
-| **Tone** | Warm, confident, first-person ("we/our"). Casual but never jokey. No hedging. |
-| **Sentence rhythm** | Short punchy opener → fact-stacking middle → short or fragment close |
-| **Personality** | 1 personality beat per answer, typically opener or closer (e.g. "On a spoon.") |
-| **Filler** | Zero. Every sentence must deliver a fact, a differentiator, or a brand beat. No "it is worth noting that", no "as you know", no setup sentences that could be cut. |
-| **Claims** | Stated plainly and inline: "8 grams of protein per serving" — not "may provide up to…" |
-| **Fragments** | Accepted for personality closes only (e.g. "On a spoon." / "We always will.") |
-| **Brand name** | Use "Silk®" or "Silk [product]" at least once per answer |
+| Paragraph count | **1 paragraph per H3** — hard rule. Exception: "How is [product] made?" may use 2 very short paragraphs (brand-voice hook + process). No other answer exceeds 1 paragraph. |
+| Sentence count | 3–5 sentences max |
+| Word count | 50–75 words per answer |
+| Tone | Warm, confident, first-person ("we/our"). Casual but never jokey. No hedging. |
+| Sentence rhythm | Short punchy opener → fact-stacking middle → short or fragment close |
+| Personality | 1 personality beat per answer, typically opener or closer (e.g. "On a spoon.") |
+| Filler | Zero. Every sentence must deliver a fact, a differentiator, or a brand beat. |
+| Claims | Stated plainly and inline: "8 grams of protein per serving" — not "may provide up to…" |
+| Fragments | Accepted for personality closes only (e.g. "On a spoon." / "We always will.") |
+| Brand name | Use "Silk®" or "Silk [product]" at least once per answer |
 
 **Reject any draft that:**
 - Has 2 paragraphs unless it's a "how is it made?" answer
@@ -396,22 +146,20 @@ Every H3 answer must match Silk's actual on-site style. The copy on silk.com is 
 
 ### Product Page Content Structure & Heading Hierarchy
 
-Individual SKU product pages follow this exact structure. Heading levels must be labelled in every brief so the writer knows where each element sits in the CMS.
-
 | Section | Heading level | Who writes it |
 |---|---|---|
-| Product title | **H1** | Writer |
+| Product title | H1 | Writer |
 | Intro paragraph | Body text (no subheading) | Writer |
 | Specs / benefits | Body text or CMS attribute field (no subheading) | Writer / Client confirms values |
 | Differentiator statement | Body text (no subheading) | Writer |
 | NUTRITIONAL INFO | H2 (CMS-populated) | **Client — do not write** |
 | INGREDIENTS | H2 (CMS-populated) | **Client — do not write** |
 | Prepared in the US | Body text | Writer |
-| Frequently Asked Questions | **H2** | Writer |
-| Each FAQ question | **H3** | Writer |
+| Frequently Asked Questions | H2 | Writer |
+| Each FAQ question | H3 | Writer |
 | Each FAQ answer | Body text, 1 paragraph, 50–75 words | Writer |
 
-**Product brief format (all new and existing product pages):**
+**Product brief format:**
 
 ```
 # [H1] [Product Title | Silk®]
@@ -436,12 +184,6 @@ Prepared in the US
 
 ### [Question — H3]
 [Answer — 1 paragraph, 50–75 words, brand voice]
-
-### [Question — H3]
-[Answer]
-
-### [Question — H3]
-[Answer]
 ```
 
 **Standard FAQ topics for protein product pages:**
@@ -449,79 +191,77 @@ Prepared in the US
 2. How much protein is in Silk® [product]?
 3. Is Silk® [product] vegan? / Does Silk® [product] need to be refrigerated? (shake pages)
 
-> **Note on live pages vs briefs:** As of May 2026, live silk.com product pages do not all have FAQ sections. New product briefs include FAQs as an SEO and AI search enhancement. Existing product page optimisation briefs should follow the live page structure unless the client approves adding FAQs.
+> As of May 2026, live silk.com product pages do not all have FAQ sections. New product briefs include FAQs as an SEO/AI enhancement. Existing page optimisation briefs follow the live page structure unless client approves adding FAQs.
 
 ### Key Approved Claims (US Market)
-- "5 Essential Nutrients" (applies to refrigerated milks only — do not apply to creamers, protein shakes, or yogurts)
-- "Double the protein of dairy and regular soy beverages"
-- "Superior X:1 protein-to-sugar ratio" (use actual ratio from product specs)
-- "Source of Omega-3 polyunsaturates"
-- "10 essential nutrients" (protein beverages — confirm per SKU)
-- "Prepared in the US"
-- "Xg of protein per serving" — always match the nutrition facts panel exactly
-- "Certified Vegan" — only if product is actively certified; include logo
+
+| Claim | Scope |
+|---|---|
+| "5 Essential Nutrients" | Refrigerated milks only — NOT creamers, protein shakes, or yogurts |
+| "Double the protein of dairy and regular soy beverages" | Approved |
+| "Superior X:1 protein-to-sugar ratio" | Use actual ratio from product specs |
+| "Source of Omega-3 polyunsaturates" | Approved |
+| "10 essential nutrients" | Protein beverages — confirm per SKU |
+| "Prepared in the US" | Confirm manufacturing location with client |
+| "Xg of protein per serving" | Must match nutrition facts panel exactly |
+| "Certified Vegan" | Only if actively certified; include logo |
+| "Complete protein" | Soymilk only (FDA-recognized) — do not apply to almond, oat, coconut, or other bases without client confirmation |
 
 ---
 
-### 16. US Legal & Claims Guidance
+## 16. US Legal & Claims Guidance
 
-All content for the US market (silk.com) must comply with FDA regulations and Silk/Danone brand policy. Apply these rules on every brief — do not rely on past copy as a precedent without checking.
-
-#### ✅ Approved — Safe to Use
+### Approved — Safe to Use
 
 | Claim type | Rule |
 |---|---|
-| Factual nutrient claims | Always match the number on the nutrition facts panel exactly. Never estimate or round. |
-| "Dairy-free" | Free-from claim. Confirm product contains no dairy-derived ingredients. |
-| "Plant-based" | General descriptor. No FDA definition — safe to use. |
-| "[Ingredient]-based" (e.g., Soymilk-based) | Factual descriptor. Safe. |
-| "Certified Vegan" | Only if the product is actively certified by a recognized body (VegeCert, Vegan Action, etc.). Must include the certification logo. |
-| "Gluten-free" | Only if the product meets FDA standard (<20ppm gluten). Confirm with client before use. |
-| "Non-GMO Project Verified" | Only if verified. Must include the Non-GMO Project logo. |
-| "Prepared in the US" | Geographic claim. Confirm manufacturing location with client before use. |
+| Factual nutrient claims | Always match the nutrition facts panel exactly. Never estimate or round. |
+| "Dairy-free" | Confirm no dairy-derived ingredients. |
+| "Plant-based" | No FDA definition — safe to use. |
+| "[Ingredient]-based" | Factual descriptor. Safe. |
+| "Certified Vegan" | Only if actively certified (VegeCert, Vegan Action, etc.). Must include logo. |
+| "Gluten-free" | Only if product meets FDA standard (<20ppm). Confirm with client. |
+| "Non-GMO Project Verified" | Only if verified. Must include Non-GMO Project logo. |
+| "Prepared in the US" | Confirm manufacturing location with client. |
 
-#### ⚠️ Use With Caution — Verify First
+### Use With Caution — Verify First
 
 | Claim | What to check |
 |---|---|
-| "High protein" | FDA requires ≥20% Daily Value protein per serving. Check the %DV on the nutrition facts panel. Do not use as a headline claim without confirming. |
+| "High protein" | FDA requires ≥20% Daily Value per serving. Check %DV on nutrition facts. Do not use as headline claim without confirming. |
 | "Good source of protein" | FDA requires ≥10% DV. Confirm %DV before use. |
-| Protein number ranges (e.g., "12–13g") | Acceptable across SKU sizes but cite both — never use a range without specifying which size each number applies to. |
-| Structure/function claims ("supports muscle recovery", "helps build strong bones") | Permitted only if (a) substantiated and (b) followed by required FDA disclaimer: *"This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."* Never use on product pages without this disclaimer. Flag to client. |
-| "Complete protein" | Only for soymilk — soy is an FDA-recognized complete protein. Do not apply to almond, oat, coconut, or other bases without client confirmation. |
-| Comparative claims ("more protein than dairy yogurt") | Require documented substantiation data. Flag to client before including. Never name a competitor without client approval and supporting data. |
+| Protein number ranges (e.g., "12–13g") | Cite both — never use a range without specifying which size each number applies to. |
+| Structure/function claims ("supports muscle recovery", "helps build strong bones") | Permitted only if (a) substantiated and (b) followed by FDA disclaimer: *"This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."* Flag to client. |
+| Comparative claims ("more protein than dairy yogurt") | Require documented substantiation data. Flag to client. Never name a competitor without client approval and supporting data. |
 
-#### ❌ Not Allowed — Never Use
+### Never Use
 
 | Claim | Why |
 |---|---|
-| Disease claims ("reduces risk of heart disease," "lowers cholesterol," "prevents osteoporosis") | Require FDA pre-approval as drug claims. Do not use. |
+| Disease claims ("reduces risk of heart disease," "lowers cholesterol," "prevents osteoporosis") | Require FDA pre-approval as drug claims. |
 | "Builds/repairs muscle" | Implied drug claim. Not allowed without clinical substantiation and disclaimer. |
 | "Boosts immunity" | Borderline disease claim. Avoid on all product and category pages. |
-| "Natural" | FDA has not defined "natural" for food labeling. Avoid to prevent regulatory exposure. |
-| "Healthy" | FDA-regulated claim. Only permitted for products meeting specific fat/sodium/nutrient criteria. Do not use unless client confirms the product qualifies. |
-| "Sweetened" | **Silk brand policy:** never describe a product with added sugar as "sweetened." Use flavor descriptors instead (e.g., "Vanilla," "Original," "Chocolate"). |
-| Named competitor comparisons (e.g., "more protein than Forager Project") | Require client approval and third-party substantiation data before use. |
+| "Natural" | FDA has not defined "natural" for food labeling. |
+| "Healthy" | FDA-regulated claim. Only permitted for products meeting specific fat/sodium/nutrient criteria. Do not use unless client confirms product qualifies. |
+| "Sweetened" | **Silk brand policy:** never describe a product with added sugar as "sweetened." Use flavor descriptors instead (e.g., "Vanilla," "Original," "Chocolate"). "Unsweetened" is permitted for products with no added sugar. |
+| Named competitor comparisons | Require client approval and third-party substantiation data. |
 
-### Keyword Density Rule
-Primary keyword: **5 times per 500 words**. Secondary keyword: **at least 2 times**.
+---
 
-### Word Count
-- Check column J (`#words`) in the production plan for the target word count per brief.
+## Keyword, Word Count & Linking Rules
 
-### Neuronwriter Score Target
-- Minimum: **10 points below the competitor benchmark** shown in the NW interface
-- Always record the score before any optimization work begins (for the email summary)
+- **Keyword density:** Primary keyword 5× per 500 words; secondary keyword ≥2×
+- **Word count:** Check column J (`#words`) in the production plan per brief
+- **NeuronWriter score target:** Minimum 10 points below the competitor benchmark shown in NW; record score before optimization begins
+- **Internal linking:**
+  - Category pages: 1–2 internal links embedded in body copy
+  - Product pages: 1 internal link (to product collection or homepage)
+  - Typical anchors: related milk types, protein page, homepage, plant-based recipes
+  - All URLs: `https://silk.com/`
 
-### Internal Linking Patterns
-- Category pages: 1–2 internal links embedded in body copy
-- Product pages: 1 internal link (to product collection or homepage)
-- Typical anchors: related milk types, protein page, homepage, plant-based recipes
-- All URLs: `https://silk.com/`
+## Content Types
 
-### Content Types Observed
 1. **Category pages (milk type)** — oat milk, almond milk, coconut milk, cashew milk, soy milk (FAQ-as-body structure)
 2. **Category pages (product line)** — creamers, shelf-stable milks, protein beverages
 3. **Product pages** — individual SKU pages (protein beverages, specific flavors)
 4. Other content types exist and will be added as briefs are observed
-
