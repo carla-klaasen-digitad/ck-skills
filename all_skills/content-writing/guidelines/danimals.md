@@ -30,6 +30,9 @@ SEO Brief:
 * Functional benefit: 'Helps provide nutrients most kids are missing while promoting play'
 * Product features: 'Kid-flavorite snacks providing a good source of needed nutrients' 
 
+## Target Audience Persona
+**"The Relatively Healthy Snack Seeker" (Millennial/Gen Z parents, primarily moms):** Always has snacks on hand; embraces good and not-so-good foods as a realist; willing to pay more for brands with naturally sweetened, non-GMO credentials. Wants kid-approved taste AND nutritional reassurance. Danimals is written FOR parents about kids — not written as if talking to kids directly.
+
 ### Principles for Expression: 
 * Delicious proof for parents - fuel healthier childhoods
 * A good source of fun - revel in childhood play 
@@ -77,11 +80,17 @@ to help support strong bones. We don’t use colors or flavors from artificial s
 # Claims 
 ## Product claims 
 SMOOTHIES & POUCHES 
+• #1 Kids' Brand in the US yogurt aisle (cite source before use; validate claim currency with brand partner)
 • Nutrients for growing kids: Calcium, Vitamin D, Fiber 
 • Good source of Calcium, Vitamin D, and Fiber 
 • No artificial sweeteners, flavors, or colors from artificial sources 
 • No high-fructose corn syrup 
 • New and improved formula, Danimals deliciousness
+## Seasonal Notes
+- **Summer:** Peak season; "Danimals Summer of Growth" PR campaign — position as the perfect snack for on-the-go summer activities
+- **Back-to-School (July–Sept):** Primary lunchbox and after-school snack season; lead with convenience and nutrition credentials
+- **Peach flavor:** Launched May 2025 — no longer a launch announcement; treat as an established SKU in the portfolio
+
 ## Descriptive claims 
 SMOOTHIES & POUCHES SMOOTHIES ONLY 
 • Nutrient dense 

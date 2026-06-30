@@ -15,62 +15,52 @@
 9. Column Mapping: month=D, year=E, heading=K, keyword=L, secondary=M, type=H, url=P, doc_output=N, nw_output=Q, status=C, header_row=4
 ---
 
-## **1. Brand Overview**
+## 1. Brand Overview
 
-**Brand:** YoCrunch® (United States)
-**Parent Company:** The YoFarm Company, LLC (owned by Danone North America)
-**Industry Sector:** Dairy / Yogurt with Toppings
-**Market Area:** United States
-**Founded:** 1985
+| Field | Detail |
+|---|---|
+| Brand | YoCrunch® (United States) |
+| Parent | The YoFarm Company, LLC (owned by Danone North America) |
+| Industry | Dairy / Yogurt with Toppings |
+| Market | United States |
+| Founded | 1985 |
 
 **Core Products:**
-
-* YoCrunch Lowfat Yogurt with OREO Cookie Pieces (Vanilla & Strawberry)
-* YoCrunch Lowfat Yogurt with M&M'S / M&M'S MINIS (Vanilla & Strawberry)
-* YoCrunch Lowfat Yogurt with SNICKERS Pieces (Vanilla)
-* YoCrunch Lowfat Yogurt with Chocolate Chip Cookie Dough Pieces (Vanilla, 113g format)
+- YoCrunch Lowfat Yogurt with OREO Cookie Pieces (Vanilla & Strawberry)
+- YoCrunch Lowfat Yogurt with M&M'S / M&M'S MINIS (Vanilla & Strawberry)
+- YoCrunch Lowfat Yogurt with SNICKERS Pieces (Vanilla)
+- YoCrunch Lowfat Yogurt with Chocolate Chip Cookie Dough Pieces (Vanilla, 113g)
 
 **Licensed Topping Partners:**
-* OREO® — Mondelēz International
-* M&M'S® / M&M'S MINIS® — Mars, Inc.
-* SNICKERS® — Mars, Inc.
+- OREO® — Mondelēz International
+- M&M'S® / M&M'S MINIS® — Mars, Inc.
+- SNICKERS® — Mars, Inc.
 
-**Mission (Reflected in Content):**
-Turning snack time into the best time — yogurt made fun with iconic crunchy toppings.
-
----
-
-## **2. Strategic Marketing Objectives (In Order of Priority)**
-
-1. Build organic visibility for "yogurt with toppings" and branded topping queries (US).
-2. Own the indulgent yogurt snacking category online.
-3. Drive retailer clicks and "where to buy" conversions.
-4. Expand non-brand keyword footprint (currently very small — significant SEO opportunity).
-5. Increase engaged sessions on product pages.
+**Brand Mission:** Turning snack time into the best time — yogurt made fun with iconic crunchy toppings.
 
 ---
 
-## **3. Target Audiences**
+## 2. Strategic Marketing Objectives
 
-### **Primary Target — Fun Snackers**
-
-* Age: 18–35
-* Casual snackers seeking indulgence, not nutrition
-* Socially oriented — snacking tied to hangouts, parties, fun moments
-* Brand-loyal to licensed candy/cookie names (OREO, M&M'S, Snickers)
-* Not motivated by health claims or clean-label credentials
-
-### **Secondary Target — Parents**
-
-* Age: 28–45
-* Buying for kids and family snack occasions
-* Drawn to recognizable candy/cookie brand partnerships as a fun treat option
+1. Build organic visibility for "yogurt with toppings" and branded topping queries (US)
+2. Own the indulgent yogurt snacking category online
+3. Drive retailer clicks and "where to buy" conversions
+4. Expand non-brand keyword footprint (currently small — significant SEO opportunity)
+5. Increase engaged sessions on product pages
 
 ---
 
-## **4. Consumer Search & Education Focus**
+## 3. Target Audiences
 
-### **Priority Non-Brand Keywords (Pillar)**
+**Primary — Gen Alpha Tweens (8–12) and Gen Z Teens (13–18):** On-the-go and rambunctiously active; seeking fun, treat-like snacks; brand-loyal to OREO and M&M'S; socially influenced; balancing all-day energy with snack exploration. Persona: "Rambunctiously On-The-Go" / "Larger-Than-Life Enthusiasm" / "Curiously Carefree."
+
+**Secondary — Parents (Millennial / Gen X, 28–45):** Purchasing for kids; want permissible indulgence that balances fun with better-for-you credentials; reassured by recognizable brand partnerships (OREO®, M&M'S®).
+
+---
+
+## 4. Consumer Search & Education Focus
+
+### Priority Non-Brand Keywords
 
 | Keyword | Est. Volume | Priority |
 |---|---|---|
@@ -85,209 +75,145 @@ Turning snack time into the best time — yogurt made fun with iconic crunchy to
 | yogurt flavors | 2,900/mo | Medium (SGE rank held) |
 | yogurt with cookies | — | Medium |
 
-### **Brand Keywords (Already Ranking)**
+**Brand Keywords (Already Ranking):** yocrunch, yocrunch oreo, yocrunch oreo yogurt, yocrunch yogurt, yocrunch twix
 
-* yocrunch
-* yocrunch oreo
-* yocrunch oreo yogurt
-* yocrunch yogurt
-* yocrunch twix
-
-### **Core Content Pillar:**
-YoCrunch is the only yogurt built around licensed candy and cookie toppings. Content should reinforce the crunch experience, fun positioning, and the recognizable topping brands.
+**Core Content Pillar:** YoCrunch is the only yogurt built around licensed candy and cookie toppings. Content reinforces the crunch experience, fun positioning, and recognizable topping brands.
 
 ---
 
-## **5. Competitive Landscape (Internal Reference Only)**
+## 5. Competitive Landscape (Internal Reference Only)
 
-### **Organic Search Competitors (SE Ranking)**
+**Primary brand competitors:** Chobani Flip (#1 direct format competitor), Yoplait/Go-GURT Mix Ins (#2), Private Label store-brand mix-ins (#3)
 
-* letsyoyogurt.com
-* yocream.com
-* yofactoryyogurt.com
-* yoplait.ca
-* danimals.com
+**Organic search competitors:** letsyoyogurt.com, yocream.com, yofactoryyogurt.com, yoplait.ca, danimals.com
 
-⚠️ Do NOT mention competitors in public-facing content.
+**Do NOT mention competitors in public-facing content.**
 
 ---
 
-## **6. Key Differentiators (Must Be Reinforced)**
+## 5b. Upcoming Product Direction (2025–2026)
 
-1. Only yogurt brand built around licensed candy and cookie topping partnerships (OREO, M&M'S, Snickers, Chips Ahoy)
-2. 40+ year heritage — founded 1985 as the YoFarm Yogurt Company
+- **Protein callout:** Front-of-pack protein bug coming ("Xg protein per serving") — when live, include in product page feature bullets
+- **Priority focus products:** YoCrunch with M&M'S® and YoCrunch with OREO® are the primary featured lines; Snickers and Cookie Dough remain in the portfolio but are secondary SEO priority
+- **Future seasonal:** Easter and Valentine's Day limited-edition packaging being evaluated for future years
+
+## 6. Key Differentiators
+
+1. Only yogurt brand built around licensed candy/cookie topping partnerships (OREO, M&M'S, Snickers, Chips Ahoy)
+2. 40+ year heritage — founded 1985
 3. Backed by Danone North America
-4. Fun, indulgent positioning in a category dominated by health messaging
+4. Fun, indulgent positioning in a health-dominated category
 5. OU Kosher certified
 
 ---
 
-## **7. Editorial Tone & Style**
+## 7. Editorial Tone & Style
 
-### **Tone to Use**
+**Use:** Playful, energetic, fun and hype-forward, celebratory, youthful, snack-occasion focused
 
-* Playful
-* Energetic
-* Fun and hype-forward
-* Celebratory
-* Youthful
-* Snack-occasion focused
-
-### **Tone to Avoid**
-
-* Health-forward or wellness-oriented
-* Clinical
-* Moralizing about food choices
-* Exaggerated superlatives ("the best", "number one")
-* Overly promotional
+**Avoid:** Health-forward, wellness-oriented, clinical, moralizing, exaggerated superlatives ("the best," "number one"), overly promotional
 
 Do not position YoCrunch as a health food. It is an indulgent snack that happens to be yogurt.
 
 ---
 
-## **8. Vocabulary Guidelines**
+## 8. Vocabulary Guidelines
 
-### **Preferred Terms**
+**Preferred:** crunch / crunchy, snack time / snacking, toppings, fun / flavor-packed / flavor-forward, iconic (for licensed topping brands), lowfat yogurt, good source of calcium / vitamin D (when accurate), live and active cultures
 
-* Crunch / crunchy
-* Snack time / snacking
-* Toppings
-* Fun / flavor-packed / flavor-forward
-* Iconic (when referencing licensed topping brands)
-* Lowfat yogurt
-* Good source of calcium / vitamin D (when nutritionally accurate)
-* Live and active cultures
+**Never use:** healthy (as product descriptor), best (superlative), wholesome, guilt-free, clean label, natural, nutritious
 
-### **Words to Avoid or Exclude**
-
-Never Use:
-* Healthy (as a product descriptor)
-* Best (as a superlative claim)
-* Wholesome
-* Guilt-free
-* Clean label
-* Natural
-* Nutritious (this brand does not lead with nutrition)
-
-Do not make health outcome claims. Vitamin D and Calcium mentions are acceptable when presented as factual nutritional information, not health promises.
+Vitamin D and Calcium mentions are acceptable as factual nutritional information — not health promises. Do not make health outcome claims.
 
 ---
 
-## **9. Compliance & Mandatory Inclusions**
+## 9. Compliance & Mandatory Inclusions
 
-All content must:
+- Use registered trademark symbols: OREO®, M&M'S®, SNICKERS®, Chips Ahoy®
+- Reference nutritional claims accurately: "Excellent Source of Vitamin D" only for 170g products; "Good Source" for 113g Cookie Dough format
+- Do not imply gluten-free — products with OREO and Chips Ahoy contain wheat
+- Do not imply nut-free — Snickers contains peanuts; cross-contamination risk exists across line
+- OU Kosher certification: mention only when relevant
+- Standard FDA nutritional claim language applies
 
-* Use registered trademark symbols for licensed brand names: OREO®, M&M'S®, SNICKERS®, Chips Ahoy®
-* Reference nutritional claims accurately (e.g., "Excellent Source of Vitamin D" only for 170g products; "Good Source" for 113g Cookie Dough format)
-* Not imply YoCrunch is gluten-free — products with OREO and Chips Ahoy contain wheat
-* Not imply nut-free status — Snickers contains peanuts; cross-contamination risk exists across line
-* Reflect OU Kosher certification only when relevant
-* Standard FDA nutritional claim language applies
-
-**Allergen awareness (for product copy):**
-* Always check: milk (all products), soy (all), wheat (OREO, Cookie Dough, Chips Ahoy), peanuts (Snickers)
-* Never claim any variety is nut-free or allergen-free
-
----
-
-## **10. Seasonality Strategy**
-
-High Focus Periods:
-* Summer (snacking season, social occasions)
-* Back-to-school (family snack purchases)
-* Holidays (gifting, party snacking, variety packs)
-
-Lower Focus:
-* January (health reset month — brand positioning conflicts with "new year, new you" messaging)
+**Allergen awareness (product copy):**
+- Milk: all products
+- Soy: all products
+- Wheat: OREO, Cookie Dough, Chips Ahoy
+- Peanuts: Snickers
+- Never claim any variety is nut-free or allergen-free
 
 ---
 
-## **11. Content Structure Requirements**
+## 10. Seasonality Strategy
 
-### **Product Pages**
-
-* SEO-optimized H1 (include product + topping name)
-* Intro paragraph — 2–3 sentences; lead with the crunch/fun experience, mention the licensed topping brand
-* Feature bullets (3–5):
-  * **That Signature Crunch** — describe the topping texture experience
-  * **[Topping Brand]® Toppings** — reference the licensed candy/cookie brand
-  * **Lowfat Yogurt** — factual base description
-  * **Good Source of Calcium** (or Vitamin D where applicable)
-  * **Live & Active Cultures** — mention yogurt cultures without making a health claim
-* FAQ section — exactly **3 questions** per product page
-  * Cover: allergens, topping brand authenticity, serving/storage
-* Trademark disclosure line at bottom: "OREO® and OREO Wafer Design are registered trademarks of Mondelēz International, used under license." (or equivalent for Mars brands)
-
-### **Blog / Recipe Articles**
-
-* Fun and occasion-driven (snack night, game day, party ideas)
-* Feature the crunch and flavor experience
-* Include recipe ideas that use YoCrunch as a base or topping ingredient
-* Educational tone is not appropriate for this brand — keep it light and fun
-
-### **Category / Landing Pages**
-
-* Lead with the crunch and topping variety
-* Mention all active product lines
-* Include "Where to Buy" CTA
+| Period | Focus |
+|---|---|
+| Summer | High — snacking season, social occasions |
+| Back-to-school | High — family snack purchases |
+| Halloween (Sept–Oct) | High — limited-edition seasonal packaging on 4-packs; lead with fun/treat energy |
+| Holiday (Nov–Dec) | High — limited-edition seasonal packaging on 4-packs; gifting, party snacking, variety packs |
+| January | Low — health reset messaging conflicts with brand positioning |
 
 ---
 
-## **12. Emotional & Brand Perception Goals**
+## 11. Content Structure Requirements
 
-The reader should feel:
+### Product Pages
+- SEO-optimized H1 (include product + topping name)
+- Intro paragraph — 2–3 sentences; lead with crunch/fun, mention licensed topping brand
+- Feature bullets (3–5):
+  - **That Signature Crunch** — topping texture experience
+  - **[Topping Brand]® Toppings** — licensed candy/cookie brand reference
+  - **Lowfat Yogurt** — factual base description
+  - **Good Source of Calcium** (or Vitamin D where applicable)
+  - **Live & Active Cultures** — without health claims
+- FAQ — exactly 3 questions: allergens, topping brand authenticity, serving/storage
+- Trademark disclosure at bottom: "OREO® and OREO Wafer Design are registered trademarks of Mondelēz International, used under license." (or equivalent for Mars brands)
 
-* Excited about snacking
-* Delighted by the topping/yogurt combo
-* Like snacking is a fun, celebratory moment
-* No guilt, no judgment
+### Blog / Recipe Articles
+- Fun and occasion-driven (snack night, game day, party ideas)
+- Feature crunch and flavor experience
+- Recipe ideas using YoCrunch as base or topping ingredient
+- Keep light and fun — educational tone is off-brand
 
-The brand should be perceived as:
-
-* Fun and playful
-* Indulgent but not excessive
-* Innovative (branded topping partnerships)
-* Trustworthy (Danone backing, OU Kosher)
-
----
-
-## **13. Level of Detail**
-
-Low to Medium.
-
-* Keep copy punchy and fun — long explanatory blocks are off-brand.
-* Lead with flavor experience and crunch.
-* Save nutritional details for product spec sections, not the intro.
-* Avoid academic or clinical language entirely.
+### Category / Landing Pages
+- Lead with crunch and topping variety
+- Mention all active product lines
+- Include "Where to Buy" CTA
 
 ---
 
-## **14. Conversion Strategy**
+## 12. Brand Perception Goals
 
-Primary Conversions:
-* Retailer clicks ("Where to Buy")
-* Product page engagement
+Reader should feel: excited about snacking, delighted by topping/yogurt combo, snacking is celebratory — no guilt, no judgment.
 
-Secondary Conversions:
-* Brand recall in indulgent snacking category
-* Topping brand cross-recognition (OREO fans → YoCrunch OREO)
-
-Content should lead with fun and flavor, then guide naturally to a purchase action.
+Brand perceived as: fun and playful, indulgent but not excessive, innovative (branded topping partnerships), trustworthy (Danone, OU Kosher).
 
 ---
 
-## **15. Content Brief Standards & Observed Patterns**
+## 13. Level of Detail
 
-*To be filled in once actual content briefs from Drive have been reviewed.*
+Low to medium. Punchy and fun — long explanatory blocks are off-brand. Lead with flavor and crunch. Nutritional details go in product spec sections only.
 
-### Document & Folder Naming Conventions
-- TBD — follow format of other Danone brands: `YOCRUNCH - [YYYY-MM] - [Topic Name]`
+---
 
-### Brief Template Structure
-- TBD — template doc to be created
+## 14. Conversion Strategy
 
-### Keyword Density Rule
-- Primary keyword: 5 times per 500 words. Secondary keyword: at least 2 times.
+**Primary:** Retailer clicks ("Where to Buy"), product page engagement  
+**Secondary:** Brand recall in indulgent snacking category; topping brand cross-recognition (OREO fans → YoCrunch OREO)
+
+---
+
+## 15. Content Brief Standards
+
+### Document & Folder Naming
+- Follow Danone brand format: `YOCRUNCH - [YYYY-MM] - [Topic Name]`
+- Template doc: TBD
+
+### Keyword Density
+- Primary keyword: 5 times per 500 words
+- Secondary keyword: at least 2 times
 
 ### Neuronwriter Score Target
 - TBD — pending Neuronwriter project setup
@@ -301,53 +227,17 @@ Content should lead with fun and flavor, then guide naturally to a purchase acti
 
 ---
 
-## **16. Keyword Research**
+## 16. Keyword Research
 
 ### Keywords to Include
-
-yogurt with toppings
-oreo yogurt
-m&m yogurt
-crunch yogurt
-yogurt with candy
-snickers yogurt
-cookie yogurt
-yogurt snacks
-yogurt flavors
-yogurt with cookies
-chips ahoy yogurt
-yogurt snacks for adults
-yogurt cups with toppings
-candy yogurt
-fun yogurt snacks
+yogurt with toppings, oreo yogurt, m&m yogurt, crunch yogurt, yogurt with candy, snickers yogurt, cookie yogurt, yogurt snacks, yogurt flavors, yogurt with cookies, chips ahoy yogurt, yogurt snacks for adults, yogurt cups with toppings, candy yogurt, fun yogurt snacks
 
 ### Keywords to Exclude
-
-Yoplait
-Danimals
-Let's Yo
-YoCream
-YoFactory
-chobani
-activia
-oikos
-light and fit
-siggi's
-siggis
-greek yogurt
-vegan yogurt
-dairy free yogurt
-plant based yogurt
-frozen yogurt
-probiotic yogurt
-organic yogurt
-low sugar yogurt
-kefir
+Yoplait, Danimals, Let's Yo, YoCream, YoFactory, chobani, activia, oikos, light and fit, siggi's, siggis, greek yogurt, vegan yogurt, dairy free yogurt, plant based yogurt, frozen yogurt, probiotic yogurt, organic yogurt, low sugar yogurt, kefir
 
 ### Competitor URLs
-
-https://www.letsyoyogurt.com
-https://www.yocream.com
-https://www.yofactoryyogurt.com
-https://www.yoplait.ca
+https://www.letsyoyogurt.com  
+https://www.yocream.com  
+https://www.yofactoryyogurt.com  
+https://www.yoplait.ca  
 https://www.yodelightfrozenyogurt.com
