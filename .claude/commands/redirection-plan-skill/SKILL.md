@@ -69,7 +69,7 @@ Upload to the same Google Drive folder as the audit. Apply standard formatting: 
 | Target Status | `VALIDATED (200)` / `INVALID (404)` / `REDIRECT CHAIN` / `NOT CHECKED` |
 | Match Confidence | `Exact` / `Chain` / `Keyword` / `Semantic` / `Category` / `Fallback` / `REVIEW` |
 | Priority | `High` / `Medium` / `Low` |
-| Notes | Reasoning, flags, match rationale — blank if no additional context |
+| Notes | **Required for T3/T4/T5/T6 matches** — always write why this target was chosen (e.g. "Keyword match: both slugs share 'vanilla' + 'greek'"; "Semantic: discontinued light line → closest equivalent is regular nonfat"; "Category fallback: no equivalent product found in live URLs"). For T1/T2: leave blank unless flagging an issue. |
 
 ---
 
@@ -122,6 +122,7 @@ Classify these patterns immediately before running the matching pipeline:
 | URL hostname contains `dev.`, `staging.`, `test.`, or `uat.` | `Block via robots.txt` |
 | URL returns 200 (false positive in the import) | `No action` |
 | URL is in a redirect chain ending at 200 with ≥ 2 hops | `Flatten Redirect Chain` — resolve in Phase 2 T2 |
+| URL is in a redirect chain that never resolves to a 200 (chain ends in 404 or loops) | `301 Redirect` — treat as a standard broken URL; run the full T1–T6 matching pipeline |
 | URL is a CMS soft 404 (returns 200, confirmed as placeholder) | `Soft 404 — Leave as-is` |
 
 All remaining URLs: assign `301 Redirect` and continue to Phase 2.
@@ -162,9 +163,12 @@ Note: also applied to rows classified as `Flatten Redirect Chain` in Phase 1.
 **T3 — Slug keyword match**
 Parse live URLs into keyword sets (same stop-word removal). Find live URLs where:
 - The broken URL's type anchor appears in the live URL slug, AND
-- At least one additional content word overlaps.
+- At least **two** non-stop-word tokens overlap in total (the type anchor counts as one — you need at least one additional specific qualifier word, not just another generic term).
 
 If multiple candidates: rank by total keyword overlap count, pick the highest.
+
+**Minimum overlap guard:** if the best T3 candidate matches only on the type anchor with no specific qualifier overlap (e.g. the only shared token is `yogurt`), the match is too loose — skip to T4 instead.
+
 Match confidence: `Keyword`
 
 **T4 — Semantic match**
@@ -172,6 +176,9 @@ Apply semantic judgment: identify what product or content the broken URL represe
 
 Subcategory bridging is allowed within the same type. See REFERENCE.md for examples.
 Flag as `REVIEW` if the match bridges distinctly different sub-brands or audiences.
+
+**T4 fail-fast condition:** if the brand has discontinued an entire product line with no equivalent remaining in the live URLs (e.g. all flavors of a discontinued sub-brand are gone), do not force a semantic stretch to an unrelated product. Prefer T5 (parent category) over a wrong T4 target. A correct fallback is better than a plausible-but-wrong recommendation.
+
 Match confidence: `Semantic`
 
 **T5 — Parent category match**

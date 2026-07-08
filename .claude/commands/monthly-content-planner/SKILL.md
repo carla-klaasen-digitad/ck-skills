@@ -311,7 +311,7 @@ If the API call fails: log `[WARN] Validation skipped for {brand} row {row_index
 
 ## Phase 5 — Content Generation (per row)
 
-Use the Claude API (claude-opus-4-7 or claude-sonnet-4-6) via Bash to generate the optimised content.
+Use the Claude API (claude-opus-4-8 or claude-sonnet-4-6) via Bash to generate the optimised content.
 
 ### 5.0 Load brand guidelines
 
@@ -447,7 +447,7 @@ import anthropic, sys, os
 client = anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY', ''))
 prompt = open(sys.argv[1]).read()
 msg = client.messages.create(
-    model='claude-opus-4-7',
+    model='claude-opus-4-8',
     max_tokens=8000,
     messages=[{'role': 'user', 'content': prompt}]
 )

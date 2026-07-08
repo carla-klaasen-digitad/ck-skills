@@ -756,7 +756,7 @@ Write feedback value into the `Feedback` column of the session row from 5.1. Fla
 
 After completing Phase 5.1–5.7, upload a copy of this session's log file to the Drive folder `DRIVE_SESSION_LOGS_FOLDER` under the parent `DRIVE_PARENT_FOLDER_ID`.
 
-1. Use the Google Drive MCP (`mcp__google_drive__create_file` or equivalent) to upload the log file.
+1. Use the Google Drive MCP (`mcp__claude_ai_Google_Drive__create_file`) to upload the log file.
 2. Name the Drive copy identically to the local log filename: `YYYY-MM-DD_HH-MM_[skill-name]_watchdog.md`.
 3. If upload fails (Drive MCP unavailable, auth error, etc.): log `[WARN] — Drive sync failed for session log: [path]. Log remains local only. Retry with /skill-watchdog apply-feedback or sync manually.` Do NOT block session close on upload failure.
 4. If upload succeeds: log `[INFO] — Session log synced to Drive: [filename].`
