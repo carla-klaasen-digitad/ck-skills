@@ -39,7 +39,7 @@ FEEDBACK_WATCH_INTERVAL     = 30m   # local cron poll interval for feedback inbo
 # Slack notification config
 # For a DM to yourself: go to your Slack profile → click "..." → Copy member ID (starts with U)
 # That member ID is your DM channel identifier (e.g. U01A2BCDE3F)
-SLACK_DM_TARGET             = [your-slack-member-id]   # e.g. U01A2BCDE3F
+SLACK_DM_TARGET             = U09QUDX6U83
 SLACK_NOTIFICATIONS         = end-of-session            # options: disabled | critical-only | all-flags | end-of-session
 ```
 
