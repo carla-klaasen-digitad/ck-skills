@@ -1,7 +1,7 @@
 ---
 name: on-page-strategy
 description: Use when building an SEO on-page content production plan for a brand. Reads a keyword research Google Sheet and writes a prioritized content plan into a production plan Google Sheet. Priority order: category pages → product pages → discovery content (recipes, blog). Skips pages already ranking top 2. Calls /global-seo-skill for SEO knowledge gaps. Trigger phrases: "build the production plan", "fill the content strategy", "on-page strategy", "content production plan", "write the production plan", "SEO content plan", "on-page content strategy".
-allowed-tools: Bash, Read, Write, Edit
+allowed-tools: Bash, Read, Write, Edit, mcp__se-ranking__authenticate, mcp__se-ranking__DATA_getSimilarKeywords, mcp__se-ranking__DATA_getDomainKeywords
 ---
 
 # On-Page Content Strategy Skill

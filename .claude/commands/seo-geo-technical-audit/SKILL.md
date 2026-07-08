@@ -497,13 +497,13 @@ The workbook (Google Sheet) is a mandatory deliverable — it cannot be bypassed
 
 After the workbook is confirmed, prompt the user for the **Comments for Claude feedback step**:
 
-"The Google Sheet is ready. Please open it now and add any corrections, context, or notes in column S (Comments for Claude) for any rows you'd like me to review. You can write things like: 'Score should be High not Medium — we fixed this last month', 'Add more detail to the fix steps', or 'This element is not relevant for this client'. When you're done adding comments, type **comments added** and I'll read column S and apply the necessary adjustments."
+"The Google Sheet is ready. Please open it now and add any corrections, context, or notes in column R (Comments for Claude) for any rows you'd like me to review. You can write things like: 'Score should be High not Medium — we fixed this last month', 'Add more detail to the fix steps', or 'This element is not relevant for this client'. When you're done adding comments, type **comments added** and I'll read column R and apply the necessary adjustments."
 
 Wait for the user to type **comments added** (or confirm no comments). Then:
 
-1. Use the Google Sheets MCP (`mcp__google-sheets__readSpreadsheet`) to read column S of the audit tab.
-2. Identify every row where column S is non-empty.
-3. For each such row: parse the comment, determine what adjustment is requested (score change, explanation update, priority change, how-to revision, etc.), and apply the change directly to the corresponding cell in the sheet using the MCP write tools.
+1. Read all non-empty rows from column R using gspread: `python3 -c "import gspread, json; gc = gspread.service_account(filename='scripts/service-account.json'); ws = gc.open_by_key('SHEET_ID').worksheet('Audit'); vals = ws.col_values(18); print(json.dumps([(i+5, v) for i, v in enumerate(vals[4:]) if v.strip()]))"` — substituting the actual spreadsheet ID. Column R is column index 18 (1-based) in gspread.
+2. Identify every row where column R is non-empty.
+3. For each such row: parse the comment, determine what adjustment is requested (score change, explanation update, priority change, how-to revision, etc.), and apply the change directly to the corresponding cell in the sheet using gspread write calls.
 4. After applying all adjustments, output a summary table:
 
 ```
@@ -513,7 +513,7 @@ COMMENTS FOR CLAUDE — ADJUSTMENTS APPLIED
 |---|---|---|---|
 ```
 
-5. If skill-watchdog is active this session: pass all column S comments to the watchdog for Phase 5 skill registry update. The watchdog logs these as improvement signals — patterns in the comments indicate where the scoring logic, reference thresholds, or output templates can be improved in future versions.
+5. If skill-watchdog is active this session: pass all column R comments to the watchdog for Phase 5 skill registry update. The watchdog logs these as improvement signals — patterns in the comments indicate where the scoring logic, reference thresholds, or output templates can be improved in future versions.
 
 After the feedback loop is complete, ask: "Ready to generate the HTML client report?" Load OUTPUTS-HTML.md before proceeding. The HTML report is a mandatory deliverable — it cannot be bypassed or deferred silently. If the user defers it, record the deferral explicitly.
 

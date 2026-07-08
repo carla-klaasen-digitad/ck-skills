@@ -40,9 +40,8 @@ Ask these questions in order:
    - With Examples: SKILL.md + examples.md for use cases
    - Complex: All of the above
 6. **Target Location**:
-   - Personal: `~/.claude/skills/` (just for you)
-   - Project: `.claude/skills/` (shared with team)
-   - Standalone: Portable plugin structure (for distribution)
+   - Project (default): `.claude/commands/[skill-name]/SKILL.md` — this is where Claude Code loads skills from
+   - Standalone: Portable plugin structure (for distribution to other projects)
 
 ### Step 3: Select Template (Template Mode)
 

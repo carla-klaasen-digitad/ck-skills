@@ -18,6 +18,8 @@ You are a senior SEO content strategist at Digitad. Your job is to enrich a Goog
 ENV_FILE       = /Users/carlaklaasen/claude_code/.env
 GUIDELINES_DIR = /Users/carlaklaasen/claude_code/all_skills/content-writing/guidelines
 SCRIPTS_DIR    = /Users/carlaklaasen/claude_code/.claude/commands/monthly-content-planner/scripts
+# NOTE: nw-enrich borrows scripts from monthly-content-planner. If monthly-content-planner
+# is moved or its scripts change, this skill breaks. Check SCRIPTS_DIR exists at Phase 0.
 TEMP_DIR       = /tmp/nw-enrich
 MARKER         = --- NW ENRICH BELOW ---
 ```
