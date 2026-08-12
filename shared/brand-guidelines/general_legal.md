@@ -1,207 +1,65 @@
-# General Writing Guidelines — Off-Site Content
+# General Legal & Claims Guidelines — On-Site Content (US Market)
 
 ## Purpose
-These articles are guest posts and link-building pieces published on third-party websites.
-They must read as genuine, editorial content — never promotional, never affiliated with any brand.
+These are the FDA/FTC-driven claims rules that recur across nearly every USA brand's on-site profile — repeated independently in each brand file because they're general food-labeling law, not brand-specific style. This file consolidates them so they're maintained once. Brand-specific rules in the individual brand file always take priority if there's ever a conflict, but should not contradict the law itself.
+
+When in doubt about any claim — remove it or flag it for legal review rather than qualify it yourself.
 
 ---
 
-## Core Rules
-- Avoid using first person since it appears as if a human is recounting their own experiences, which can be misleading. 
-- Only write in US English. 
-- Never mention the brand, product name, parent company, or any affiliation whatsoever
-- The article topic is driven entirely by the heading/title — not the anchor text or target URL
-- The anchor text must be hyperlinked to the target URL exactly once in the article
-- No calls to action of any kind
-- No promotional language, no sponsored tone
-- Content must be purely informational and valuable to a general reader
+## 1. Claims That Require a Specific Threshold or Certification
+
+| Claim | Requirement |
+|---|---|
+| "High protein" | FDA requires ≥20% Daily Value per serving. Check %DV on the nutrition facts panel before using as a headline claim. |
+| "Good source of protein" | FDA requires ≥10% DV. Confirm %DV before use. |
+| "Sugar-free" | Has a specific FDA legal definition (<0.5g per serving). Never use for a product that doesn't meet it — use "0g added sugar" or "no added sugar" instead, matching the nutrition facts panel exactly. |
+| "Gluten-free" | Only if the product meets the FDA standard (<20ppm). Confirm with the brand before applying. |
+| "Certified Vegan" / "Non-GMO Project Verified" / "USDA Organic" | Only if the product is actively certified — include the certification logo where required. Never apply based on ingredients alone. |
+| Protein number ranges (e.g., "12–13g") | Never state a range without specifying which product size or SKU each number applies to. |
+
+## 2. Words That Are Regulated or Undefined — Banned or Restricted by Default
+
+- **"Natural"** — the FDA has never formally defined "natural" for food labeling. Do not use it as a standalone claim; use "naturally sourced" or a specific ingredient description instead.
+- **"Healthy"** — an FDA-regulated term. Only permitted if the specific product meets the FDA's fat/sodium/nutrient criteria for that claim; confirm before use, never assume.
+- **"The best" / "#1" / other superlatives** — never use without a current, citable source. If a "#1" claim is used, the source must be named and its currency validated before publishing (e.g., a specific market-research citation with a date).
+- **"Guilt-free," "treat," "satiety"** — regulatory risk aside, these are also brand-voice-banned nearly universally in this portfolio; treat as off-limits by default.
+- **Disease claims** ("reduces risk of heart disease," "lowers cholesterol," "prevents osteoporosis") — require FDA pre-approval as drug claims. Never use without confirmed, approved claim language from the brand.
+- **"Builds/repairs muscle," "boosts immunity"** — implied drug claims. Not allowed without clinical substantiation and the required disclaimer.
+- **Structure/function claims** ("supports muscle recovery," "helps build strong bones") — permitted only if (a) substantiated and (b) followed by the FDA disclaimer: *"This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."* Flag to the client if this disclaimer isn't already present in brand materials.
+- **Comparative claims** ("more protein than dairy yogurt") — require documented substantiation data. Never name a competitor in a comparison without client approval and supporting data.
+
+## 3. Citing Sources On-Site
+
+Unlike off-site guest-post content, on-site brand pages may cite real, verified sources and named credentialed professionals (e.g., a brand's own Registered Dietitians, a specific dated market-research citation) — but only when the source is genuinely verifiable and current. Never write "studies show," "doctors recommend," or "most nutritionists agree" as a vague, unattributed appeal to authority. If a claim needs backing, name the actual source or drop the claim.
+
+## 4. Outcome, Timeframe & Body-Composition Claims
+
+- Never promise a specific physical, mental, or emotional outcome from a product ("you will feel stronger," "reduces stress").
+- Never reference a timeframe for results ("within two weeks," "over time you will notice").
+- Never reference fat loss, weight management, calorie burning, or physical appearance as an outcome of a food choice.
+- Nutritional prescriptiveness (how much to consume, how often, for which age group) is medical advice — avoid it unless it's an FDA-approved claim used verbatim (e.g., Dannon's Type 2 diabetes reduction claim, used exactly as approved, never paraphrased).
+
+## 5. Infant and Child Content
+
+For any content related to infants, toddlers, or children: no claims about digestion, gut health, neurological or physical development, feeding outcomes, or physiological responses to food. Never make age-specific feeding recommendations or predict developmental outcomes.
+
+Brands with an infant-formula line are additionally subject to the **WHO Code** (International Code of Marketing of Breast-Milk Substitutes) — see the brand's own guideline file for stage-specific promotion restrictions (e.g., Happy Family's Stage 1 formula is HCP-channel-only, never consumer-facing).
+
+## 6. Environmental & Sustainability Claims
+
+Never make absolute or comparative environmental claims ("most sustainable," "zero impact"). Describe certifications and practices (B Corp, Rainforest Alliance, renewable electricity %, recycled packaging) in factual, neutral terms tied to what's actually certified — never implying a guaranteed environmental outcome or superiority over competitors.
+
+## 7. Geographic & Source Claims
+
+Never imply that a product's geographic origin or sourcing confers quality, purity, or health advantages beyond what's factually accurate. Origin descriptions (e.g., Evian's French Alps sourcing) are acceptable as context, not as an implied superiority or health claim.
 
 ---
 
-## Link Placement
-- If the anchor text fits naturally in the first paragraph, place it there
-- If it does not fit naturally in the first paragraph, place it wherever it fits most naturally in the body
-- Never force it — the link should feel like a genuine editorial reference
+## Not Covered Here
 
----
+This file does not cover FTC sponsored-content disclosure rules or guest-post structural/tone rules (word count, no-CTA, never-mention-the-brand, etc.) — those are off-site-specific and live in `shared/brand-guidelines/off-site/general_danoneusa.md` instead. Use that file for off-site/guest-post work; use this file for on-site brand content.
 
-## Structure
-- Length: 800–1200 words (body content only, excluding meta description and title)
-- Opening: Start with a short, engaging intro sentence — never use filler openers like
-  "In today's fast-paced world", "In recent years", "Have you ever wondered", or similar
-- Headings: Use H2 and H3 subheadings to break up the content logically
-- Conclusion: End with a brief, informational closing paragraph — no CTA
+## Canada
 
----
-
-## Variation (Important)
-Every article should feel structurally different from the others. Vary the following across the batch:
-- Perspective: some articles use "you", some use "I" or "we", some use third-person
-- Format: some articles include an FAQ section, some do not
-- Intro style: some start with a statement, some with a question, some with a short anecdote
-- Subheading count: vary between 3–6 H2s per article
-The goal is that no two articles feel like they came from the same template.
-
----
-
-## Tone
-- Conversational and natural — like a knowledgeable friend writing for another person
-- Empowering and informative, never preachy or judgmental
-- Not overly casual, not clinical
-- Confident but not braggy
-
----
-
-## Punctuation Rules
-- Use a maximum of 2 em dashes (—) in the entire article
-- Never use em dashes as a substitute for commas or parentheses throughout the body
-
----
-
-## Banned Words & Phrases
-Never use any of the following regardless of context:
-- delve, game-changer, seamlessly, it's worth noting
-- in conclusion, navigate, unlock, elevate, leverage
-- at the end of the day, having said that
-- healthy, wholesome, wellness, essential, nourishment
-- guilt-free, treat, satiety
-- natural, nutrient-dense (as standalone claims)
-- probiotic, prebiotic (unless the anchor text itself contains these words)
-- gut health, microbiome (as standalone claims)
-- perfect, refuel, recovery (in performance or energy contexts)
-
----
-
-## Legal Compliance (US Market — Mandatory)
-
-These are universal principles. Every rule applies to every article, every brand, every topic.
-When in doubt about any claim — remove it entirely rather than qualify it.
-
----
-
-### 1. No Research or Scientific Authority
-Never reference research, studies, scientific findings, or expert consensus in any form.
-This includes explicit citations, implied references, and authority-invoking phrases.
-Do not write "research shows", "studies suggest", "neuroscientists say", "doctors recommend",
-"most nutritionists agree", or any equivalent. If a point requires research to support it,
-reframe it as general observation or common understanding, or remove it entirely.
-
----
-
-### 2. No Physiological or Biological Mechanism Claims
-Never describe how the body responds to food, nutrition, or behavior at a physiological level.
-Never use clinical, scientific, or medical terminology to explain internal processes.
-If a concept cannot be expressed in plain conversational language without technical terms,
-remove it entirely. Write about what people commonly experience or observe —
-never about what is happening inside the body.
-
----
-
-### 3. No Health, Wellness, or Outcome Claims
-Never state, imply, or predict that following advice, eating certain foods, or adopting
-certain behaviors will produce a specific physical, mental, or emotional outcome.
-This applies to positive outcomes ("you will feel stronger"), negative framing
-("without protein your muscles break down"), comparative claims ("X provides more energy
-than Y"), and mood or mental health claims ("reduces stress", "improves focus").
-Describe what people commonly do or report — never what will happen to them.
-
----
-
-### 4. No Nutritional Prescriptiveness
-Never tell readers how much of something to consume, how often, at what times,
-or for which age groups. Do not frame nutritional choices as necessary, essential,
-or universally required. Avoid deficiency framing — never imply the reader is
-lacking something that the article's subject provides. Avoid universalizing language
-such as "everyone needs" or "all bodies require". Nutritional guidance of any kind,
-including serving sizes, timing windows, and quantity recommendations, is medical advice
-and must not appear in these articles.
-
----
-
-### 5. No Problem/Solution Framing
-Never structure content around a problem the reader has and a solution the article provides.
-This includes before/after framing, urgency or necessity language, and any framing that
-positions food, nutrition, or lifestyle choices as fixes for a condition or deficiency.
-Articles must be informational in nature — not prescriptive or corrective.
-
----
-
-### 6. No Outcome Timeframes
-Never reference specific timeframes for results or changes — not "within two weeks",
-not "after consistent use", not "over time you will notice". Any quantified or implied
-timeline for a physical, mental, or behavioral outcome is a regulated claim.
-
----
-
-### 7. No Weight, Body Composition, or Appearance Claims
-Never reference fat loss, weight management, calorie burning, body composition, or
-physical appearance as outcomes of food choices or behaviors, even framed as
-general information.
-
----
-
-### 8. No Authority Invocation
-Never invoke the authority of experts, professionals, institutions, or consensus groups
-to validate a claim. This includes named sources, unnamed sources, and implied consensus.
-Social proof framing such as "top athletes swear by" or "most parents find" is acceptable
-only when describing common practices, never when used to validate a health or nutrition claim.
-
----
-
-### 9. Infant and Child Content
-For any article related to babies, toddlers, or children: make no claims about
-digestion, gut health, neurological development, physical development, feeding outcomes,
-or physiological responses to food or feeding. Never make age-specific feeding
-recommendations. Never predict developmental outcomes. Use neutral, observational
-language throughout — describe what parents commonly do, not what will result from it.
-
----
-
-### 10. FTC — Sponsored Content
-These articles are paid placements. Content must never be written or framed in a way
-that could be mistaken for independent editorial opinion. Never write in a way that
-implies the author independently recommends a product or has personal experience with it.
-The article must read as purely informational, not as a review, recommendation, or endorsement.
-
----
-
-### 11. Environmental & Sustainability Claims
-
-Never make absolute or comparative environmental claims. Describe sustainability initiatives, certifications, or practices in factual, neutral terms without implying they guarantee environmental outcomes or superiority over other companies.
-
----
-
-### 12. Geographic & Source Claims
-
-Never imply that a product's geographic origin, source, or natural provenance confers quality, purity, or health advantages. Descriptions of origin are acceptable as context only.
-
----
-
-## Google Doc Output Format
-Each generated article must be structured in the Google Doc in this exact order:
-
-1. **Meta Title** (label it "Meta Title:")
-   - SEO-optimized, 50–60 characters, matches the article heading
-
-2. **Meta Description** (label it "Meta Description:")
-   - 1–2 sentences, 150–160 characters, summarizes the article for search engines
-   - No promotional language
-
-3. **Article Title** (H1)
-   - Matches the heading from the input sheet exactly
-
-4. **Stock Image**
-   - One image inserted below the H1 title
-   - Sourced from Unsplash, relevant to the article topic
-
-5. **Article Body**
-   - H2 and H3 subheadings throughout
-   - Anchor text hyperlinked to target URL exactly once
-
----
-
-## Brand Guidelines
-Each article may also have a brand-specific guideline file. When present:
-- Read it to understand tone, vocabulary rules, and what to avoid
-- Apply only the rules relevant to off-site, non-promotional content
-- Brand-specific rules always take priority over general guidelines if there is a conflict
+For Canada-market on-site content, use `shared/brand-guidelines/general_legal_canada.md` instead — Canadian claims law, bilingual conventions, and Health Canada-adjacent rules differ from the US rules above.

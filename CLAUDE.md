@@ -28,7 +28,7 @@ Whenever a brand name from the registry below appears in **any** message during 
 | Danone Away From Home / Danone AFH / DAFH | `shared/brand-guidelines/danoneawayfromhome.md` |
 | Remix Yogurt / Remix / RemixYogurt | `shared/brand-guidelines/remixyogurt.md` |
 
-Also read `shared/brand-guidelines/general_legal.md` only when: (1) a guest post is mentioned, or (2) the user explicitly asks for legal review help.
+Also read the market-appropriate legal file for every content task: `shared/brand-guidelines/general_legal.md` (USA on-site) or `shared/brand-guidelines/general_legal_canada.md` (Canada on-site) always; for guest-post/off-site tasks read `shared/brand-guidelines/off-site/general_danoneusa.md` or `off-site/general_danonecanada.md` instead.
 
 Full behavior spec: `.claude/commands/brand-context/SKILL.md`
 

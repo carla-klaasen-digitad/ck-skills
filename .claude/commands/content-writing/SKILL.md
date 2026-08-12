@@ -38,7 +38,8 @@ This skill automates content generation across multiple formats and channels:
 Brand guidelines are stored in `shared/brand-guidelines/`. When a brand name is mentioned, the brand-context skill loads the appropriate file automatically. Do not proceed with writing before the brand file is loaded.
 
 - Brand files: `shared/brand-guidelines/{brand}.md`
-- Legal overlay: `shared/brand-guidelines/general_legal.md` (load for off-site / guest post content)
+- Legal overlay (on-site): `shared/brand-guidelines/general_legal.md` (USA) or `general_legal_canada.md` (Canada) — load for every on-site content task
+- Legal overlay (off-site / guest post): `shared/brand-guidelines/off-site/general_danoneusa.md` or `off-site/general_danonecanada.md` instead
 - Full registry and rules: `.claude/commands/brand-context/SKILL.md`
 
 ---

@@ -1,6 +1,6 @@
 ---
 name: brand-context
-description: Automatically loads brand-specific writing guidelines whenever a brand name is mentioned in a content task. Reads the brand's .md file from shared/brand-guidelines/ and optionally loads general_legal.md for off-site or legal-sensitive content. Read for on-site content writing, off-site content writing, keyword research, general brand questions. Brand include but are not limited to: Oikos, Activia, Happy Family, International Delight (ID), Too Good, Evian, Stok, Silk, Danone North America, Light and Fit, Danimals, Remix, Dunkin creamers. Also load this skill if relevant file names are brought up. 
+description: Automatically loads brand-specific writing guidelines whenever a brand name is mentioned in a content task. Reads the brand's .md file from shared/brand-guidelines/, plus the market-appropriate legal file — general_legal.md/general_legal_canada.md for on-site work, off-site/general_danoneusa.md/general_danonecanada.md for guest-post work. Read for on-site content writing, off-site content writing, keyword research, general brand questions. Brand include but are not limited to: Oikos, Activia, Happy Family, International Delight (ID), Too Good, Evian, Stok, Silk, Danone North America, Light and Fit, Danimals, Remix, Dunkin creamers. Also load this skill if relevant file names are brought up. 
 
 allowed-tools: Read, Bash
 ---
@@ -51,10 +51,10 @@ Scan the user's message for any brand name from the registry above. Match is cas
 ### Step 2 — Read brand file
 Immediately read the matched brand `.md` file using the Read tool. Do this silently — no announcement, no "Loading Oikos guidelines…" message.
 
-### Step 3 — Load `general_legal.md` when needed
-Also read `general_legal.md` only when **one of these two conditions** is true:
-- The message mentions a guest post (e.g. "guest post", "guest article")
-- The user explicitly asks for legal review help (e.g. "legal review", "check legal", "review for legal")
+### Step 3 — Load the market-appropriate legal file
+- **On-site content tasks:** also read `general_legal.md` (USA) or `general_legal_canada.md` (Canada), matching the brand's target market. Always load one of these for any on-site writing, briefing, or copy-review task — not conditionally.
+- **Off-site / guest-post tasks:** read `off-site/general_danoneusa.md` (USA) or `off-site/general_danonecanada.md` (Canada) instead — these cover guest-post structure, brand-mention rules, and off-site claims restrictions, and are a different scope from the on-site legal files.
+- **Legal review help requested explicitly:** load whichever of the four files matches the content's market and on-site/off-site scope.
 
 ### Step 4 — Apply silently
 Use the brand guidelines and legal rules as active constraints throughout the rest of the task. Do not summarize or quote the files back unless the user asks. Just follow them.

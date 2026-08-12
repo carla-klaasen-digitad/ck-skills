@@ -72,7 +72,7 @@ def parse_col_map(col_map_str):
 def scan_brands(guidelines_dir):
     results = []
     for fname in sorted(os.listdir(guidelines_dir)):
-        if not fname.endswith(".md") or fname == "general_legal.md":
+        if not fname.endswith(".md") or fname in ("general_legal.md", "general_legal_canada.md"):
             continue
         path = os.path.join(guidelines_dir, fname)
         content = open(path, encoding="utf-8").read()

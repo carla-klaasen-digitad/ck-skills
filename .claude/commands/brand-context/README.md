@@ -59,9 +59,11 @@ List all available brands:
 
 ## Legal Guidelines
 
-`general_legal.md` is loaded automatically when:
-- A **guest post** is mentioned
-- The user asks for **legal review** help
+The market-appropriate legal file loads automatically for every content task:
+- **On-site (USA):** `general_legal.md`
+- **On-site (Canada):** `general_legal_canada.md`
+- **Off-site / guest post (USA):** `off-site/general_danoneusa.md`
+- **Off-site / guest post (Canada):** `off-site/general_danonecanada.md`
 
 ## Adding a New Brand
 
