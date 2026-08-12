@@ -8,28 +8,29 @@ The moment you mention a brand name in any content, briefing, or copy task, this
 
 ## Supported Brands
 
-| Brand | Key |
-|-------|-----|
-| Activia | activia |
-| Danimals | danimals |
-| Dannon | dannon |
-| Danone Away From Home | danoneawayfromhome |
-| Danone North America | danonenorthamerica |
-| Dunkin Creamers | dunkincreamers |
-| Evian | evian |
-| Follow Your Heart | followyourheart |
-| Happy Family | happyfamily |
-| International Delight | internationaldelight |
-| Light & Fit | lightandfit |
-| Oikos | oikos |
-| Remix Yogurt | remixyogurt |
-| Silk | silk |
-| So Delicious | sodelicious |
-| SToK | stok |
-| Too Good | toogood |
-| YoCrunch | yocrunch |
+| Brand | USA Key | Canada Key |
+|-------|-----|-----|
+| Activia | activia | activia_canada |
+| Danimals | danimals | — |
+| Dannon | dannon | — |
+| Danone Away From Home | danoneawayfromhome | — |
+| Danone North America | danonenorthamerica | — |
+| Danone Yogurt / Danino | — | danoneyogurt_canada |
+| Dunkin Creamers | dunkincreamers | — |
+| Evian | evian | — |
+| Follow Your Heart | followyourheart | — |
+| Happy Family | happyfamily | — |
+| International Delight | internationaldelight | internationaldelight_canada |
+| Light & Fit | lightandfit | — |
+| Oikos | oikos | oikos_canada |
+| Remix Yogurt | remixyogurt | — |
+| Silk | silk | silk_canada |
+| So Delicious | sodelicious | sodelicious_canada |
+| SToK | stok | — |
+| Too Good | toogood | — |
+| YoCrunch | yocrunch | — |
 
-Brand guidelines live in `shared/brand-guidelines/`.
+Brand guidelines live in `shared/brand-guidelines/`. "Two Good" (an 80%-less-sugar Canada Greek yogurt) looks like a distinct real brand from "Too Good & Co." — don't load `toogood.md` for it; flag and ask instead.
 
 ## Auto-Trigger (no slash command needed)
 

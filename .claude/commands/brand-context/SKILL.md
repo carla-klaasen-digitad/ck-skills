@@ -15,29 +15,32 @@ Load the correct brand guidelines file the moment a brand name appears in conver
 
 ## Brand Registry
 
-Match any of these names (case-insensitive) to their file:
+Match any of these names (case-insensitive) to their file. Load the USA file by default; also load the Canada file (where one exists) whenever context indicates Canada (`.ca` domain, "Canada," "Canadian," "Quebec," French-language content, or an explicit mention):
 
-| Brand mention(s) | File |
-|-----------------|------|
-| Activia | `activia.md` |
-| Danimals | `danimals.md` |
-| Dannon | `dannon.md` |
-| Danone Away From Home, Danone AFH, DAFH | `danoneawayfromhome.md` |
-| Danone North America, DNA, Danone NA | `danonenorthamerica.md` |
-| Dunkin Creamers, Dunkin' Creamers, Dunkin | `dunkincreamers.md` |
-| Evian | `evian.md` |
-| Follow Your Heart, FollowYourHeart, FYH | `followyourheart.md` |
-| Happy Family, HappyFamily, Happy Family Organics | `happyfamily.md` |
-| International Delight, Int'l Delight, ID Creamers | `internationaldelight.md` |
-| Light & Fit, Light and Fit | `lightandfit.md` |
-| Mitacs | `mitacs.md` |
-| Oikos | `oikos.md` |
-| Silk | `silk.md` |
-| So Delicious, SoDelicious, So Delicious Dairy Free | `sodelicious.md` |
-| SToK, Stok | `stok.md` |
-| Too Good, TooGood, Two Good | `toogood.md` |
-| YoCrunch, Yo Crunch | `yocrunch.md` |
-| Remix Yogurt, Remix, RemixYogurt | `remixyogurt.md` |
+| Brand mention(s) | USA File | Canada File |
+|-----------------|------|------|
+| Activia | `activia.md` | `activia_canada.md` |
+| Danimals | `danimals.md` | — |
+| Dannon | `dannon.md` | — |
+| Danone Away From Home, Danone AFH, DAFH | `danoneawayfromhome.md` | — |
+| Danone North America, DNA, Danone NA | `danonenorthamerica.md` | — |
+| Danone Yogurt, Danino, Danone Creamy | — | `danoneyogurt_canada.md` |
+| Dunkin Creamers, Dunkin' Creamers, Dunkin | `dunkincreamers.md` | — |
+| Evian | `evian.md` | — |
+| Follow Your Heart, FollowYourHeart, FYH | `followyourheart.md` | — |
+| Happy Family, HappyFamily, Happy Family Organics | `happyfamily.md` | — |
+| International Delight, Int'l Delight, ID Creamers | `internationaldelight.md` | `internationaldelight_canada.md` |
+| Light & Fit, Light and Fit | `lightandfit.md` | — |
+| Mitacs | `mitacs.md` | — |
+| Oikos | `oikos.md` | `oikos_canada.md` |
+| Silk | `silk.md` | `silk_canada.md` |
+| So Delicious, SoDelicious, So Delicious Dairy Free | `sodelicious.md` | `sodelicious_canada.md` |
+| SToK, Stok | `stok.md` | — |
+| Too Good, TooGood | `toogood.md` | — |
+| YoCrunch, Yo Crunch | `yocrunch.md` | — |
+| Remix Yogurt, Remix, RemixYogurt | `remixyogurt.md` | — |
+
+**"Two Good" — do not match to `toogood.md`.** Canada source material describes a "Two Good Yogurt" (80% less sugar Greek yogurt) that looks like a different real brand from USA's "Too Good & Co." (60% less sugar, cultured ultra-filtered milk, pouches/creamers/yogurts) — possibly conflated in this registry historically. If "Two Good" comes up, flag it and ask before treating it as Too Good & Co.
 
 **Base path:** `shared/brand-guidelines/` (relative to the repo root)
 
