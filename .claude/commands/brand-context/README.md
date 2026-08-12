@@ -29,7 +29,7 @@ The moment you mention a brand name in any content, briefing, or copy task, this
 | Too Good | toogood |
 | YoCrunch | yocrunch |
 
-Brand guidelines live in `all_skills/content-writing/guidelines/`.
+Brand guidelines live in `shared/brand-guidelines/`.
 
 ## Auto-Trigger (no slash command needed)
 

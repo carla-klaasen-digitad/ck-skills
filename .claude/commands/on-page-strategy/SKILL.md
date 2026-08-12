@@ -36,7 +36,7 @@ Extract the ID from the URL pattern: `https://docs.google.com/spreadsheets/d/{SP
 Before reading any keyword data, read the brand writing guidelines file:
 
 ```
-/Users/carlaklaasen/claude_code/all_skills/content-writing/guidelines/{brandname}.md
+shared/brand-guidelines/{brandname}.md
 ```
 
 Where `{brandname}` is the lowercase brand name derived from the brand brief or brand URL (e.g., `danimals`, `activia`, `happy-family`).
@@ -55,7 +55,7 @@ Use the helper script to inspect the keyword research sheet.
 ### Step 1.1 — Get headers
 
 ```bash
-python3 /Users/carlaklaasen/claude_code/.claude/commands/on-page-strategy/scripts/sheets_helper.py \
+python3 .claude/commands/on-page-strategy/scripts/sheets_helper.py \
   headers "{KEYWORD_SHEET_ID}" "{TAB_NAME}"
 ```
 
@@ -77,7 +77,7 @@ If a column is unambiguous, map it automatically and note the mapping to the use
 ### Step 1.2 — Read all keyword data
 
 ```bash
-python3 /Users/carlaklaasen/claude_code/.claude/commands/on-page-strategy/scripts/sheets_helper.py \
+python3 .claude/commands/on-page-strategy/scripts/sheets_helper.py \
   read "{KEYWORD_SHEET_ID}" "{TAB_NAME}" "A{HEADER_ROW}:Z500"
 ```
 
@@ -267,7 +267,7 @@ Format: a JSON array where each element is a dict with keys:
 ### Step 5.3 — Call the write helper
 
 ```bash
-python3 /Users/carlaklaasen/claude_code/.claude/commands/on-page-strategy/scripts/sheets_helper.py \
+python3 .claude/commands/on-page-strategy/scripts/sheets_helper.py \
   write "{PRODUCTION_PLAN_SHEET_ID}" "ON SITE (ALL) - Content Strategy" {START_ROW} /tmp/on_page_rows.json
 ```
 
@@ -351,9 +351,9 @@ Authentication: SE Ranking MCP tools require OAuth — use `mcp__se-ranking__aut
 
 ## Credential Reference
 
-- **Service account file**: `/Users/carlaklaasen/claude_code/content_automation/content-automation-492519-da1e80a65441.json`
+- **Service account file**: `content_automation/content-automation-492519-da1e80a65441.json`
 - **Service account email**: `content-bot@content-automation-492519.iam.gserviceaccount.com`
-- **Env file**: `/Users/carlaklaasen/claude_code/.env`
-- **Helper script**: `/Users/carlaklaasen/claude_code/.claude/commands/on-page-strategy/scripts/sheets_helper.py`
+- **Env file**: `.env`
+- **Helper script**: `.claude/commands/on-page-strategy/scripts/sheets_helper.py`
 
 The helper script loads credentials automatically from the env file. No manual credential setup needed within the skill.

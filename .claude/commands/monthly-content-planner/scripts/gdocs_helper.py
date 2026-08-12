@@ -17,7 +17,7 @@ import sys, os, json, re, argparse, warnings
 warnings.filterwarnings("ignore")
 
 from dotenv import load_dotenv
-load_dotenv("/Users/carlaklaasen/claude_code/.env")
+load_dotenv()
 
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError

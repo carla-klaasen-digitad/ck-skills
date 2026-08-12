@@ -10,9 +10,9 @@ Produces client-facing technical recommendations Google Docs for Danone USA bran
 
 ## Requirements
 
-- Google OAuth2 credentials in `/Users/carlaklaasen/claude_code/.env`: `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, `GOOGLE_TOKEN_URI`
+- Google OAuth2 credentials in `.env`: `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, `GOOGLE_TOKEN_URI`
 - Scopes required: Google Docs API (documents), Google Sheets API (spreadsheets), Google Drive API (drive.file for creating docs)
-- Reference write script: `/Users/carlaklaasen/claude_code/write_activia_doc.py`
+- Reference write script: `write_activia_doc.py`
 
 ## When This Skill Activates
 
@@ -89,7 +89,7 @@ Before writing, run through CHECKS.md.
 
 ### Write method — Google Docs API via Python
 
-Use the Google Docs API directly with OAuth2 credentials from `/Users/carlaklaasen/claude_code/.env`. The MCP tool `replaceDocumentWithMarkdown` is not available in this environment.
+Use the Google Docs API directly with OAuth2 credentials from `.env`. The MCP tool `replaceDocumentWithMarkdown` is not available in this environment.
 
 **Steps:**
 1. Load `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, `GOOGLE_TOKEN_URI` from `.env`
@@ -100,7 +100,7 @@ Use the Google Docs API directly with OAuth2 credentials from `/Users/carlaklaas
 6. Apply formatting via subsequent `batchUpdate` requests: `updateParagraphStyle` for heading levels (HEADING_1, HEADING_2, HEADING_3, NORMAL_TEXT), `updateTextStyle` for bold labels and italic/linked lines, `createParagraphBullets` for Fix numbered lists (preset: `NUMBERED_DECIMAL_ALPHA_ROMAN`) and guideline bullets (preset: `BULLET_DISC_CIRCLE_SQUARE`)
 7. Batch format requests in groups of 50
 
-A working reference script: `/Users/carlaklaasen/claude_code/write_activia_doc.py`
+A working reference script: `write_activia_doc.py`
 
 ### Mandatory style rules (full list in STYLE-RULES.md)
 

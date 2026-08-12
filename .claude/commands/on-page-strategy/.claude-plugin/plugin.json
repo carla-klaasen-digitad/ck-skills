@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "scripts": ["scripts/sheets_helper.py"],
-    "credentials": "/Users/carlaklaasen/claude_code/content_automation/content-automation-492519-da1e80a65441.json",
+    "credentials": "content_automation/content-automation-492519-da1e80a65441.json",
     "related-skills": ["global-seo-skill", "skill-watchdog"]
   }
 }

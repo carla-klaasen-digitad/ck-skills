@@ -15,10 +15,10 @@ You are a senior bilingual SEO copywriter at Digitad. Your job is to produce pub
 ## Configuration
 
 ```
-PUSH_MODULE    = /Users/carlaklaasen/claude_code/content_automation/push_content_to_gdoc.py
-SCRIPTS_DIR    = /Users/carlaklaasen/claude_code/content_automation/
-GUIDELINES_DIR = /Users/carlaklaasen/claude_code/all_skills/content-writing/guidelines/
-VENV           = /Users/carlaklaasen/claude_code/content_automation/venv
+PUSH_MODULE    = content_automation/push_content_to_gdoc.py
+SCRIPTS_DIR    = content_automation/
+GUIDELINES_DIR = shared/brand-guidelines/
+VENV           = content_automation/venv
 ```
 
 ---
@@ -217,8 +217,8 @@ if __name__ == '__main__':
 ## Phase 4 — Run Script
 
 ```bash
-source /Users/carlaklaasen/claude_code/content_automation/venv/bin/activate && \
-python /Users/carlaklaasen/claude_code/content_automation/push_{client_slug}_{page_slug}.py
+source content_automation/venv/bin/activate && \
+python content_automation/push_{client_slug}_{page_slug}.py
 ```
 
 **Common errors and fixes:**

@@ -1,6 +1,6 @@
 ---
 name: brand-context
-description: Automatically loads brand-specific writing guidelines whenever a brand name is mentioned in a content task. Reads the brand's .md file from all_skills/content-writing/guidelines/ and optionally loads general_legal.md for off-site or legal-sensitive content. Read for on-site content writing, off-site content writing, keyword research, general brand questions. Brand include but are not limited to: Oikos, Activia, Happy Family, International Delight (ID), Too Good, Evian, Stok, Silk, Danone North America, Light and Fit, Danimals, Remix, Dunkin creamers. Also load this skill if relevant file names are brought up. 
+description: Automatically loads brand-specific writing guidelines whenever a brand name is mentioned in a content task. Reads the brand's .md file from shared/brand-guidelines/ and optionally loads general_legal.md for off-site or legal-sensitive content. Read for on-site content writing, off-site content writing, keyword research, general brand questions. Brand include but are not limited to: Oikos, Activia, Happy Family, International Delight (ID), Too Good, Evian, Stok, Silk, Danone North America, Light and Fit, Danimals, Remix, Dunkin creamers. Also load this skill if relevant file names are brought up. 
 
 allowed-tools: Read, Bash
 ---
@@ -39,7 +39,7 @@ Match any of these names (case-insensitive) to their file:
 | YoCrunch, Yo Crunch | `yocrunch.md` |
 | Remix Yogurt, Remix, RemixYogurt | `remixyogurt.md` |
 
-**Base path:** `/Users/carlaklaasen/claude_code/all_skills/content-writing/guidelines/`
+**Base path:** `shared/brand-guidelines/` (relative to the repo root)
 
 ---
 
@@ -99,7 +99,7 @@ If the Read tool returns an error, immediately tell the user which file failed t
 
 ## Brand Onboarding — When a Brand Is Approved
 
-When the user says a brand is being approved, added, or moved from pending to active, run the onboarding interview below. Ask the questions grouped by section. Wait for answers before proceeding to the next section. Once all answers are collected, compile them into a brand guidelines `.md` file at `all_skills/content-writing/guidelines/[brandname].md` following the structure of existing brand files (activia.md, oikos.md, etc. as reference).
+When the user says a brand is being approved, added, or moved from pending to active, run the onboarding interview below. Ask the questions grouped by section. Wait for answers before proceeding to the next section. Once all answers are collected, compile them into a brand guidelines `.md` file at `shared/brand-guidelines/[brandname].md` following the structure of existing brand files (activia.md, oikos.md, etc. as reference).
 
 ### Onboarding Interview
 
@@ -148,7 +148,7 @@ When the user says a brand is being approved, added, or moved from pending to ac
 ### After the Interview
 
 Once all answers are collected:
-1. Create `all_skills/content-writing/guidelines/[brandname].md` with the standard structure (Logistical Information block → AI Content Profile sections matching existing brand files)
+1. Create `shared/brand-guidelines/[brandname].md` with the standard structure (Logistical Information block → AI Content Profile sections matching existing brand files)
 2. Create a Section 15 "Content Brief Standards" with placeholders — fill it in once actual briefs from Drive have been reviewed
 3. Add the brand to the CLAUDE.md Brand Context registry
 4. Tell the user: "Brand guidelines file created. I'd recommend reviewing an actual content brief from Drive to fill in the Section 15 patterns before the first brief is written."

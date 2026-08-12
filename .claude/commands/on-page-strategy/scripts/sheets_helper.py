@@ -18,14 +18,14 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from dotenv import load_dotenv
-load_dotenv("/Users/carlaklaasen/claude_code/.env")
+load_dotenv()
 
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
 SA_FILE = os.getenv(
     "GOOGLE_SERVICE_ACCOUNT_FILE",
-    "/Users/carlaklaasen/claude_code/content_automation/content-automation-492519-da1e80a65441.json"
+    "content_automation/content-automation-492519-da1e80a65441.json"
 )
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 

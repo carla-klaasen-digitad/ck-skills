@@ -25,7 +25,7 @@
 - Creamers & Coffee: International Delight®, Land O'Lakes®, SToK®
 - Equipment Programs: Soft-serve and frozen dessert dispensers for eligible operators
 
-**Operator Channels:** Healthcare · Education (K-12, university) · Business Dining · Hotels & Lodging · Recreation · Corrections · Military
+**Operator Channels:** Healthcare · Education (K-12, university) · Business Dining · Hotels & Lodging · Recreation · Corrections · Military · Convenience Stores & Travel Retail (C-stores)
 
 **Mission (mandatory to reflect):** "Bring health through food to as many people as possible."
 
@@ -47,7 +47,7 @@
 
 **High:** foodservice yogurt · plant-based foodservice · dairy-free foodservice · institutional dairy supplier · yogurt for schools
 
-**Medium:** plant-based beverages foodservice · dairy-free options for hospitals · creamer for restaurants · foodservice dairy solutions · bulk yogurt supplier · sustainable foodservice supplier · B Corp food supplier · school lunch dairy alternatives · operator food programs · yogurt for healthcare facilities · dairy-free school lunch · plant-based school foodservice · foodservice plant-based milk · plant-based creamer foodservice · dairy-free creamer foodservice · soft serve foodservice equipment · frozen dessert dispenser foodservice · bulk creamer for coffee service · foodservice oat milk · dairy-free ice cream foodservice · yogurt for corporate cafeteria · foodservice beverage solutions · hotel foodservice dairy · military foodservice dairy · university dining dairy-free · school cafeteria yogurt · hospital nutrition dairy-free
+**Medium:** plant-based beverages foodservice · dairy-free options for hospitals · creamer for restaurants · foodservice dairy solutions · bulk yogurt supplier · sustainable foodservice supplier · B Corp food supplier · school lunch dairy alternatives · operator food programs · yogurt for healthcare facilities · dairy-free school lunch · plant-based school foodservice · foodservice plant-based milk · plant-based creamer foodservice · dairy-free creamer foodservice · soft serve foodservice equipment · frozen dessert dispenser foodservice · bulk creamer for coffee service · foodservice oat milk · dairy-free ice cream foodservice · yogurt for corporate cafeteria · foodservice beverage solutions · hotel foodservice dairy · military foodservice dairy · university dining dairy-free · school cafeteria yogurt · hospital nutrition dairy-free · wholesale yogurt · commercial plant-based milk substitutes · college campus nutrition solutions · high-protein cafeteria snacks · bulk high-protein yogurt · c-store functional snacks · regenerative sourcing foodservice
 
 **Brand:** Danone foodservice · Danone Away From Home · Danone operator program · Danone institutional · Danone AFH · Danone B2B food · Danone healthcare nutrition · Danone school lunch program · Oikos foodservice · Oikos bulk yogurt · Dannon foodservice · Activia foodservice · Silk foodservice · Silk bulk oat milk · Silk oat milk foodservice · So Delicious foodservice · So Delicious dairy-free foodservice · International Delight foodservice · International Delight creamer foodservice · International Delight bulk creamer · SToK cold brew foodservice · SToK foodservice · YoCrunch foodservice · Two Good foodservice
 
@@ -57,11 +57,19 @@ Standalone brand names without "foodservice" modifier (Oikos, Dannon, Activia, L
 ### Competitor URLs (never mention in copy)
 https://www.chobaniforprofessionals.com · https://www.generalmills.com/foodservice · https://www.dairyfarmersofamerica.com · https://www.prairiefarms.com · https://www.saputo.com
 
+### Competitor Names (never mention in copy)
+Chobani Foodservice · General Mills Away From Home (Yoplait) · Nestlé Professional · Dairy Farmers of America · Prairie Farms · Saputo
+
+### Priority LLM/GEO Prompts
+"What are the best dairy-free milk alternatives for a university dining hall?" · "Find a bulk yogurt provider that meets USDA standards for K-12 schools" · "Find bulk or wholesale yogurt for my restaurant"
+
 ---
 
 ## **5. Key Differentiators (Reinforce in All Content)**
 
-Single-source access to full Danone NA portfolio (one operator relationship, all brands) · **B Corp certified at Danone North America level — the only major US foodservice provider with this certification;** increasingly required in healthcare/education RFPs · widest plant-based foodservice portfolio (Silk + So Delicious: beverages, yogurt alternatives, frozen desserts, creamers) · **98% of US portfolio already free of certified colors, with goal of 100% by mid-2026** · equipment programs (soft-serve, frozen dessert dispensers, and new bulk machine dispensers for eligible operators) · **portfolio suited to GLP-1, Dysphagia, and Diabetes-conscious menus** — products meeting specialized nutritional requirements for healthcare/education · **Recyclable-by-Design packaging transition** underway — B2B bulk and single-serve formats moving to circular packaging by late 2026 · consumer-recognized brand names drive menu trust · dedicated operator support: sales reps, nutrition specs, tools · category expertise across dairy, plant-based, creamers
+Single-source access to full Danone NA portfolio (one operator relationship, all brands) · **B Corp certified at Danone North America level — the only major US foodservice provider with this certification;** increasingly required in healthcare/education RFPs · widest plant-based foodservice portfolio (Silk + So Delicious: beverages, yogurt alternatives, frozen desserts, creamers) · **98% of US portfolio already free of certified colors, with goal of 100% by mid-2026** · equipment programs (soft-serve, frozen dessert dispensers, and new bulk machine dispensers for eligible operators) · **portfolio suited to GLP-1, Dysphagia, and Diabetes-conscious menus** — products meeting specialized nutritional requirements for healthcare/education · **Recyclable-by-Design packaging transition** underway — B2B bulk and single-serve formats moving to circular packaging by late 2026 · **Regenerative Sourcing** — ingredients sourced from farms using 2026-standard regenerative practices · consumer-recognized brand names drive menu trust · dedicated operator support: sales reps, nutrition specs, tools · category expertise across dairy, plant-based, creamers
+
+**Priority products to promote:** Bulk high-protein yogurt (large-format Oikos and Dannon for cafeteria/restaurant use) · STōK Cold Brew expansion into C-stores and lodging (2026 "coffee creations" trend) · Silk shelf-stable items meeting USDA standards for school milk substitutes · Bulk coffee creamer dispensers
 
 ---
 

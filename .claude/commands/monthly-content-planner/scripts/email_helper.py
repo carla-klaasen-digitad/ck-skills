@@ -11,7 +11,7 @@ json_rows_file: path to a JSON array of row objects with keys:
 
 The ANALYST_EMAIL env var (or hardcoded fallback) sets the recipient.
 Credentials are loaded from GOOGLE_REFRESH_TOKEN, GOOGLE_CLIENT_ID,
-GOOGLE_CLIENT_SECRET in /Users/carlaklaasen/claude_code/.env.
+GOOGLE_CLIENT_SECRET in .env (repo root).
 """
 
 import sys
@@ -25,7 +25,7 @@ from datetime import datetime
 warnings.filterwarnings("ignore")
 
 from dotenv import load_dotenv
-load_dotenv("/Users/carlaklaasen/claude_code/.env")
+load_dotenv()
 
 try:
     from googleapiclient.discovery import build

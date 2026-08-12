@@ -16,7 +16,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from dotenv import load_dotenv
-load_dotenv("/Users/carlaklaasen/claude_code/.env")
+load_dotenv()
 
 try:
     import requests

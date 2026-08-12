@@ -15,9 +15,9 @@ You are a senior SEO content strategist at Digitad. Your job is to run the month
 ## Configuration
 
 ```
-ENV_FILE           = /Users/carlaklaasen/claude_code/.env
-GUIDELINES_DIR     = /Users/carlaklaasen/claude_code/all_skills/content-writing/guidelines
-SCRIPTS_DIR        = /Users/carlaklaasen/claude_code/.claude/commands/monthly-content-planner/scripts
+ENV_FILE           = .env
+GUIDELINES_DIR     = shared/brand-guidelines
+SCRIPTS_DIR        = .claude/commands/monthly-content-planner/scripts
 PRODUCTION_PLAN_ID = 13ZKd5UVG_OcvRS9Wri8c8XSbwqiCguiJBDvUuUN9hbg
 MITACS_PLAN_ID     = 1yAJ3QkX7TovCFbclCmAsxozOxOGkDS2d24KM_gef9ZY
 TEMP_DIR           = /tmp/content-planner

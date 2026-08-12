@@ -14,12 +14,12 @@ A passive monitoring layer that runs alongside any other skill. It does not inte
 
 ```
 WATCHDOG_VERSION      = 5.1
-LOG_DIR               = /Users/carlaklaasen/claude_code/all_skills/session-skill-logs/
-EVOLUTION_REGISTRY    = /Users/carlaklaasen/claude_code/all_skills/watchdog-evolution/evolution-registry.md
-EVOLUTION_DIR         = /Users/carlaklaasen/claude_code/all_skills/watchdog-evolution/
-BASELINE_DIR          = /Users/carlaklaasen/claude_code/all_skills/skill-baselines/
-SNAPSHOT_DIR          = /Users/carlaklaasen/claude_code/all_skills/watchdog-evolution/self-snapshots/
-METACOGNITIVE_LOG     = /Users/carlaklaasen/claude_code/all_skills/watchdog-evolution/metacognitive-log.md
+LOG_DIR               = all_skills/session-skill-logs/
+EVOLUTION_REGISTRY    = all_skills/watchdog-evolution/evolution-registry.md
+EVOLUTION_DIR         = all_skills/watchdog-evolution/
+BASELINE_DIR          = all_skills/skill-baselines/
+SNAPSHOT_DIR          = all_skills/watchdog-evolution/self-snapshots/
+METACOGNITIVE_LOG     = all_skills/watchdog-evolution/metacognitive-log.md
 ESCALATION_THRESHOLD  = 2      # same issue recurring N times → promote one severity level
 EVOLUTION_TRIGGER     = 3      # sessions count gate for improvement proposals
 BASELINE_SESSIONS_MIN = 3      # min sessions before anomaly detection activates
@@ -85,7 +85,7 @@ Before any skill execution begins, run these checks. Fail fast on blockers; log 
 
 ### Skill File Checks
 
-1. Locate the skill file at `/Users/carlaklaasen/.claude/commands/[skill-name].md` or `/Users/carlaklaasen/.claude/commands/[skill-name]/SKILL.md`.
+1. Locate the skill file at `~/.claude/commands/[skill-name].md` or `~/.claude/commands/[skill-name]/SKILL.md`.
 2. Verify the file exists and is readable. If not: surface `[CRITICAL]` — skill file not found, halt.
 3. Parse frontmatter. Verify these fields are present and non-empty: `name`, `description`, `allowed-tools`.
 4. If any required frontmatter field is missing: log `[FLAG] — CB-05: Malformed skill spec: missing field [X]`.
@@ -157,8 +157,8 @@ Before any skill execution begins, run these checks. Fail fast on blockers; log 
 
 ### Global Flat File Shadow Check
 
-22b. For the primary monitored skill, check if a global flat file exists at `~/.claude/commands/[skill-name].md` (a flat `.md` file, not a folder). Do this by attempting to read `/Users/carlaklaasen/.claude/commands/[skill-name].md`.
-- If it exists AND a project-level directory version also exists at `/Users/carlaklaasen/claude_code/.claude/commands/[skill-name]/SKILL.md`: log `[FLAG] — CB-05: Global flat file detected that shadows the project-level skill: ~/.claude/commands/[skill-name].md. Claude Code loads global flat files before project-level directories. The running skill may be the older global version, not the project version. Archive or remove the global flat file unless this is intentional. To fix: move the file to ~/.claude/commands/_archived/[skill-name]-archived.md`
+22b. For the primary monitored skill, check if a global flat file exists at `~/.claude/commands/[skill-name].md` (a flat `.md` file, not a folder). Do this by attempting to read `~/.claude/commands/[skill-name].md`.
+- If it exists AND a project-level directory version also exists at `.claude/commands/[skill-name]/SKILL.md`: log `[FLAG] — CB-05: Global flat file detected that shadows the project-level skill: ~/.claude/commands/[skill-name].md. Claude Code loads global flat files before project-level directories. The running skill may be the older global version, not the project version. Archive or remove the global flat file unless this is intentional. To fix: move the file to ~/.claude/commands/_archived/[skill-name]-archived.md`
 - If no global flat file found: log `[INFO] — No global flat file conflict detected for [skill-name]`. No action needed.
 
 ### Orphaned Session Log Check
@@ -1014,7 +1014,7 @@ If `Registry write rate` < 90%: append "Warning: Phase 5 is not completing relia
 Runs automatically after the Phase 7 chat report. Regenerates the local HTML skill health dashboard with live data.
 
 ```bash
-python3 /Users/carlaklaasen/claude_code/all_skills/watchdog-evolution/generate_skill_dashboard.py
+python3 all_skills/watchdog-evolution/generate_skill_dashboard.py
 ```
 
 - If the script succeeds: report `Dashboard regenerated → all_skills/skill-health-dashboard.html`
@@ -1240,7 +1240,7 @@ A local cron job invokes `/skill-watchdog apply-feedback` every `FEEDBACK_WATCH_
 
 The local cron setup is a one-time step: add a crontab entry like:
 ```
-*/30 * * * * cd /Users/carlaklaasen/claude_code && claude --print "/skill-watchdog apply-feedback" >> ~/.claude/feedback-cron.log 2>&1
+*/30 * * * * cd /path/to/ck-skills && claude --print "/skill-watchdog apply-feedback" >> ~/.claude/feedback-cron.log 2>&1
 ```
 
 ---

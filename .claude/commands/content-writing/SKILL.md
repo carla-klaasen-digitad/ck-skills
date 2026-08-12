@@ -35,10 +35,10 @@ This skill automates content generation across multiple formats and channels:
 
 ### Brand Guidelines — Auto-Load
 
-Brand guidelines are stored in `all_skills/content-writing/guidelines/`. When a brand name is mentioned, the brand-context skill loads the appropriate file automatically. Do not proceed with writing before the brand file is loaded.
+Brand guidelines are stored in `shared/brand-guidelines/`. When a brand name is mentioned, the brand-context skill loads the appropriate file automatically. Do not proceed with writing before the brand file is loaded.
 
-- Brand files: `all_skills/content-writing/guidelines/{brand}.md`
-- Legal overlay: `all_skills/content-writing/guidelines/general_legal.md` (load for off-site / guest post content)
+- Brand files: `shared/brand-guidelines/{brand}.md`
+- Legal overlay: `shared/brand-guidelines/general_legal.md` (load for off-site / guest post content)
 - Full registry and rules: `.claude/commands/brand-context/SKILL.md`
 
 ---
