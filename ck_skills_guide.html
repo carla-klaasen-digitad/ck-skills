@@ -69,6 +69,23 @@
   .lede { font-size: 16.5px; }
   code { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: .86em; background: var(--code-bg); border-radius: 4px; padding: .1em .4em; }
 
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step { display: grid; grid-template-columns: 30px 1fr; gap: 14px; padding: 14px 0; }
+  .step + .step { border-top: 1px solid var(--line); }
+  .step .num { font-family: ui-monospace, monospace; font-weight: 700; font-size: 13px; color: var(--accent); background: var(--accent-soft); border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step .body { display: flex; flex-direction: column; gap: 4px; }
+  .step .body h4 { margin: 0; font-size: 14.5px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .step .body p { font-size: 13.5px; color: var(--muted); }
+
+  .term { background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12.5px; line-height: 1.7; overflow-x: auto; white-space: pre; }
+  .term .c { color: var(--muted); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+  .card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .card h4 { margin: 0; font-size: 13.5px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .card p { font-size: 13px; color: var(--muted); margin: 0; }
+
   .checklist { display: flex; flex-direction: column; gap: 0; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
   .check-item { display: grid; grid-template-columns: 20px 1fr; gap: 12px; padding: 12px 16px; font-size: 13.5px; }
   .check-item + .check-item { border-top: 1px solid var(--line); }
@@ -108,6 +125,35 @@
     <h1>ck-skills Quick Reference</h1>
     <p class="dek">What each skill does, when to reach for it, exactly what to type to invoke it, and what it needs before it'll run. One tab per skill.</p>
   </div>
+
+  <section>
+    <h2>Getting access</h2>
+    <p class="lede">Two different needs, two different paths — installing the repo so Claude Code can actually run these skills, or just reading how one works without setting anything up.</p>
+
+    <h3 style="font-size: 14.5px;">Path A — just want to read a skill (no install)</h3>
+    <p style="font-size: 14px;">Every skill is a plain markdown file on GitHub — open it in a browser, no clone, no Claude Code, no credentials:</p>
+    <div class="term"><span class="c"># Browse any skill directly</span>
+https://github.com/carla-klaasen-digitad/ck-skills/tree/main/.claude/commands/{skill-name}</div>
+    <p style="font-size: 13px; color: var(--muted);">Good enough for checking exactly what a skill does or how it's invoked before deciding whether to run it yourself.</p>
+
+    <h3 style="font-size: 14.5px; margin-top: 6px;">Path B — install it so Claude Code can run the skills</h3>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div class="body"><h4>Have Claude Code installed</h4><p>If you don't already have it, follow Anthropic's install instructions at <a href="https://docs.claude.com/en/docs/claude-code">docs.claude.com/en/docs/claude-code</a>.</p></div></div>
+      <div class="step"><div class="num">2</div><div class="body"><h4>Clone the repo</h4><p>Works from any location on your machine — nothing inside the repo depends on a specific folder path.</p></div></div>
+      <div class="step"><div class="num">3</div><div class="body"><h4>Launch Claude Code <b>from the repo root</b> — this step is not optional</h4><p>Skills are loaded from <code>.claude/commands/</code> relative to whatever folder Claude Code is opened in. Open it from a parent folder, or any other folder, and none of these skills will load at all — silently, with no error.</p></div></div>
+      <div class="step"><div class="num">4</div><div class="body"><h4>Add a <code>.env</code> file at the repo root</h4><p>Most skills need Google OAuth credentials and/or an Anthropic API key here. There's no template checked into git — copy an existing <code>.env</code> from a machine that already has one, or ask Carla for the values. Never commit this file; it's already gitignored.</p></div></div>
+    </div>
+    <div class="term"><span class="c"># Step 2</span>
+git clone git@github.com:carla-klaasen-digitad/ck-skills.git
+cd ck-skills
+
+<span class="c"># Step 3 — from inside that same folder</span>
+claude</div>
+    <div class="callout warn">
+      <span class="mark">⚑</span>
+      <p><b>Wrong working directory is the #1 "why isn't this skill working" cause.</b> If Claude Code was launched from your home folder or Desktop instead of from inside <code>ck-skills/</code>, every slash command in this guide will fail to trigger, with nothing telling you why. If a skill seems to not exist, check this first before anything else.</p>
+    </div>
+  </section>
 
   <div class="tabbar" role="tablist">
     <button class="tabbtn active" role="tab" aria-selected="true" data-tab="brand-context">brand-context</button>
