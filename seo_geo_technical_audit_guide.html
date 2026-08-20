@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO/GEO Technical Audit Guide</title>
+<style>
+  :root {
+    --paper: #F2F3EE;
+    --paper-raised: #FFFFFF;
+    --ink: #1B211D;
+    --muted: #62695F;
+    --line: #D8DBD1;
+    --accent: #2F6F5E;
+    --accent-soft: #E3EEE9;
+    --warn: #B4592A;
+    --warn-soft: #F7E8DD;
+    --code-bg: #E9EBE3;
+    --shadow: 0 1px 2px rgba(27,33,29,0.06), 0 6px 20px rgba(27,33,29,0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #14181A; --paper-raised: #1B2023; --ink: #E7EBE6; --muted: #93998F;
+      --line: #2B3230; --accent: #5FBFA0; --accent-soft: #1E2E29; --warn: #E39A6B;
+      --warn-soft: #33241A; --code-bg: #10201C;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #14181A; --paper-raised: #1B2023; --ink: #E7EBE6; --muted: #93998F;
+    --line: #2B3230; --accent: #5FBFA0; --accent-soft: #1E2E29; --warn: #E39A6B;
+    --warn-soft: #33241A; --code-bg: #10201C;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: Charter, 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent-soft); }
+  .page { max-width: 860px; margin: 0 auto; padding: 48px 24px 96px; display: flex; flex-direction: column; gap: 34px; }
+  .hgroup { display: flex; flex-direction: column; gap: 10px; }
+  .eyebrow { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 800; font-size: 34px; letter-spacing: -.015em; line-height: 1.1; margin: 0; text-wrap: balance; }
+  .dek { color: var(--muted); font-size: 17px; max-width: 66ch; margin: 0; }
+
+  section { display: flex; flex-direction: column; gap: 14px; }
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 700; font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink);
+    margin: 0; display: flex; align-items: baseline; gap: 10px;
+  }
+  h2::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+  h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 14.5px; margin: 0; }
+  p { margin: 0; max-width: 68ch; }
+  .lede { font-size: 16.5px; }
+  code { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: .86em; background: var(--code-bg); border-radius: 4px; padding: .1em .4em; }
+
+  .journey { display: flex; align-items: flex-start; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 22px 18px; overflow-x: auto; gap: 0; }
+  .jstep { flex: 1; min-width: 130px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; position: relative; padding: 0 8px; }
+  .jstep .dot { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: ui-monospace, monospace; font-size: 13px; z-index: 1; }
+  .jstep .dot.you { background: var(--warn-soft); color: var(--warn); }
+  .jstep .label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; font-size: 12px; }
+  .jstep .sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
+  .jstep::before { content: ''; position: absolute; top: 16px; left: -50%; width: 100%; height: 2px; background: var(--line); z-index: 0; }
+  .jstep:first-child::before { display: none; }
+
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step { display: grid; grid-template-columns: 30px 1fr; gap: 14px; padding: 14px 0; }
+  .step + .step { border-top: 1px solid var(--line); }
+  .step .num { font-family: ui-monospace, monospace; font-weight: 700; font-size: 13px; color: var(--accent); background: var(--accent-soft); border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step .body { display: flex; flex-direction: column; gap: 4px; }
+  .step .body h4 { margin: 0; font-size: 14.5px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .step .body p { font-size: 13.5px; color: var(--muted); }
+
+  .checklist { display: flex; flex-direction: column; gap: 0; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
+  .check-item { display: grid; grid-template-columns: 20px 1fr; gap: 12px; padding: 12px 16px; font-size: 13.5px; }
+  .check-item + .check-item { border-top: 1px solid var(--line); }
+  .check-item .box { width: 16px; height: 16px; border: 1.5px solid var(--accent); border-radius: 4px; margin-top: 2px; flex-shrink: 0; }
+  .check-item b { color: var(--ink); }
+  .check-item .note { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+
+  .callout { display: flex; gap: 12px; background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 16px; }
+  .callout.warn { background: var(--warn-soft); border-color: var(--warn); }
+  .callout .mark { font-weight: 800; font-family: ui-monospace, monospace; color: var(--accent); flex-shrink: 0; }
+  .callout.warn .mark { color: var(--warn); }
+  .callout p { font-size: 14px; }
+  .callout p b { color: var(--ink); }
+
+  .prompts { display: flex; flex-direction: column; gap: 10px; }
+  .prompt-card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .prompt-card .situation { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; font-size: 12.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .prompt-card .say { font-size: 14px; padding: 10px 12px; background: var(--code-bg); border-radius: 6px; border-left: 3px solid var(--accent); font-style: italic; }
+  .prompt-card .why { font-size: 12.5px; color: var(--muted); }
+
+  .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--paper-raised); box-shadow: var(--shadow); }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  thead th { text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 10px 14px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+  .card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .card h4 { margin: 0; font-size: 13.5px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .card p { font-size: 13px; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 20px; font-size: 12.5px; color: var(--muted); font-family: ui-monospace, monospace; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="hgroup">
+    <div class="eyebrow">Digitad · ck-skills — <a href="ck_skills_guide.html">back to the skills index</a></div>
+    <h1>SEO/GEO Technical Audit Guide</h1>
+    <p class="dek">The most heavily-specified skill in the repo: 123 scored elements across 6 phases, a mandatory data-intake gate, a two-script workbook pipeline, and a client-facing HTML report. This is what actually happens under the hood, and what to watch for at each stage.</p>
+  </div>
+
+  <section>
+    <h2>What this is</h2>
+    <p class="lede">A full technical SEO + GEO (generative-engine visibility) audit, scored element by element against a fixed rubric, ending in a Google Sheet workbook and a 9-file client-facing HTML report. It never fabricates a score — every element is either scored from real data or explicitly marked <code>DATA MISSING</code>.</p>
+  </section>
+
+  <section>
+    <h2>The scoring engine, in plain terms</h2>
+    <div class="grid2">
+      <div class="card">
+        <h4>Rating scale</h4>
+        <p>Not Present (1) → Weak (2) → Medium (3) → High (4) → Excellent (5), or Not Applicable. Codes like "W" or "H" are internal shorthand only — every output file spells the full name.</p>
+      </div>
+      <div class="card">
+        <h4>Weight tiers</h4>
+        <p>Critical (10) → High (7.5) → Medium (5) → Low (2.5) — how much a given element actually matters for this site.</p>
+      </div>
+      <div class="card">
+        <h4>Priority Score</h4>
+        <p><code>Rating × Weight</code>, lower = more urgent. ≤10 is High priority, 11–20 Medium, 21–35 Low, 36–50 Monitor. This is formula-driven in the sheet — never hand-written.</p>
+      </div>
+      <div class="card">
+        <h4>Phase breakdown</h4>
+        <p>Technical (27) · UX (14) · Tools &amp; Config (10) · On-Site SEO (25) · Off-Site (11) · GEO/AI Visibility (36) = 123 elements total.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>DATA MISSING vs. PROMPT USER — the difference matters</h2>
+    <p style="font-size: 14px;">These look similar but trigger opposite behavior:</p>
+    <div class="grid2">
+      <div class="card">
+        <h4>DATA MISSING</h4>
+        <p>A required export was already declared absent during intake. Mark it, state which file is needed, keep moving — no interruption. You already said you don't have it.</p>
+      </div>
+      <div class="card">
+        <h4>PROMPT USER</h4>
+        <p>The element needs a manual visual check, admin access, or a judgment call that's cheaper for you to answer than for Claude to infer. Stops and asks the exact question from the reference file — never paraphrased.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Before scoring starts — Phase 0 intake</h2>
+    <p class="lede">This is the single longest phase and it exists for a reason: every later phase assumes the intake was done right. Skipping ahead produces silently under-scored elements.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div class="body"><h4>Session init</h4><p>Runs <code>init_session.py</code> to test every API connection at once (Screaming Frog, SE Ranking, Drive, PSI, GSC, GA4, Moz, WHOIS) and confirm client name, site URL, and Drive folder access. Required whenever the workbook will be a Google Sheet, or any source is API-fetched.</p></div></div>
+      <div class="step"><div class="num">2</div><div class="body"><h4>Site context + writing style</h4><p>Collects website, site type, industry, market before anything else. Then shows one finding in three tones (technical / plain-language client-facing / executive-brief) and asks which to use for the rest of the audit — plain-language is the default if you don't weigh in.</p></div></div>
+      <div class="step"><div class="num">3</div><div class="body"><h4>Workbook format</h4><p>Google Sheet (shareable, live) or a local .xlsx. Choosing Sheet triggers a Drive validation check before Phase 1 can begin.</p></div></div>
+      <div class="step"><div class="num">4</div><div class="body"><h4>GSC access check — before anything else is asked</h4><p>Checks whether Claude already has direct GSC/GA4 MCP access to the site. If it does, Coverage/Performance/Core Web Vitals are auto-fetched — no export needed for those. If not, every one of them becomes a manual ask.</p></div></div>
+      <div class="step"><div class="num">5</div><div class="body"><h4>Screaming Frog — internal crawl or manual exports?</h4><p>If run internally via the SF REST API, it also checks which integrations (GA4, GSC, PSI, Majestic/Moz) are active in that config — those become auto-fetched sources too, not separate manual exports.</p></div></div>
+      <div class="step"><div class="num">6</div><div class="body"><h4>Full data-source inventory</h4><p>A complete table of every possible source, what it unlocks, and how it's fetched (API / SF / Manual). Nothing gets scored without a row in this table being resolved one way or another.</p></div></div>
+      <div class="step"><div class="num">7</div><div class="body"><h4>Gap report — before any scoring</h4><p>States plainly: confirmed sources, missing sources, and exactly what % of the 123 elements can actually be scored right now. You explicitly confirm before Phase 1 starts.</p></div></div>
+      <div class="step"><div class="num">8</div><div class="body"><h4>Production Plan created</h4><p>A live tracked list of every anticipated output file (workbook, HTML report, redirect plan, sitemap delta, etc.) with status markers — not optional, not skippable.</p></div></div>
+    </div>
+    <div class="callout">
+      <span class="mark">i</span>
+      <p><b>GSC Coverage always outranks Screaming Frog</b> for indexation, 404s, redirect chains, and canonical tags. SF only finds URLs reachable from the current internal link graph; GSC finds URLs from every source — old sitemaps, backlinks, historical crawls. If GSC data arrives after an SF-only score was already written, that element gets rescored from GSC.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>How one phase actually flows</h2>
+    <div class="journey">
+      <div class="jstep"><div class="dot you">1</div><div class="label">Confirm readiness</div><div class="sub">"Ready for Phase N? Completeness: X%"</div></div>
+      <div class="jstep"><div class="dot">2</div><div class="label">Load reference doc</div><div class="sub">REFERENCE-1.md or -2.md, this phase's section only</div></div>
+      <div class="jstep"><div class="dot you">3</div><div class="label">Answer PROMPT USER items</div><div class="sub">asked verbatim, in one batch</div></div>
+      <div class="jstep"><div class="dot">4</div><div class="label">Score every element</div><div class="sub">in one pass, none skipped silently</div></div>
+      <div class="jstep"><div class="dot">5</div><div class="label">Write the phase .md file</div><div class="sub">to disk — before anything is printed to chat</div></div>
+      <div class="jstep"><div class="dot">6</div><div class="label">Save state, then /compact</div><div class="sub">session-state.md first — always</div></div>
+    </div>
+    <p style="font-size: 13.5px; color: var(--muted);">This repeats phase by phase — never two phases in one prompt. The write-before-print and save-before-compact ordering exists specifically because context crashes and lost files are the most common real audit failures.</p>
+  </section>
+
+  <section>
+    <h2>Phase 4's export gate — the one that blocks the most sessions</h2>
+    <p style="font-size: 14px;">Phase 4 (On-Site SEO) cannot be declared complete — and Phase 5 cannot start — until 10 mandatory export files exist, each uploaded to Drive as a real Google Sheet (not a raw CSV) with its Drive URL recorded in the Sources column:</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>File</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td class="num">1</td><td>Title Tag Issues</td><td></td></tr>
+          <tr><td class="num">2</td><td>Meta Description Issues</td><td></td></tr>
+          <tr><td class="num">3</td><td>H1 Issues</td><td></td></tr>
+          <tr><td class="num">4</td><td>Heading Hierarchy Issues</td><td></td></tr>
+          <tr><td class="num">5</td><td>Image Alt Tag Issues</td><td></td></tr>
+          <tr><td class="num">6</td><td>Canonical Tag Issues</td><td></td></tr>
+          <tr><td class="num">7</td><td>Redirect Plan</td><td>generated by <code>/redirection-plan-skill</code> — invoked automatically, not a separate step</td></tr>
+          <tr><td class="num">8</td><td>Internal Linking Report</td><td></td></tr>
+          <tr><td class="num">9</td><td>External Linking Report</td><td></td></tr>
+          <tr><td class="num">10</td><td>Sitemap Recommendations Report</td><td>a full URL-by-URL decision matrix — add / remove / replace / normalize / no action</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout">
+      <span class="mark">i</span>
+      <p>Robots.txt Recommendation is conditional — only required if that element scored a real issue — and doesn't block the Phase 4 gate either way. The Schema Sub-Phase is a separate optional add-on, offered whenever schema scores Weak, Medium, or Not Present.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Session close — the sequence after Phase 6</h2>
+    <p class="lede">This is the longest stretch of the whole audit and the one most likely to get rushed. Every step below is a named, non-skippable gate — not a suggestion.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div class="body"><h4>Executive Summary + Session Log</h4><p>Written as .md files before the workbook — these summarize findings and the full session record.</p></div></div>
+      <div class="step"><div class="num">2</div><div class="body"><h4>Conditional deliverables review</h4><p>A checklist of what was generated this session vs. what was triggered but not yet built vs. what's still awaiting your confirmation — surfaced before the workbook, not after.</p></div></div>
+      <div class="step"><div class="num">3</div><div class="body"><h4>Workbook — the two-script pipeline</h4><p><code>extract_data.py</code> parses every phase .md file into <code>workbook_data.json</code>, then <code>generate_gsheet.py</code> reads that JSON and creates the actual Google Sheet. Audit data is never hand-typed as Python literals — that approach silently fails past ~50 rows.</p></div></div>
+      <div class="step"><div class="num">4</div><div class="body"><h4>Comments for Claude feedback loop</h4><p>You open the finished sheet, write notes into column R for any row you want revisited, then say "comments added." Claude reads every non-empty R cell, classifies each as a row fix / a skill-level rule / both, applies the fix, and clears that cell — one at a time, never in bulk, and never before the fix is actually confirmed written.</p></div></div>
+      <div class="step"><div class="num">5</div><div class="body"><h4>HTML client report</h4><p>Built in one pass by <code>scripts/generate_html.py</code> reading <code>workbook_data.json</code> — never written file-by-file by hand. Hand-writing these individually bypasses the design system entirely and is explicitly disallowed.</p></div></div>
+      <div class="step"><div class="num">6</div><div class="body"><h4>Activity log</h4><p><code>activity_log.py</code> auto-searches your local Claude session JSONLs for this audit's session ID and generates the final activity record.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rules that exist because something already broke</h2>
+    <div class="grid2">
+      <div class="card">
+        <h4>Column M is formula-only</h4>
+        <p>Priority is calculated automatically from Score × Weight. Any hardcoded text written to that column silently inverts the displayed priority — an Excellent score can end up showing as High priority.</p>
+      </div>
+      <div class="card">
+        <h4>No property IDs, ever</h4>
+        <p>GA4 property IDs, GSC property IDs, OAuth tokens — none of these may appear in any cell, in any column. Use the descriptive name only ("GA4 — Dannon," never "GA4 property 377536711").</p>
+      </div>
+      <div class="card">
+        <h4>No element codes in client-facing cells</h4>
+        <p>T01, G17, U04 and similar are internal notation only. A client reading the report has no idea what they mean and shouldn't have to.</p>
+      </div>
+      <div class="card">
+        <h4>FAQPage schema is never recommended</h4>
+        <p>Deprecated by Google. This has had to be corrected more than once across different brands' audits — treat it as a hard no, not a case-by-case judgment call.</p>
+      </div>
+      <div class="card">
+        <h4>How to Correct never names a product</h4>
+        <p>Describe the action, not the vendor: "convert images to WebP" rather than naming a specific CMS or plugin that does it.</p>
+      </div>
+      <div class="card">
+        <h4>Contradiction detection is a hard stop</h4>
+        <p>If a later phase's data contradicts an earlier PROMPT USER answer, scoring halts on that element until you explicitly resolve which one is right — it's never silently overwritten either way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Operating modes — pick one at the start</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Mode</th><th>When</th></tr></thead>
+        <tbody>
+          <tr><td><b>A — New Audit</b></td><td>Default. Full 6-phase run from Phase 0.</td></tr>
+          <tr><td><b>B — Re-Audit</b></td><td>You have a previous audit file. Either compares old vs. new with a delta table, or just refreshes fields that were missing last time.</td></tr>
+          <tr><td><b>C — Schema Deep-Dive</b></td><td>Only the schema markup analysis — skips straight to that sub-phase.</td></tr>
+          <tr><td><b>D — Executive Summary Only</b></td><td>Audit's already done; you just need the summary generated.</td></tr>
+          <tr><td><b>E — HTML Report Only</b></td><td>A completed <code>workbook_data.json</code> already exists; generates just the 9-file HTML report, no re-scoring.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>What to say to Claude</h2>
+    <div class="prompts">
+      <div class="prompt-card">
+        <div class="situation">Starting a new audit</div>
+        <div class="say">"Run a technical SEO and GEO audit for [Brand] — [website URL]."</div>
+        <div class="why">Claude will run Phase 0 intake and ask which operating mode, then walk through data-source collection with you before scoring anything.</div>
+      </div>
+      <div class="prompt-card">
+        <div class="situation">You only have some of the data right now</div>
+        <div class="say">"I don't have GA4 or backlink data yet — just Screaming Frog and GSC."</div>
+        <div class="why">Fine — the gap report will mark the affected elements DATA MISSING and tell you exactly what % of the audit that leaves scoreable. Nothing blocks on this.</div>
+      </div>
+      <div class="prompt-card">
+        <div class="situation">Reviewing the finished workbook</div>
+        <div class="say">"I've added comments in column R — comments added."</div>
+        <div class="why">Triggers the feedback loop: each comment gets classified, the right reference file gets loaded, the fix gets applied, then that cell clears.</div>
+      </div>
+      <div class="prompt-card">
+        <div class="situation">Something in the sheet looks structurally wrong</div>
+        <div class="say">"Column M shows 'High' for a row that scored Excellent — is that right?"</div>
+        <div class="why">It isn't — that's the formula-override bug this guide flags above. Worth reporting immediately rather than assuming the sheet is right.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Not covered here in depth: schema deep-dive mechanics (<code>REFERENCE-SCHEMA.md</code>), the exact 19-column Google Sheet layout (<code>OUTPUTS-WORKBOOK.md</code>), and the HTML report's design system (<code>DESIGN.md</code>) — ask Claude to walk through any of these directly when you need them. Quick-reference guide for the other ck-skills: <a href="ck_skills_guide.html">ck_skills_guide.html</a>.</footer>
+
+</div>
+
+</body>
+</html>
